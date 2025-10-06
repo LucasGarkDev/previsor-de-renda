@@ -1,0 +1,1823 @@
+# Dicionário da PNAD Contínua
+
+- **V3001** (educacao) [nan] → Não aplicável
+- **V3001** (educacao) [1] → Sim
+- **V3001** (educacao) [2] → Não
+- **V3002** (educacao) [nan] → Não aplicável
+- **V3002** (educacao) [1] → Sim
+- **V3002** (educacao) [2] → Não
+- **V3002A** (educacao) [nan] → Não aplicável
+- **V3002A** (educacao) [1] → Rede privada
+- **V3002A** (educacao) [2] → Rede pública
+- **V3003A** (educacao) [nan] → Não aplicável
+- **V3003A** (educacao) [1] → Creche (disponível apenas no questionário anual de educação)
+- **V3003A** (educacao) [2] → Pré-escola
+- **V3003A** (educacao) [3] → Alfabetização de jovens e adultos
+- **V3003A** (educacao) [4] → Regular do ensino fundamental
+- **V3003A** (educacao) [5] → Educação de jovens e adultos (EJA) do ensino fundamental
+- **V3003A** (educacao) [6] → Regular do ensino médio
+- **V3003A** (educacao) [7] → Educação de jovens e adultos (EJA) do ensino médio
+- **V3003A** (educacao) [8] → Superior - graduação
+- **V3003A** (educacao) [9] → Especialização de nível superior
+- **V3003A** (educacao) [10] → Mestrado
+- **V3003A** (educacao) [11] → Doutorado
+- **V3004** (educacao) [nan] → Não aplicável
+- **V3004** (educacao) [1] → 8 anos
+- **V3004** (educacao) [2] → 9 anos
+- **V3004A** (educacao) [nan] → Não aplicável
+- **V3004A** (educacao) [1] → Sim
+- **V3004A** (educacao) [2] → Não
+- **V3005A** (educacao) [nan] → Não aplicável
+- **V3005A** (educacao) [1] → Períodos semestrais
+- **V3005A** (educacao) [2] → Anos
+- **V3005A** (educacao) [3] → Outra forma
+- **V3006** (educacao) [nan] → Não aplicável
+- **V3006** (educacao) [1] → Primeira (o)
+- **V3006** (educacao) [2] → Segunda (o)
+- **V3006** (educacao) [3] → Terceira (o)
+- **V3006** (educacao) [4] → Quarta (o)
+- **V3006** (educacao) [5] → Quinta (o)
+- **V3006** (educacao) [6] → Sexta (o)
+- **V3006** (educacao) [7] → Sétima (o)
+- **V3006** (educacao) [8] → Oitava (o)
+- **V3006** (educacao) [9] → Nona (o)
+- **V3006** (educacao) [10] → Décimo
+- **V3006** (educacao) [11] → Décimo primeiro
+- **V3006** (educacao) [12] → Décimo segundo
+- **V3006** (educacao) [13] → Curso não classificado em séries ou anos
+- **V3006A** (educacao) [nan] → Não aplicável
+- **V3006A** (educacao) [1] → Anos iniciais (primeiro segmento)
+- **V3006A** (educacao) [2] → Anos finais (segundo segmento)
+- **V3006B** (educacao) [nan] → Não aplicável
+- **V3006B** (educacao) [1] → Presencial
+- **V3006B** (educacao) [2] → A distância
+- **V3006C** (educacao) [nan] → Não aplicável
+- **V3006C** (educacao) [1] → Somente de manhã
+- **V3006C** (educacao) [2] → Somente de tarde
+- **V3006C** (educacao) [3] → Somente de noite
+- **V3006C** (educacao) [4] → Manhã e tarde
+- **V3006C** (educacao) [5] → Outros
+- **V3007** (educacao) [nan] → Não aplicável
+- **V3007** (educacao) [1] → Sim
+- **V3007** (educacao) [2] → Não
+- **V3008** (educacao) [nan] → Não aplicável
+- **V3008** (educacao) [1] → Sim
+- **V3008** (educacao) [2] → Não
+- **V3009A** (educacao) [nan] → Não aplicável
+- **V3009A** (educacao) [1] → Creche (disponível apenas no questionário anual de educação)
+- **V3009A** (educacao) [2] → Pré-escola
+- **V3009A** (educacao) [3] → Classe de alfabetização - CA
+- **V3009A** (educacao) [4] → Alfabetização de jovens e adultos
+- **V3009A** (educacao) [5] → Antigo primário (elementar)
+- **V3009A** (educacao) [6] → Antigo ginásio (médio 1º ciclo)
+- **V3009A** (educacao) [7] → Regular do ensino fundamental ou do 1º grau
+- **V3009A** (educacao) [8] → Educação de jovens e adultos (EJA) ou supletivo do 1º grau
+- **V3009A** (educacao) [9] → Antigo científico, clássico, etc. (médio 2º ciclo)
+- **V3009A** (educacao) [10] → Regular do ensino médio óu do 2º grau
+- **V3009A** (educacao) [11] → Educação de jovens e adultos (EJA) ou supletivo do 2º grau
+- **V3009A** (educacao) [12] → Superior - graduação
+- **V3009A** (educacao) [13] → Especialização de nível superior
+- **V3009A** (educacao) [14] → Mestrado
+- **V3009A** (educacao) [15] → Doutorado
+- **V3010** (educacao) [nan] → Não aplicável
+- **V3010** (educacao) [1] → 8 anos
+- **V3010** (educacao) [2] → 9 anos
+- **V3010A** (educacao) [nan] → Não aplicável
+- **V3010A** (educacao) [1] → Sim
+- **V3010A** (educacao) [2] → Não
+- **V3011A** (educacao) [nan] → Não aplicável
+- **V3011A** (educacao) [1] → Períodos semestrais
+- **V3011A** (educacao) [2] → Anos
+- **V3011A** (educacao) [3] → Outra forma
+- **V3012** (educacao) [nan] → Não aplicável
+- **V3012** (educacao) [1] → Concluiu
+- **V3012** (educacao) [2] → Não concluiu
+- **V3012** (educacao) [3] → Curso não classificado em séries ou anos
+- **V3013** (educacao) [nan] → Não aplicável
+- **V3013** (educacao) [1] → Primeira (o)
+- **V3013** (educacao) [2] → Segunda (o)
+- **V3013** (educacao) [3] → Terceira (o)
+- **V3013** (educacao) [4] → Quarta (o)
+- **V3013** (educacao) [5] → Quinta (o)
+- **V3013** (educacao) [6] → Sexta (o)
+- **V3013** (educacao) [7] → Sétima (o)
+- **V3013** (educacao) [8] → Oitava (o)
+- **V3013** (educacao) [9] → Nona (o)
+- **V3013** (educacao) [10] → Décimo
+- **V3013** (educacao) [11] → Décimo primeiro
+- **V3013** (educacao) [12] → Décimo segundo
+- **V3013A** (educacao) [nan] → Não aplicável
+- **V3013A** (educacao) [1] → Anos iniciais (primeiro segmento)
+- **V3013A** (educacao) [2] → Anos finais (segundo segmento)
+- **V3013B** (educacao) [nan] → Não aplicável
+- **V3013B** (educacao) [1] → Sim
+- **V3013B** (educacao) [2] → Não
+- **V3014** (educacao) [nan] → Não aplicável
+- **V3014** (educacao) [1] → Sim
+- **V3014** (educacao) [2] → Não
+- **V3017** (educacao) [nan] → Não aplicável
+- **V3017** (educacao) [1] → Somente na rede privada
+- **V3017** (educacao) [2] → Somente na rede pública
+- **V3017** (educacao) [3] → Na rede privada e pública
+- **V3017A** (educacao) [nan] → Não aplicável
+- **V3017A** (educacao) [1] → Somente na rede privada
+- **V3017A** (educacao) [2] → Somente na rede pública
+- **V3017A** (educacao) [3] → Na rede privada e pública
+- **V3018** (educacao) [nan] → Não aplicável
+- **V3018** (educacao) [1] → Somente na rede privada
+- **V3018** (educacao) [2] → Somente na rede pública
+- **V3018** (educacao) [3] → Na rede privada e pública
+- **V3019** (educacao) [nan] → Não aplicável
+- **V3019** (educacao) [1] → Sim
+- **V3019** (educacao) [2] → Não
+- **V3019A** (educacao) [nan] → Não aplicável
+- **V3019A** (educacao) [1] → Sim, curso técnico de nível médio
+- **V3019A** (educacao) [2] → Sim, curso normal (magistério)
+- **V3019A** (educacao) [3] → Não
+- **V3020** (educacao) [nan] → Não aplicável
+- **V3020** (educacao) [1] → Após a conclusão do ensino médio (forma subsequente)
+- **V3020** (educacao) [2] → No mesmo curso do ensino médio (forma integrada ao ensino médio - 1 matrícula)
+- **V3020** (educacao) [3] → O ensino médio é realizado em um curso e o técnico em outro (forma concomitante com o ensino médio - duas matrículas)
+- **V3020B** (educacao) [nan] → Não aplicável
+- **V3020B** (educacao) [1] → Curso após a conclusão do ensino médio (forma subsequente)
+- **V3020B** (educacao) [2] → Curso no mesmo curso do ensino médio (forma integrada ao ensino médio - 1 matrícula)
+- **V3020B** (educacao) [3] → Curso realizado em um curso e o ensino médio em outro (forma concomitante com o ensino médio - duas matrículas)
+- **V3020C** (educacao) [nan] → Não aplicável
+- **V3020C** (educacao) [1] → Instituição pública (federal, estadual, municipal)
+- **V3020C** (educacao) [2] → SENAI, SESI, SENAC, SESC ou outra instituição dos Serviços Nacionais de Aprendizagem
+- **V3020C** (educacao) [3] → Outra instituição particular
+- **V3021** (educacao) [nan] → Não aplicável
+- **V3021** (educacao) [1] → Sim
+- **V3021** (educacao) [2] → Não
+- **V3021A** (educacao) [nan] → Não aplicável
+- **V3021A** (educacao) [1] → Sim, curso técnico de nível médio
+- **V3021A** (educacao) [2] → Sim, curso normal (magistério)
+- **V3021A** (educacao) [3] → Não
+- **V3022** (educacao) [nan] → Não aplicável
+- **V3022** (educacao) [1] → Após a conclusão do ensino médio (forma subsequente)
+- **V3022** (educacao) [2] → No mesmo curso do ensino médio (forma integrada ao ensino médio - 1 matrícula)
+- **V3022** (educacao) [3] → O ensino médio é realizado em um curso e o técnico em outro (forma concomitante com o ensino médio - duas matrículas)
+- **V3022A** (educacao) [nan] → Não aplicável
+- **V3022A** (educacao) [1] → Até 2007
+- **V3022A** (educacao) [2] → 2008 a 2010
+- **V3022A** (educacao) [3] → 2011 em diante:
+- **V3022C** (educacao) [nan] → Não aplicável
+- **V3022C** (educacao) [1] → Curso após a conclusão do ensino médio (forma subsequente)
+- **V3022C** (educacao) [2] → Curso no mesmo curso do ensino médio (forma integrada ao ensino médio - 1 matrícula)
+- **V3022C** (educacao) [3] → Curso realizado em um curso e o ensino médio em outro (forma concomitante com o ensino médio - duas matrículas)
+- **V3022D** (educacao) [nan] → Não aplicável
+- **V3022D** (educacao) [1] → Instituição pública (federal, estadual, municipal)
+- **V3022D** (educacao) [2] → SENAI, SESI, SENAC, SESC ou outra instituição dos Serviços Nacionais de Aprendizagem
+- **V3022D** (educacao) [3] → Outra instituição particular
+- **V3022E** (educacao) [nan] → Não aplicável
+- **V3022E** (educacao) [1] → Até 2010
+- **V3022E** (educacao) [2] → 2011 em diante
+- **V3023** (educacao) [nan] → Não aplicável
+- **V3023** (educacao) [1] → Sim
+- **V3023** (educacao) [2] → Não
+- **V3023A** (educacao) [nan] → Não aplicável
+- **V3023A** (educacao) [1] → Sim
+- **V3023A** (educacao) [2] → Não
+- **V3024** (educacao) [nan] → Não aplicável
+- **V3024** (educacao) [1] → Sim
+- **V3024** (educacao) [2] → Não
+- **V3025** (educacao) [nan] → Não aplicável
+- **V3025** (educacao) [1] → Sim
+- **V3025** (educacao) [2] → Não
+- **V3026** (educacao) [nan] → Não aplicável
+- **V3026** (educacao) [1] → Sim
+- **V3026** (educacao) [2] → Não
+- **V3026A** (educacao) [nan] → Não aplicável
+- **V3026A** (educacao) [1] → Instituição pública (federal, estadual ou municipal)
+- **V3026A** (educacao) [2] → SENAI, SESI, SENAC, SESC ou outra instituição dos Serviços Nacionais de Aprendizagem
+- **V3026A** (educacao) [3] → Empreendimento em que trabalha
+- **V3026A** (educacao) [4] → Outra instituição particular
+- **V3028** (educacao) [nan] → Não aplicável
+- **V3028** (educacao) [1] → Sim
+- **V3028** (educacao) [2] → Não
+- **V3029** (educacao) [nan] → Não aplicável
+- **V3029** (educacao) [1] → Sim
+- **V3029** (educacao) [2] → Não
+- **V3029A** (educacao) [nan] → Não aplicável
+- **V3029A** (educacao) [1] → Até 2010
+- **V3029A** (educacao) [2] → 2011 em diante
+- **V3030** (educacao) [nan] → Não aplicável
+- **V3030** (educacao) [1] → Até 2007
+- **V3030** (educacao) [2] → De 2008 a 2010
+- **V3030** (educacao) [3] → 2011 em diante
+- **V3030A** (educacao) [nan] → Não aplicável
+- **V3030A** (educacao) [1] → Instituição de pública (federal, estadual ou municipal)
+- **V3030A** (educacao) [2] → SENAI, SESI, SENAC, SESC ou outra instituição dos Serviços Nacionais de Aprendizagem
+- **V3030A** (educacao) [3] → Empreendimento em que trabalha
+- **V3030A** (educacao) [4] → Outra instituição particular
+- **V3032** (educacao) [nan] → Não aplicável
+- **V3032** (educacao) [1] → Sim
+- **V3032** (educacao) [2] → Não
+- **V3033** (educacao) [nan] → Não aplicável
+- **V3033** (educacao) [1] → Não tem escola ou creche na localidade ou a escola fica distante
+- **V3033** (educacao) [2] → Falta de vaga na escola ou creche
+- **V3033** (educacao) [3] → Falta de dinheiro para pagar as despesas (mensalidade, transporte, material escolar etc)
+- **V3033** (educacao) [4] → Os pais ou responsáveis não querem que frequente
+- **V3033** (educacao) [5] → Problema de saúde ou de deficiência (física ou mental)
+- **V3033** (educacao) [6] → Outro motivo
+- **V3033A** (educacao) [nan] → Não aplicável
+- **V3033A** (educacao) [1] → Não tem escola ou creche ou a escola fica distante
+- **V3033A** (educacao) [2] → Falta de vaga na escola ou creche
+- **V3033A** (educacao) [3] → A escola ou creche não aceita a criança por conta da idade
+- **V3033A** (educacao) [4] → Falta de dinheiro para pagar a mensalidade, transporte, material escolar etc.
+- **V3033A** (educacao) [5] → As escola ou creches não são boas ou seguras ou adaptadas para criança com deficiência
+- **V3033A** (educacao) [6] → Problema de saúde permanente da criança
+- **V3033A** (educacao) [7] → Por opção dos pais ou responsáveis (acham muito nova para ir a escoa, preferem cuidar em casa etc.)
+- **V3033A** (educacao) [8] → Outro motivo
+- **V3033B** (educacao) [nan] → Não aplicável
+- **V3033B** (educacao) [1] → Com algum dois pais ou responsáveis pela criança
+- **V3033B** (educacao) [2] → Com outro morador do domicílio
+- **V3033B** (educacao) [3] → Com parente não morador do domicílio
+- **V3033B** (educacao) [4] → Com outra pessoa não moradora do domicílio (inclusive trabalhadores domésticos)
+- **V3034** (educacao) [nan] → Não aplicável
+- **V3034** (educacao) [1] → Trabalha, está procurando trabalho ou conseguiu trabalho que vai começar em breve
+- **V3034** (educacao) [2] → Não tem escola na localidade ou a escola fica distante
+- **V3034** (educacao) [3] → Falta de vaga na escola
+- **V3034** (educacao) [4] → Falta de dinheiro para pagar as despesas (mensalidade, transporte, material escolar etc)
+- **V3034** (educacao) [5] → Por gravidez
+- **V3034** (educacao) [6] → Por ter que cuidar de criança ou adolescente
+- **V3034** (educacao) [7] → Por ter que cuidar dos afazeres domésticos ou de idoso ou pessoa com necessidades especiais
+- **V3034** (educacao) [8] → Estudando para concurso ou estudando por conta própria para vestibular
+- **V3034** (educacao) [9] → Por já ter concluído o nível de estudo que desejava
+- **V3034** (educacao) [10] → Desistiu por não ter sido aprovado no vestibular ou ENEM
+- **V3034** (educacao) [11] → Por problema de saúde ou de deficiência (física ou mental)
+- **V3034** (educacao) [12] → Não tem interesse
+- **V3034** (educacao) [13] → Outro motivo
+- **V3034A** (educacao) [nan] → Não aplicável
+- **V3034A** (educacao) [5 a 98] → Idade (em anos)
+- **V3034B** (educacao) [nan] → Não aplicável
+- **V3034B** (educacao) [1] → Precisava trabalhar
+- **V3034B** (educacao) [2] → Não tinha escola na localidade ou esta ficava distante
+- **V3034B** (educacao) [3] → Faltava vaga na escola ou não tinha turno letivo desejado
+- **V3034B** (educacao) [4] → Faltava de dinheiro para pagar mensalidade, transporte, material escolar etc.
+- **V3034B** (educacao) [5] → Por gravidez
+- **V3034B** (educacao) [6] → Tinha que realizar afazeres domésticos ou cuidar de criança, adolescente, idoso ou pessoa com deficiência
+- **V3034B** (educacao) [7] → Desistiu por não aprender ou por excesso de repetência
+- **V3034B** (educacao) [8] → Ter concluído o nível de estudo que desejava
+- **V3034B** (educacao) [9] → A escola não era adaptada para pessoa com deficiência
+- **V3034B** (educacao) [10] → Por ter problema de saúde permanente
+- **V3034B** (educacao) [11] → Não tinha interesse em estudar
+- **V3034B** (educacao) [12] → Outro motivo
+- **V3034C** (educacao) [nan] → Não aplicável
+- **V3034C** (educacao) [1] → Trabalhava ou estava procurando trabalho
+- **V3034C** (educacao) [2] → Não tem escola ou faculdade na localidade ou ficam distantes
+- **V3034C** (educacao) [3] → Falta de vaga na escola ou no turno letivo desejado
+- **V3034C** (educacao) [4] → Não tem curso ou vaga nos cursos de interesse (nível técnico, qualificação profissional ou pré-vestibular)
+- **V3034C** (educacao) [5] → Falta de dinheiro para pagar mensalidade, transporte, material escolar etc.
+- **V3034C** (educacao) [6] → Por gravidez
+- **V3034C** (educacao) [7] → Por ter que realizar afazeres domésticos ou cuidar de criança, adolescente, idoso ou pessoa com deficiência
+- **V3034C** (educacao) [8] → Estudando para concurso ou por conta própria para vestibular/ENEM
+- **V3034C** (educacao) [9] → Por já ter concluído o nível de estudo que desejava
+- **V3034C** (educacao) [10] → Por ter problema de saúde permanente
+- **V3034C** (educacao) [11] → Não tem interesse em estudar
+- **V3034C** (educacao) [12] → Outro motivo
+- **nan** (microdados) [nan] → nan
+- **nan** (microdados) [nan] → nan
+- **V1022** (microdados) [1] → Urbana
+- **V1022** (microdados) [2] → Rural
+- **V1023** (microdados) [1] → Capital
+- **V1023** (microdados) [2] → Resto da RM (Região Metropolitana, excluindo a capital)
+- **V1023** (microdados) [3] → Resto da RIDE (Região Integrada de Desenvolvimento Econômico, excluindo a capital) 
+- **V1023** (microdados) [4] → Resto da UF  (Unidade da Federação, excluindo a região metropolitana e a RIDE)
+- **V2005** (microdados) [1] → Pessoa responsável pelo domicílio
+- **V2005** (microdados) [2] → Cônjuge ou companheiro(a) de sexo diferente
+- **V2005** (microdados) [3] → Cônjuge ou companheiro(a) do mesmo sexo
+- **V2005** (microdados) [4] → Filho(a) do responsável e do cônjuge
+- **V2005** (microdados) [5] → Filho(a) somente do responsável
+- **V2005** (microdados) [6] → Enteado(a)
+- **V2005** (microdados) [7] → Genro ou nora
+- **V2005** (microdados) [8] → Pai, mãe, padrasto ou madrasta
+- **V2005** (microdados) [9] → Sogro(a)
+- **V2005** (microdados) [10] → Neto(a)
+- **V2005** (microdados) [11] → Bisneto(a)
+- **V2005** (microdados) [12] → Irmão ou irmã
+- **V2005** (microdados) [13] → Avô ou avó
+- **V2005** (microdados) [14] → Outro parente
+- **V2005** (microdados) [15] → Agregado(a) - Não parente que não compartilha despesas
+- **V2005** (microdados) [16] → Convivente - Não parente que compartilha despesas
+- **V2005** (microdados) [17] → Pensionista
+- **V2005** (microdados) [18] → Empregado(a) doméstico(a)
+- **V2005** (microdados) [19] → Parente do(a) empregado(a) doméstico(a)
+- **V2007** (microdados) [1] → Homem
+- **V2007** (microdados) [2] → Mulher
+- **V2010** (microdados) [1] → Branca
+- **V2010** (microdados) [2] → Preta
+- **V2010** (microdados) [3] → Amarela
+- **V2010** (microdados) [4] → Parda
+- **V2010** (microdados) [5] → Indígena
+- **V2010** (microdados) [9] → Ignorado
+- **V3001** (microdados) [nan] → Não aplicável
+- **V3001** (microdados) [1] → Sim
+- **V3001** (microdados) [2] → Não
+- **V3002** (microdados) [nan] → Não aplicável
+- **V3002** (microdados) [1] → Sim
+- **V3002** (microdados) [2] → Não
+- **V3002A** (microdados) [nan] → Não aplicável
+- **V3002A** (microdados) [1] → Rede privada
+- **V3002A** (microdados) [2] → Rede pública
+- **V3003** (microdados) [nan] → Não aplicável
+- **V3003** (microdados) [1] → Pré-escolar (maternal e jardim de infância)
+- **V3003** (microdados) [2] → Alfabetização de jovens e adultos
+- **V3003** (microdados) [3] → Regular do ensino fundamental
+- **V3003** (microdados) [4] → Educação de jovens e adultos (EJA) ou supletivo do ensino fundamental
+- **V3003** (microdados) [5] → Regular do ensino médio
+- **V3003** (microdados) [6] → Educação de jovens e adultos (EJA) ou supletivo do ensino médio
+- **V3003** (microdados) [7] → Superior - graduação
+- **V3003** (microdados) [8] → Mestrado
+- **V3003** (microdados) [9] → Doutorado
+- **V3003A** (microdados) [nan] → Não aplicável
+- **V3003A** (microdados) [1] → Creche (disponível apenas no questionário anual de educação)
+- **V3003A** (microdados) [2] → Pré-escola
+- **V3003A** (microdados) [3] → Alfabetização de jovens e adultos
+- **V3003A** (microdados) [4] → Regular do ensino fundamental
+- **V3003A** (microdados) [5] → Educação de jovens e adultos (EJA) do ensino fundamental
+- **V3003A** (microdados) [6] → Regular do ensino médio
+- **V3003A** (microdados) [7] → Educação de jovens e adultos (EJA) do ensino médio
+- **V3003A** (microdados) [8] → Superior - graduação
+- **V3003A** (microdados) [9] → Especialização de nível superior
+- **V3003A** (microdados) [10] → Mestrado
+- **V3003A** (microdados) [11] → Doutorado
+- **V3004** (microdados) [nan] → Não aplicável
+- **V3004** (microdados) [1] → 8 anos
+- **V3004** (microdados) [2] → 9 anos
+- **V3005** (microdados) [nan] → Não aplicável
+- **V3005** (microdados) [1] → Sim
+- **V3005** (microdados) [2] → Não
+- **V3005A** (microdados) [nan] → Não aplicável
+- **V3005A** (microdados) [1] → Períodos semestrais
+- **V3005A** (microdados) [2] → Anos
+- **V3005A** (microdados) [3] → Outra forma
+- **V3006** (microdados) [nan] → Não aplicável
+- **V3006** (microdados) [1] → Primeira (o)
+- **V3006** (microdados) [2] → Segunda (o)
+- **V3006** (microdados) [3] → Terceira (o)
+- **V3006** (microdados) [4] → Quarta (o)
+- **V3006** (microdados) [5] → Quinta (o)
+- **V3006** (microdados) [6] → Sexta (o)
+- **V3006** (microdados) [7] → Sétima (o)
+- **V3006** (microdados) [8] → Oitava (o)
+- **V3006** (microdados) [9] → Nona (o)
+- **V3006** (microdados) [10] → Décimo
+- **V3006** (microdados) [11] → Décimo primeiro
+- **V3006** (microdados) [12] → Décimo segundo
+- **V3006** (microdados) [13] → Curso não classificado em séries ou anos
+- **V3006A** (microdados) [nan] → Não aplicável
+- **V3006A** (microdados) [1] → Anos iniciais (primeiro segmento)
+- **V3006A** (microdados) [2] → Anos finais (segundo segmento)
+- **V3007** (microdados) [nan] → Não aplicável
+- **V3007** (microdados) [1] → Sim
+- **V3007** (microdados) [2] → Não
+- **V3008** (microdados) [nan] → Não aplicável
+- **V3008** (microdados) [1] → Sim
+- **V3008** (microdados) [2] → Não
+- **V3009** (microdados) [nan] → Não aplicável
+- **V3009** (microdados) [1] → Classe de alfabetização - CA
+- **V3009** (microdados) [2] → Alfabetização de jovens e adultos
+- **V3009** (microdados) [3] → Antigo primário (elementar)
+- **V3009** (microdados) [4] → Antigo ginásio (médio 1º ciclo)
+- **V3009** (microdados) [5] → Regular do ensino fundamental ou do 1º grau
+- **V3009** (microdados) [6] → Educação de jovens e adultos (EJA) ou supletivo do ensino fundamental
+- **V3009** (microdados) [7] → Antigo científico, clássico, etc. (médio 2º ciclo)
+- **V3009** (microdados) [8] → Regular do ensino médio ou do 2º grau
+- **V3009** (microdados) [9] → Educação de jovens e adultos (EJA) ou supletivo do ensino médio
+- **V3009** (microdados) [10] → Superior - graduação
+- **V3009** (microdados) [11] → Mestrado
+- **V3009** (microdados) [12] → Doutorado
+- **V3009A** (microdados) [nan] → Não aplicável
+- **V3009A** (microdados) [1] → Creche (disponível apenas no questionário anual de educação)
+- **V3009A** (microdados) [2] → Pré-escola
+- **V3009A** (microdados) [3] → Classe de alfabetização - CA
+- **V3009A** (microdados) [4] → Alfabetização de jovens e adultos
+- **V3009A** (microdados) [5] → Antigo primário (elementar)
+- **V3009A** (microdados) [6] → Antigo ginásio (médio 1º ciclo)
+- **V3009A** (microdados) [7] → Regular do ensino fundamental ou do 1º grau
+- **V3009A** (microdados) [8] → Educação de jovens e adultos (EJA) ou supletivo do 1º grau
+- **V3009A** (microdados) [9] → Antigo científico, clássico, etc. (médio 2º ciclo)
+- **V3009A** (microdados) [10] → Regular do ensino médio óu do 2º grau
+- **V3009A** (microdados) [11] → Educação de jovens e adultos (EJA) ou supletivo do 2º grau
+- **V3009A** (microdados) [12] → Superior - graduação
+- **V3009A** (microdados) [13] → Especialização de nível superior
+- **V3009A** (microdados) [14] → Mestrado
+- **V3009A** (microdados) [15] → Doutorado
+- **V3010** (microdados) [nan] → Não aplicável
+- **V3010** (microdados) [1] → 8 anos
+- **V3010** (microdados) [2] → 9 anos
+- **V3011** (microdados) [nan] → Não aplicável
+- **V3011** (microdados) [1] → Sim
+- **V3011** (microdados) [2] → Não
+- **V3011A** (microdados) [nan] → Não aplicável
+- **V3011A** (microdados) [1] → Períodos semestrais
+- **V3011A** (microdados) [2] → Anos
+- **V3011A** (microdados) [3] → Outra forma
+- **V3012** (microdados) [nan] → Não aplicável
+- **V3012** (microdados) [1] → Concluiu
+- **V3012** (microdados) [2] → Não concluiu
+- **V3012** (microdados) [3] → Curso não classificado em séries ou anos
+- **V3013** (microdados) [nan] → Não aplicável
+- **V3013** (microdados) [1] → Primeira (o)
+- **V3013** (microdados) [2] → Segunda (o)
+- **V3013** (microdados) [3] → Terceira (o)
+- **V3013** (microdados) [4] → Quarta (o)
+- **V3013** (microdados) [5] → Quinta (o)
+- **V3013** (microdados) [6] → Sexta (o)
+- **V3013** (microdados) [7] → Sétima (o)
+- **V3013** (microdados) [8] → Oitava (o)
+- **V3013** (microdados) [9] → Nona (o)
+- **V3013** (microdados) [10] → Décimo
+- **V3013** (microdados) [11] → Décimo primeiro
+- **V3013** (microdados) [12] → Décimo segundo
+- **V3013A** (microdados) [nan] → Não aplicável
+- **V3013A** (microdados) [1] → Anos iniciais (primeiro segmento)
+- **V3013A** (microdados) [2] → Anos finais (segundo segmento)
+- **V3013B** (microdados) [nan] → Não aplicável
+- **V3013B** (microdados) [1] → Sim
+- **V3013B** (microdados) [2] → Não
+- **V3014** (microdados) [nan] → Não aplicável
+- **V3014** (microdados) [1] → Sim
+- **V3014** (microdados) [2] → Não
+- **V4001** (microdados) [nan] → Não aplicável
+- **V4001** (microdados) [1] → Sim
+- **V4001** (microdados) [2] → Não
+- **V4002** (microdados) [nan] → Não aplicável
+- **V4002** (microdados) [1] → Sim
+- **V4002** (microdados) [2] → Não
+- **V4003** (microdados) [nan] → Não aplicável
+- **V4003** (microdados) [1] → Sim
+- **V4003** (microdados) [2] → Não
+- **V4004** (microdados) [nan] → Não aplicável
+- **V4004** (microdados) [1] → Sim
+- **V4004** (microdados) [2] → Não
+- **V4005** (microdados) [nan] → Não aplicável
+- **V4005** (microdados) [1] → Sim
+- **V4005** (microdados) [2] → Não
+- **V4006** (microdados) [nan] → Não aplicável
+- **V4006** (microdados) [1] → Férias, folga ou jornada de trabalho variável 
+- **V4006** (microdados) [2] → Licença maternidade
+- **V4006** (microdados) [3] → Licença remunerada por motivo de doença ou acidente da própria pessoa
+- **V4006** (microdados) [4] → Outro tipo de licença remunerada (estudo, paternidade, casamento, licença prêmio, etc.) 
+- **V4006** (microdados) [5] → Afastamento do próprio negócio/empresa por motivo de gestação, doença, acidente, etc., sem ser remunerado por instituto de previdência
+- **V4006** (microdados) [6] → Fatores ocasionais (tempo, paralisação nos serviços de transportes, etc.)
+- **V4006** (microdados) [7] → Greve ou paralisação
+- **V4006** (microdados) [8] → Outro motivo
+- **V4006A** (microdados) [nan] → Não aplicável
+- **V4006A** (microdados) [1] → Férias, folga ou jornada de trabalho variável 
+- **V4006A** (microdados) [2] → Licença maternidade ou paternidade
+- **V4006A** (microdados) [3] → Licença remunerada por motivo de saúde ou acidente da própria pessoa
+- **V4006A** (microdados) [4] → Outro tipo de licença remunerada (estudo, casamento, licença prêmio, etc.) 
+- **V4006A** (microdados) [5] → Afastamento do próprio negócio/empresa por motivo de gestação, doença, acidente, etc., sem ser remunerado por instituto de previdência
+- **V4006A** (microdados) [6] → Fatores ocasionais (tempo, paralisação nos serviços de transportes, etc.)
+- **V4006A** (microdados) [7] → Outro motivo
+- **V4007** (microdados) [nan] → Não aplicável
+- **V4007** (microdados) [1] → Sim
+- **V4007** (microdados) [2] → Não
+- **V4008** (microdados) [nan] → Não aplicável
+- **V4008** (microdados) [1] → Menos de 1 mês
+- **V4008** (microdados) [2] → De 1 mês a menos de 1 ano
+- **V4008** (microdados) [3] → De 1 ano a menos de 2 anos
+- **V4008** (microdados) [4] → 2 anos ou mais
+- **V4009** (microdados) [nan] → Não aplicável
+- **V4009** (microdados) [1] → Um
+- **V4009** (microdados) [2] → Dois
+- **V4009** (microdados) [3] → Três ou mais
+- **V4010** (microdados) [0] → MEMBROS DAS FORÇAS ARMADAS, POLICIAIS E BOMBEIROS MILITARES
+- **V4010** (microdados) [1] → DIRETORES E GERENTES
+- **V4010** (microdados) [1] → OFICIAIS DAS FORÇAS ARMADAS
+- **V4010** (microdados) [2] → GRADUADOS E PRAÇAS DAS FORÇAS ARMADAS
+- **V4010** (microdados) [2] → PROFISSIONAIS DAS CIÊNCIAS E INTELECTUAIS
+- **V4010** (microdados) [3] → TÉCNICOS E PROFISSIONAIS DE NÍVEL MÉDIO
+- **V4010** (microdados) [4] → POLICIAIS MILITARES
+- **V4010** (microdados) [4] → TRABALHADORES DE APOIO ADMINISTRATIVO
+- **V4010** (microdados) [5] → BOMBEIROS MILITARES
+- **V4010** (microdados) [5] → TRABALHADORES DOS SERVIÇOS, VENDEDORES DOS COMÉRCIOS E MERCADOS
+- **V4010** (microdados) [6] → TRABALHADORES QUALIFICADOS DA AGROPECUÁRIA, FLORESTAIS, DA CAÇA E DA PESCA
+- **V4010** (microdados) [7] → TRABALHADORES QUALIFICADOS, OPERÁRIOS E ARTESÃOS DA CONSTRUÇÃO, DAS ARTES MECÂNICAS E OUTROS OFÍCIOS
+- **V4010** (microdados) [8] → OPERADORES DE INSTALAÇÕES E MÁQUINAS E MONTADORES
+- **V4010** (microdados) [9] → OCUPAÇÕES ELEMENTARES
+- **V4010** (microdados) [11] → OFICIAIS DAS FORÇAS ARMADAS
+- **V4010** (microdados) [11] → DIRETORES EXECUTIVOS, DIRIGENTES DA ADMINISTRAÇÃO PÚBLICA E MEMBROS DO PODER EXECUTIVO E LEGISLATIVO
+- **V4010** (microdados) [12] → DIRIGENTES ADMINISTRATIVOS E COMERCIAIS
+- **V4010** (microdados) [13] → DIRIGENTES E GERENTES DE PRODUÇÃO E OPERAÇÃO
+- **V4010** (microdados) [14] → GERENTES DE HOTÉIS, RESTAURANTES, COMÉRCIOS E OUTROS SERVIÇOS
+- **V4010** (microdados) [21] → GRADUADOS E PRAÇAS DAS FORÇAS ARMADAS
+- **V4010** (microdados) [21] → PROFISSIONAIS DAS CIÊNCIAS E DA ENGENHARIA
+- **V4010** (microdados) [22] → PROFISSIONAIS DA SAÚDE
+- **V4010** (microdados) [23] → PROFISSIONAIS DO ENSINO
+- **V4010** (microdados) [24] → ESPECIALISTAS EM ORGANIZAÇÃO DA ADMINISTRAÇÃO PÚBLICA E DE EMPRESAS
+- **V4010** (microdados) [25] → PROFISSIONAIS DE TECNOLOGIAS DA INFORMAÇÃO E COMUNICAÇÕES
+- **V4010** (microdados) [26] → PROFISSIONAIS  EM DIREITO, EM CIÊNCIAS SOCIAIS E CULTURAIS
+- **V4010** (microdados) [31] → PROFISSIONAIS DE NÍVEL MÉDIO DAS CIÊNCIAS E DA ENGENHARIA
+- **V4010** (microdados) [32] → PROFISSIONAIS DE NÍVEL MÉDIO DA SAÚDE E AFINS
+- **V4010** (microdados) [33] → PROFISSIONAIS DE NÍVEL MÉDIO EM OPERAÇÕES FINANCEIRAS E ADMINISTRATIVAS
+- **V4010** (microdados) [34] → PROFISSIONAIS DE NÍVEL MÉDIO DE SERVIÇOS JURÍDICOS, SOCIAIS, CULTURAIS E AFINS
+- **V4010** (microdados) [35] → TÉCNICOS DE NÍVEL MÉDIO DA TECNOLOGIA DA INFORMAÇÃO E DAS COMUNICAÇÕES
+- **V4010** (microdados) [41] → ESCRITURÁRIOS
+- **V4010** (microdados) [41] → POLICIAIS MILITARES
+- **V4010** (microdados) [42] → TRABALHADORES DE ATENDIMENTO DIRETO AO PÚBLICO
+- **V4010** (microdados) [43] → TRABALHADORES DE CÁLCULOS NUMÉRICOS E ENCARREGADOS DO REGISTRO DE MATERIAIS
+- **V4010** (microdados) [44] → OUTROS TRABALHADORES DE APOIO ADMINISTRATIVO
+- **V4010** (microdados) [51] → BOMBEIROS MILITARES
+- **V4010** (microdados) [51] → TRABALHADORES DOS SERVIÇOS PESSOAIS
+- **V4010** (microdados) [52] → VENDEDORES
+- **V4010** (microdados) [53] → TRABALHADORES DOS CUIDADOS PESSOAIS
+- **V4010** (microdados) [54] → TRABALHADORES DOS SERVIÇOS DE PROTEÇÃO E SEGURANÇA
+- **V4010** (microdados) [61] → AGRICULTORES E TRABALHADORES QUALIFICADOS DA AGROPECUÁRIA
+- **V4010** (microdados) [62] → TRABALHADORES FLORESTAIS QUALIFICADOS, PESCADORES E CAÇADORES
+- **V4010** (microdados) [71] → TRABALHADORES QUALIFICADOS E OPERÁRIOS DA CONSTRUÇÃO EXCLUSIVE ELETRICISTAS
+- **V4010** (microdados) [72] → TRABALHADORES QUALIFICADOS E OPERÁRIOS DA METALURGIA, DA CONSTRUÇÃO MECÂNICA E AFINS
+- **V4010** (microdados) [73] → ARTESÃOS E OPERÁRIOS DAS ARTES GRÁFICAS
+- **V4010** (microdados) [74] → TRABALHADORES ESPECIALIZADOS EM ELETRICIDADE E ELETRÔNICA
+- **V4010** (microdados) [75] → OPERÁRIOS E OFICIAIS DE PROCESSAMENTO DE ALIMENTOS, DA MADEIRA, DA CONFECÇÃO E AFINS
+- **V4010** (microdados) [81] → OPERADORES DE INSTALAÇÕES FIXAS E MÁQUINAS
+- **V4010** (microdados) [82] → MONTADORES
+- **V4010** (microdados) [83] → CONDUTORES DE VEÍCULOS E OPERADORES DE EQUIPAMENTOS MÓVEIS PESADOS
+- **V4010** (microdados) [91] → TRABALHADORES DOMÉSTICOS E OUTROS TRABALHADORES DE LIMPEZA DE INTERIOR DE EDIFÍCIOS
+- **V4010** (microdados) [92] → TRABALHADORES ELEMENTARES DA AGROPECUÁRIA, DA PESCA E FLORESTAIS
+- **V4010** (microdados) [93] → TRABALHADORES ELEMENTARES DA MINERAÇÃO, DA CONSTRUÇÃO, DA INDÚSTRIA DE TRANSFORMAÇÃO E DO TRANSPORTE
+- **V4010** (microdados) [94] → AJUDANTES DE PREPARAÇÃO DE ALIMENTOS
+- **V4010** (microdados) [95] → TRABALHADORES AMBULANTES DOS SERVIÇOS E AFINS
+- **V4010** (microdados) [96] → COLETORES DE LIXO E OUTRAS OCUPAÇÕES ELEMENTARES
+- **V4010** (microdados) [000] → OCUPAÇÕES MALDEFINIDAS
+- **V4010** (microdados) [110] → OFICIAIS DAS FORÇAS ARMADAS
+- **V4010** (microdados) [111] → MEMBROS SUPERIORES DO PODER EXECUTIVO E LEGISLATIVO
+- **V4010** (microdados) [112] → DIRETORES GERAIS E GERENTES GERAIS
+- **V4010** (microdados) [121] → DIRIGENTES DE ADMINISTRAÇÃO E DE SERVIÇOS
+- **V4010** (microdados) [122] → DIRIGENTES DE VENDAS, COMERCIALIZAÇÃO E DESENVOLVIMENTO
+- **V4010** (microdados) [131] → DIRIGENTES DE PRODUÇÃO AGROPECUÁRIA, SILVICULTURA, AQUICULTURA E PESCA
+- **V4010** (microdados) [132] → DIRIGENTES DE INDÚSTRIA DE TRANSFORMAÇÃO, MINERAÇÃO, CONSTRUÇÃO E DISTRIBUIÇÃO
+- **V4010** (microdados) [133] → DIRIGENTES DE SERVIÇOS DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÕES
+- **V4010** (microdados) [134] → DIRIGENTES E GERENTES DE SERVIÇOS PROFISSIONAIS
+- **V4010** (microdados) [141] → GERENTES DE HOTÉIS E RESTAURANTES
+- **V4010** (microdados) [142] → GERENTES DE COMÉRCIOS ATACADISTAS E VAREJISTAS
+- **V4010** (microdados) [143] → OUTROS GERENTES DE SERVIÇOS
+- **V4010** (microdados) [210] → GRADUADOS E PRAÇAS DAS FORÇAS ARMADAS
+- **V4010** (microdados) [211] → FÍSICOS, QUÍMICOS E AFINS
+- **V4010** (microdados) [212] → MATEMÁTICOS, ATUÁRIOS E ESTATÍSTICOS
+- **V4010** (microdados) [213] → PROFISSIONAIS EM CIÊNCIAS BIOLÓGICAS
+- **V4010** (microdados) [214] → ENGENHEIROS (EXCLUSIVE ELETROTECNÓLOGOS)
+- **V4010** (microdados) [215] → ENGENHEIROS ELETROTÉCNICOS
+- **V4010** (microdados) [216] → ARQUITETOS, URBANISTAS, AGRIMENSORES E DESENHISTAS
+- **V4010** (microdados) [221] → MÉDICOS
+- **V4010** (microdados) [222] → PROFISSIONAIS DE ENFERMAGEM E PARTOS
+- **V4010** (microdados) [223] → PROFISSIONAIS DA MEDICINA TRADICIONAL E ALTERNATIVA
+- **V4010** (microdados) [224] → PARAMÉDICOS
+- **V4010** (microdados) [225] → VETERINÁRIOS
+- **V4010** (microdados) [226] → OUTROS PROFISSIONAIS DA SAÚDE
+- **V4010** (microdados) [231] → PROFESSORES DE UNIVERSIDADES E DO ENSINO SUPERIOR
+- **V4010** (microdados) [232] → PROFESSORES DE FORMAÇÃO PROFISSIONAL
+- **V4010** (microdados) [233] → PROFESSORES DO ENSINO MÉDIO
+- **V4010** (microdados) [234] → PROFESSORES DO ENSINO FUNDAMENTAL E PRÉ-ESCOLAR
+- **V4010** (microdados) [235] → OUTROS PROFISSIONAIS DO ENSINO
+- **V4010** (microdados) [241] → ESPECIALISTAS EM FINANÇAS
+- **V4010** (microdados) [242] → ESPECIALISTAS EM ORGANIZAÇÃO DE ADMINISTRAÇÃO
+- **V4010** (microdados) [243] → PROFISSIONAIS DE VENDAS, COMERCIALIZAÇÃO E RELAÇÕES PÚBLICAS
+- **V4010** (microdados) [251] → DESENVOLVEDORES E ANALISTAS DE PROGRAMAS E APLICATIVOS (SOFTWARE ) E MULTIMÍDIA
+- **V4010** (microdados) [252] → ESPECIALISTAS EM BASE DE DADOS E EM REDES DE COMPUTADORES
+- **V4010** (microdados) [261] → PROFISSIONAIS EM DIREITO
+- **V4010** (microdados) [262] → ARQUIVOLOGISTAS, CURADORES DE MUSEUS, BIBLIOTECÁRIOS E AFINS
+- **V4010** (microdados) [263] → ESPECIALISTAS EM CIÊNCIAS SOCIAIS E TEOLOGIA
+- **V4010** (microdados) [264] → ESCRITORES, JORNALISTAS E LINGUISTAS
+- **V4010** (microdados) [265] → ARTISTAS CRIATIVOS E INTERPRETATIVOS
+- **V4010** (microdados) [299] → MILITARES DAS FORÇAS ARMADAS NÃO ESPECIFICADOS
+- **V4010** (microdados) [311] → TÉCNICOS EM CIÊNCIAS FÍSICAS E DA ENGENHARIA
+- **V4010** (microdados) [312] → SUPERVISORES EM ENGENHARIA DE MINAS, DE INDÚSTRIAS DE TRANSFORMAÇÃO E DA CONSTRUÇÃO
+- **V4010** (microdados) [313] → TÉCNICOS EM CONTROLE DE PROCESSOS
+- **V4010** (microdados) [314] → TÉCNICOS E PROFISSIONAIS DE NÍVEL MÉDIO EM CIÊNCIAS BIOLÓGICAS E AFINS
+- **V4010** (microdados) [315] → TÉCNICOS E CONTROLADORES DA NAVEGAÇÃO MARÍTIMA E AERONÁUTICA
+- **V4010** (microdados) [321] → TÉCNICOS MÉDICOS E FARMACÊUTICOS
+- **V4010** (microdados) [322] → PROFISSIONAIS DE NÍVEL MÉDIO DE ENFERMAGEM E PARTOS
+- **V4010** (microdados) [323] → PROFISSIONAIS DE NÍVEL MÉDIO DE MEDICINA TRADICIONAL E ALTERNATIVA
+- **V4010** (microdados) [324] → TÉCNICOS E ASSISTENTES VETERINÁRIOS
+- **V4010** (microdados) [325] → OUTROS PROFISSIONAIS DE NÍVEL MÉDIO DA SAÚDE
+- **V4010** (microdados) [331] → PROFISSIONAIS DE NÍVEL MÉDIO EM FINANÇAS E MATEMÁTICA
+- **V4010** (microdados) [332] → AGENTES E CORRETORES COMERCIAIS
+- **V4010** (microdados) [333] → AGENTES DE SERVIÇOS COMERCIAIS
+- **V4010** (microdados) [334] → SECRETÁRIOS ADMINISTRATIVOS E ESPECIALIZADOS
+- **V4010** (microdados) [335] → AGENTES DA ADMINISTRAÇÃO PÚBLICA PARA APLICAÇÃO DA LEI E AFINS
+- **V4010** (microdados) [341] → PROFISSIONAIS DE NÍVEL MÉDIO DE SERVIÇOS JURÍDICOS, SOCIAIS E RELIGIOSOS
+- **V4010** (microdados) [342] → TRABALHADORES DO ESPORTE E CONDICIONAMENTO FÍSICO
+- **V4010** (microdados) [343] → PROFISSIONAIS DE NÍVEL MÉDIO EM ATIVIDADES CULTURAIS, ARTÍSTICAS E CULINÁRIAS
+- **V4010** (microdados) [351] → TÉCNICOS EM OPERAÇÕES DE TECNOLOGIA DA INFORMAÇÃO E DAS COMUNICAÇÕES E ASSISTÊNCIA AO USUÁRIO
+- **V4010** (microdados) [352] → TÉCNICOS EM TELECOMUNICAÇÕES E RADIODIFUSÃO
+- **V4010** (microdados) [411] → ESCRITURÁRIOS GERAIS
+- **V4010** (microdados) [411] → OFICIAIS DE POLÍCIA MILITAR
+- **V4010** (microdados) [412] → SECRETÁRIOS (GERAL)
+- **V4010** (microdados) [412] → GRADUADOS E PRAÇAS DA POLÍCIA MILITAR
+- **V4010** (microdados) [413] → OPERADORES DE MÁQUINAS DE ESCRITÓRIO
+- **V4010** (microdados) [421] → CAIXAS DE BANCO, COBRADORES, PAGADORES E AFINS
+- **V4010** (microdados) [422] → TRABALHADORES DE SERVIÇOS DE INFORMAÇÃO AO CLIENTE
+- **V4010** (microdados) [431] → AUXILIARES CONTÁBEIS E FINANCEIROS
+- **V4010** (microdados) [432] → TRABALHADORES ENCARREGADOS DE REGISTROS DE MATERIAIS E DE TRANSPORTES
+- **V4010** (microdados) [441] → OUTROS TRABALHADORES DE APOIO ADMINISTRATIVO
+- **V4010** (microdados) [511] → OFICIAIS DE BOMBEIRO MILITAR
+- **V4010** (microdados) [511] → TRABALHADORES DO SERVIÇO DIRETO AOS PASSAGEIROS
+- **V4010** (microdados) [512] → COZINHEIROS
+- **V4010** (microdados) [512] → GRADUADOS E PRAÇAS DO CORPO DE BOMBEIROS
+- **V4010** (microdados) [513] → GARÇONS E ATENDENTES DE BAR
+- **V4010** (microdados) [514] → CABELEIREIROS, ESPECIALISTAS EM TRATAMENTO DE BELEZA E AFINS
+- **V4010** (microdados) [515] → SUPERVISORES DE MANUTENÇÃO E LIMPEZA DE EDIFÍCIOS
+- **V4010** (microdados) [516] → OUTROS TRABALHADORES DE SERVIÇOS PESSOAIS
+- **V4010** (microdados) [521] → VENDEDORES DE RUA E POSTOS DE MERCADO
+- **V4010** (microdados) [522] → COMERCIANTES E VENDEDORES DE LOJAS
+- **V4010** (microdados) [523] → CAIXAS E EXPEDIDORES DE BILHETES
+- **V4010** (microdados) [524] → OUTROS VENDEDORES
+- **V4010** (microdados) [531] → CUIDADORES DE CRIANÇAS E AJUDANTES DE PROFESSORES
+- **V4010** (microdados) [532] → TRABALHADORES DE CUIDADOS PESSOAIS NOS SERVIÇOS DE SAÚDE
+- **V4010** (microdados) [541] → TRABALHADORES DOS SERVIÇOS DE PROTEÇÃO E SEGURANÇA
+- **V4010** (microdados) [599] → BOMBEIROS E POLICIAIS MILITARES NÃO ESPECIFICADOS
+- **V4010** (microdados) [611] → AGRICULTORES E TRABALHADORES QUALIFICADOS EM ATIVIDADES DA AGRICULTURA
+- **V4010** (microdados) [612] → CRIADORES E TRABALHADORES QUALIFICADOS DA PECUÁRIA
+- **V4010** (microdados) [613] → PRODUTORES E TRABALHADORES QUALIFICADOS DE EXPLORAÇÃO AGROPECUÁRIA MISTA
+- **V4010** (microdados) [621] → TRABALHADORES FLORESTAIS QUALIFICADOS E AFINS
+- **V4010** (microdados) [622] → PESCADORES E CAÇADORES
+- **V4010** (microdados) [711] → TRABALHADORES DA CONSTRUÇÃO CIVIL EM OBRAS ESTRUTURAIS
+- **V4010** (microdados) [712] → TRABALHADORES QUALIFICADOS DA CONSTRUÇÃO (ACABAMENTO)
+- **V4010** (microdados) [713] → PINTORES, LIMPADORES DE FACHADAS E AFINS
+- **V4010** (microdados) [721] → MOLDADORES, SOLDADORES, CHAPISTAS, CALDEIREIROS, MONTADORES DE ESTRUTURAS METÁLICAS E AFINS
+- **V4010** (microdados) [722] → FERREIROS, FERRAMENTEIROS E AFINS
+- **V4010** (microdados) [723] → MECÂNICOS E REPARADORES DE MÁQUINAS
+- **V4010** (microdados) [731] → ARTESÃOS
+- **V4010** (microdados) [732] → TRABALHADORES QUALIFICADOS E OPERÁRIOS DAS ARTES GRÁFICAS
+- **V4010** (microdados) [741] → INSTALADORES E REPARADORES DE EQUIPAMENTOS ELÉTRICOS
+- **V4010** (microdados) [742] → INSTALADORES E REPARADORES DE EQUIPAMENTOS ELETRÔNICOS E DE TELECOMUNICAÇÕES
+- **V4010** (microdados) [751] → TRABALHADORES QUALIFICADOS DO PROCESSAMENTO DE ALIMENTOS E AFINS
+- **V4010** (microdados) [752] → TRABALHADORES QUALIFICADOS DO TRATAMENTO DA MADEIRA, MARCENEIROS E AFINS
+- **V4010** (microdados) [753] → TRABALHADORES QUALIFICADOS E OPERÁRIOS DA CONFECÇÃO DE ROUPAS, CALÇADOS E ACESSÓRIOS
+- **V4010** (microdados) [754] → OUTROS TRABALHADORES QUALIFICADOS E OPERÁRIOS DA INDÚSTRIA E DO ARTESANATO
+- **V4010** (microdados) [811] → OPERADORES DE INSTALAÇÕES MINERADORAS E DE EXTRAÇÃO E PROCESSAMENTO DE MINERAIS
+- **V4010** (microdados) [812] → OPERADORES DE INSTALAÇÕES DE PROCESSAMENTO E RECOBRIDORAS DE METAIS
+- **V4010** (microdados) [813] → OPERADORES DE INSTALAÇÕES E MÁQUINAS DE PRODUTOS QUÍMICOS E FOTOGRÁFICOS
+- **V4010** (microdados) [814] → OPERADORES DE MÁQUINAS PARA FABRICAR PRODUTOS DE BORRACHA, DE PAPEL E DE MATERIAL PLÁSTICO
+- **V4010** (microdados) [815] → OPERADORES DE MÁQUINAS PARA FABRICAR PRODUTOS DE TÊXTEIS E ARTIGOS DE COURO E PELE
+- **V4010** (microdados) [816] → OPERADORES DE MÁQUINAS PARA ELABORAR ALIMENTOS E PRODUTOS AFINS
+- **V4010** (microdados) [817] → OPERADORES DE INSTALAÇÕES PARA A PREPARAÇÃO DE PAPEL E DE PROCESSAMENTO DE MADEIRA
+- **V4010** (microdados) [818] → OUTROS OPERADORES DE INSTALAÇÕES FIXAS E MÁQUINAS
+- **V4010** (microdados) [821] → MONTADORES
+- **V4010** (microdados) [831] → MAQUINISTAS DE LOCOMOTIVAS E AFINS
+- **V4010** (microdados) [832] → CONDUTORES DE AUTOMÓVEIS, CAMINHONETES E MOTOCICLETAS
+- **V4010** (microdados) [833] → CONDUTORES DE CAMINHÕES PESADOS E ÔNIBUS
+- **V4010** (microdados) [834] → OPERADORES DE EQUIPAMENTOS MÓVEIS PESADOS
+- **V4010** (microdados) [835] → MARINHEIROS DE COBERTA E AFINS
+- **V4010** (microdados) [911] → TRABALHADORES DOMÉSTICOS E OUTROS TRABALHADORES DE LIMPEZA DE INTERIOR DE EDIFÍCIOS
+- **V4010** (microdados) [912] → LAVADORES DE VEÍCULOS, JANELAS, ROUPAS E OUTRAS LIMPEZAS  MANUAIS
+- **V4010** (microdados) [921] → TRABALHADORES ELEMENTARES DA AGROPECUÁRIA, DA PESCA E FLORESTAIS
+- **V4010** (microdados) [931] → TRABALHADORES ELEMENTARES DA MINERAÇÃO E DA CONSTRUÇÃO
+- **V4010** (microdados) [932] → TRABALHADORES ELEMENTARES DA INDÚSTRIA DE TRANSFORMAÇÃO
+- **V4010** (microdados) [933] → TRABALHADORES ELEMENTARES DO TRANSPORTE E ARMAZENAMENTO
+- **V4010** (microdados) [941] → AJUDANTES DE PREPARAÇÃO DE ALIMENTOS
+- **V4010** (microdados) [951] → TRABALHADORES AMBULANTES DOS SERVIÇOS E AFINS
+- **V4010** (microdados) [952] → VENDEDORES AMBULANTES (EXCLUSIVE DE SERVIÇOS DE ALIMENTAÇÃO)
+- **V4010** (microdados) [961] → COLETORES DE LIXO
+- **V4010** (microdados) [962] → OUTRAS OCUPAÇÕES ELEMENTARES
+- **V4010** (microdados) [999] → MEMBROS DAS FORÇAS ARMADAS, POLICIAIS E BOMBEIROS MILITARES NÃO ESPECIFICADOS
+- **V4010** (microdados) [1111] → LEGISLADORES
+- **V4010** (microdados) [1112] → DIRIGENTES SUPERIORES DA ADMINISTRAÇÃO PÚBLICA
+- **V4010** (microdados) [1113] → CHEFES DE PEQUENAS POPULAÇÕES
+- **V4010** (microdados) [1114] → DIRIGENTES DE ORGANIZAÇÕES QUE APRESENTAM UM INTERESSE ESPECIAL
+- **V4010** (microdados) [1120] → DIRETORES GERAIS E GERENTES GERAIS
+- **V4010** (microdados) [1211] → DIRIGENTES FINANCEIROS
+- **V4010** (microdados) [1212] → DIRIGENTES DE RECURSOS HUMANOS
+- **V4010** (microdados) [1213] → DIRIGENTES DE POLÍTICAS E PLANEJAMENTO
+- **V4010** (microdados) [1219] → DIRIGENTES DE ADMINISTRAÇÃO E DE SERVIÇOS NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [1221] → DIRIGENTES DE VENDAS E  COMERCIALIZAÇÃO
+- **V4010** (microdados) [1222] → DIRIGENTES DE PUBLICIDADE E RELAÇÕES PÚBLICAS
+- **V4010** (microdados) [1223] → DIRIGENTES DE PESQUISA E DESENVOLVIMENTO
+- **V4010** (microdados) [1311] → DIRIGENTES DE PRODUÇÃO AGROPECUÁRIA E SILVICULTURA
+- **V4010** (microdados) [1312] → DIRIGENTES DE PRODUÇÃO DA AQUICULTURA E PESCA
+- **V4010** (microdados) [1321] → DIRIGENTES DE INDÚSTRIA DE TRANSFORMAÇÃO
+- **V4010** (microdados) [1322] → DIRIGENTES DE EXPLORAÇÕES DE MINERAÇÃO
+- **V4010** (microdados) [1323] → DIRIGENTES DE EMPRESAS DE CONSTRUÇÃO
+- **V4010** (microdados) [1324] → DIRIGENTES DE EMPRESAS DE ABASTECIMENTO, DISTRIBUIÇÃO E AFINS
+- **V4010** (microdados) [1330] → DIRIGENTES DE SERVIÇOS DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÕES
+- **V4010** (microdados) [1341] → DIRIGENTES DE SERVIÇOS DE CUIDADOS INFANTIS
+- **V4010** (microdados) [1342] → DIRIGENTES DE SERVIÇOS DE SAÚDE
+- **V4010** (microdados) [1343] → DIRIGENTES DE SERVIÇOS DE CUIDADO A PESSOAS IDOSAS
+- **V4010** (microdados) [1344] → DIRIGENTES DE SERVIÇOS DE BEM-ESTAR SOCIAL
+- **V4010** (microdados) [1345] → DIRIGENTES DE SERVIÇOS DE EDUCAÇÃO
+- **V4010** (microdados) [1346] → GERENTES DE SUCURSAIS DE BANCOS, DE SERVIÇOS FINANCEIROS E DE SEGUROS
+- **V4010** (microdados) [1349] → DIRIGENTES E GERENTES DE SERVIÇOS PROFISSIONAIS NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [1411] → GERENTES DE HOTÉIS
+- **V4010** (microdados) [1412] → GERENTES DE RESTAURANTES
+- **V4010** (microdados) [1420] → GERENTES DE COMÉRCIOS ATACADISTAS E VAREJISTAS
+- **V4010** (microdados) [1431] → GERENTES DE CENTROS ESPORTIVOS,  DE DIVERSÃO E CULTURAIS
+- **V4010** (microdados) [1439] → GERENTES DE SERVIÇOS NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [2111] → FÍSICOS E ASTRÔNOMOS
+- **V4010** (microdados) [2112] → METEOROLOGISTAS
+- **V4010** (microdados) [2113] → QUÍMICOS
+- **V4010** (microdados) [2114] → GEÓLOGOS E GEOFÍSICOS
+- **V4010** (microdados) [2120] → MATEMÁTICOS, ATUÁRIOS E ESTATÍSTICOS
+- **V4010** (microdados) [2131] → BIÓLOGOS, BOTÂNICOS, ZOÓLOGOS E AFINS
+- **V4010** (microdados) [2132] → AGRÔNOMOS E AFINS
+- **V4010** (microdados) [2133] → PROFISSIONAIS DA PROTEÇÃO DO MEIO AMBIENTE
+- **V4010** (microdados) [2141] → ENGENHEIROS INDUSTRIAIS E DE PRODUÇÃO
+- **V4010** (microdados) [2142] → ENGENHEIROS CIVIS
+- **V4010** (microdados) [2143] → ENGENHEIROS DE MEIO AMBIENTE
+- **V4010** (microdados) [2144] → ENGENHEIROS MECÂNICOS
+- **V4010** (microdados) [2145] → ENGENHEIROS QUÍMICOS
+- **V4010** (microdados) [2146] → ENGENHEIROS DE MINAS, METALÚRGICOS E AFINS
+- **V4010** (microdados) [2149] → ENGENHEIROS NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [2151] → ENGENHEIROS ELETRICISTAS
+- **V4010** (microdados) [2152] → ENGENHEIROS ELETRÔNICOS
+- **V4010** (microdados) [2153] → ENGENHEIROS EM TELECOMUNICAÇÕES
+- **V4010** (microdados) [2161] → ARQUITETOS DE EDIFICAÇÕES
+- **V4010** (microdados) [2162] → ARQUITETOS PAISAGISTAS
+- **V4010** (microdados) [2163] → DESENHISTAS DE PRODUTOS E  VESTUÁRIO
+- **V4010** (microdados) [2164] → URBANISTAS E ENGENHEIROS DE TRÂNSITO
+- **V4010** (microdados) [2165] → CARTÓGRAFOS E AGRIMENSORES
+- **V4010** (microdados) [2166] → DESENHISTAS GRÁFICOS E DE MULTIMÍDIA
+- **V4010** (microdados) [2211] → MÉDICOS GERAIS
+- **V4010** (microdados) [2212] → MÉDICOS ESPECIALISTAS
+- **V4010** (microdados) [2221] → PROFISSIONAIS DE ENFERMAGEM
+- **V4010** (microdados) [2222] → PROFISSIONAIS DE PARTOS
+- **V4010** (microdados) [2230] → PROFISSIONAIS DA MEDICINA TRADICIONAL E ALTERNATIVA
+- **V4010** (microdados) [2240] → PARAMÉDICOS
+- **V4010** (microdados) [2250] → VETERINÁRIOS
+- **V4010** (microdados) [2261] → DENTISTAS
+- **V4010** (microdados) [2262] → FARMACÊUTICOS
+- **V4010** (microdados) [2263] → PROFISSIONAIS DA SAÚDE E DA HIGIENE LABORAL E AMBIENTAL
+- **V4010** (microdados) [2264] → FISIOTERAPEUTAS
+- **V4010** (microdados) [2265] → DIETISTAS E NUTRICIONISTAS
+- **V4010** (microdados) [2266] → FONOAUDIÓLOGOS
+- **V4010** (microdados) [2267] → OPTOMETRISTAS
+- **V4010** (microdados) [2269] → PROFISSIONAIS DA SAÚDE NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [2310] → PROFESSORES DE UNIVERSIDADES E DO ENSINO SUPERIOR
+- **V4010** (microdados) [2320] → PROFESSORES DE FORMAÇÃO PROFISSIONAL
+- **V4010** (microdados) [2330] → PROFESSORES DO ENSINO MÉDIO
+- **V4010** (microdados) [2341] → PROFESSORES DO ENSINO FUNDAMENTAL
+- **V4010** (microdados) [2342] → PROFESSORES DO ENSINO PRÉ-ESCOLAR
+- **V4010** (microdados) [2351] → ESPECIALISTAS EM MÉTODOS PEDAGÓGICOS
+- **V4010** (microdados) [2352] → EDUCADORES PARA NECESSIDADES ESPECIAIS
+- **V4010** (microdados) [2353] → OUTROS PROFESSORES DE IDIOMAS
+- **V4010** (microdados) [2354] → OUTROS PROFESSORES DE MÚSICA
+- **V4010** (microdados) [2355] → OUTROS PROFESSORES DE ARTES
+- **V4010** (microdados) [2356] → INSTRUTORES EM TECNOLOGIAS DA INFORMAÇÃO
+- **V4010** (microdados) [2359] → PROFISSIONAIS DE ENSINO NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [2411] → CONTADORES
+- **V4010** (microdados) [2412] → ASSESSORES FINANCEIROS E EM INVESTIMENTOS
+- **V4010** (microdados) [2413] → ANALISTAS FINANCEIROS
+- **V4010** (microdados) [2421] → ANALISTAS DE GESTÃO E ADMINISTRAÇÃO
+- **V4010** (microdados) [2422] → ESPECIALISTAS EM POLÍTICAS DE ADMINISTRAÇÃO
+- **V4010** (microdados) [2423] → ESPECIALISTAS EM POLÍTICAS E SERVIÇOS DE PESSOAL E AFINS
+- **V4010** (microdados) [2424] → ESPECIALISTAS EM FORMAÇÃO DE PESSOAL
+- **V4010** (microdados) [2431] → PROFISSIONAIS DA PUBLICIDADE E DA COMERCIALIZAÇÃO
+- **V4010** (microdados) [2432] → PROFISSIONAIS DE RELAÇÕES PÚBLICAS
+- **V4010** (microdados) [2433] → PROFISSIONAIS DE VENDAS TÉCNICAS E MÉDICAS (EXCLUSIVE DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÕES)
+- **V4010** (microdados) [2434] → PROFISSIONAIS DE VENDAS DE TECNOLOGIA DA INFORMAÇÃO E COMUNICAÇÕES
+- **V4010** (microdados) [2511] → ANALISTAS DE SISTEMAS
+- **V4010** (microdados) [2512] → DESENVOLVEDORES DE PROGRAMAS E APLICATIVOS (SOFTWARE )
+- **V4010** (microdados) [2513] → DESENVOLVEDORES DE PÁGINAS DE INTERNET (WEB ) E MULTIMÍDIA
+- **V4010** (microdados) [2514] → PROGRAMADORES DE APLICAÇÕES
+- **V4010** (microdados) [2519] → DESENVOLVEDORES E ANALISTAS DE PROGRAMAS E APLICATIVOS (SOFTWARE ) E MULTIMÍDIA NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [2521] → DESENHISTAS E ADMINISTRADORES DE BASES DE DADOS
+- **V4010** (microdados) [2522] → ADMINISTRADORES DE SISTEMAS
+- **V4010** (microdados) [2523] → PROFISSIONAIS EM REDE DE COMPUTADORES
+- **V4010** (microdados) [2529] → ESPECIALISTAS EM BASE DE DADOS E EM REDES DE COMPUTADORES NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [2611] → ADVOGADOS E JURISTAS
+- **V4010** (microdados) [2612] → JUÍZES
+- **V4010** (microdados) [2619] → PROFISSIONAIS EM DIREITO NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [2621] → ARQUIVOLOGISTAS E CURADORES DE MUSEUS
+- **V4010** (microdados) [2622] → BIBLIOTECÁRIOS, DOCUMENTARISTAS E AFINS
+- **V4010** (microdados) [2631] → ECONOMISTAS
+- **V4010** (microdados) [2632] → SOCIÓLOGOS, ANTROPÓLOGOS E AFINS
+- **V4010** (microdados) [2633] → FILÓSOFOS, HISTORIADORES E ESPECIALISTAS EM CIÊNCIA POLÍTICA
+- **V4010** (microdados) [2634] → PSICÓLOGOS
+- **V4010** (microdados) [2635] → ASSISTENTES SOCIAIS
+- **V4010** (microdados) [2636] → MINISTROS DE CULTOS RELIGIOSOS, MISSIONÁRIOS E AFINS
+- **V4010** (microdados) [2641] → ESCRITORES
+- **V4010** (microdados) [2642] → JORNALISTAS
+- **V4010** (microdados) [2643] → TRADUTORES, INTÉRPRETES E LINGUISTAS
+- **V4010** (microdados) [2651] → ARTISTAS PLÁSTICOS
+- **V4010** (microdados) [2652] → MÚSICOS, CANTORES E COMPOSITORES
+- **V4010** (microdados) [2653] → BAILARINOS E COREÓGRAFOS
+- **V4010** (microdados) [2654] → DIRETORES DE CINEMA, DE TEATRO E AFINS
+- **V4010** (microdados) [2655] → ATORES
+- **V4010** (microdados) [2656] → LOCUTORES DE RÁDIO, TELEVISÃO E OUTROS MEIOS DE COMUNICAÇÃO
+- **V4010** (microdados) [2659] → ARTISTAS CRIATIVOS E INTERPRETATIVOS NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [3111] → TÉCNICOS EM CIÊNCIAS FÍSICAS E QUÍMICAS
+- **V4010** (microdados) [3112] → TÉCNICOS EM ENGENHARIA CIVIL
+- **V4010** (microdados) [3113] → ELETROTÉCNICOS
+- **V4010** (microdados) [3114] → TÉCNICOS EM ELETRÔNICA
+- **V4010** (microdados) [3115] → TÉCNICOS EM ENGENHARIA MECÂNICA
+- **V4010** (microdados) [3116] → TÉCNICOS EM QUÍMICA INDUSTRIAL
+- **V4010** (microdados) [3117] → TÉCNICOS EM ENGENHARIA DE MINAS E METALURGIA
+- **V4010** (microdados) [3118] → DESENHISTAS E PROJETISTAS TÉCNICOS
+- **V4010** (microdados) [3119] → TÉCNICOS EM CIÊNCIAS FÍSICAS E DA ENGENHARIA NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [3121] → SUPERVISORES DA MINERAÇÃO
+- **V4010** (microdados) [3122] → SUPERVISORES DE INDÚSTRIAS DE TRANSFORMAÇÃO
+- **V4010** (microdados) [3123] → SUPERVISORES DA CONSTRUÇÃO
+- **V4010** (microdados) [3131] → OPERADORES DE INSTALAÇÕES DE PRODUÇÃO DE ENERGIA
+- **V4010** (microdados) [3132] → OPERADORES DE INCINERADORES, INSTALAÇÕES DE TRATAMENTO DE ÁGUA E AFINS
+- **V4010** (microdados) [3133] → CONTROLADORES DE INSTALAÇÕES DE PROCESSAMENTO DE PRODUTOS QUÍMICOS
+- **V4010** (microdados) [3134] → OPERADORES DE INSTALAÇÕES DE REFINO DE PETRÓLEO E GÁS NATURAL
+- **V4010** (microdados) [3135] → CONTROLADORES DE PROCESSOS DE PRODUÇÃO DE METAIS
+- **V4010** (microdados) [3139] → TÉCNICOS EM CONTROLE DE PROCESSOS NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [3141] → TÉCNICOS E PROFISSIONAIS DE NÍVEL MÉDIO EM CIÊNCIAS BIOLÓGICAS (EXCLUSIVE DA MEDICINA)
+- **V4010** (microdados) [3142] → TÉCNICOS AGROPECUÁRIOS
+- **V4010** (microdados) [3143] → TÉCNICOS FLORESTAIS
+- **V4010** (microdados) [3151] → OFICIAIS MAQUINISTAS EM NAVEGAÇÃO
+- **V4010** (microdados) [3152] → CAPITÃES, OFICIAIS DE COBERTA E PRÁTICOS
+- **V4010** (microdados) [3153] → PILOTOS DE AVIAÇÃO E AFINS
+- **V4010** (microdados) [3154] → CONTROLADORES DE TRÁFEGO AÉREO
+- **V4010** (microdados) [3155] → TÉCNICOS EM SEGURANÇA AERONÁUTICA
+- **V4010** (microdados) [3211] → TÉCNICOS EM APARELHOS DE DIAGNÓSTICO E TRATAMENTO MÉDICO
+- **V4010** (microdados) [3212] → TÉCNICOS DE LABORATÓRIOS MÉDICOS
+- **V4010** (microdados) [3213] → TÉCNICOS E ASSISTENTES FARMACÊUTICOS
+- **V4010** (microdados) [3214] → TÉCNICOS DE PRÓTESES MÉDICAS E DENTÁRIAS
+- **V4010** (microdados) [3221] → PROFISSIONAIS DE NÍVEL MÉDIO DE ENFERMAGEM
+- **V4010** (microdados) [3222] → PROFISSIONAIS DE NÍVEL MÉDIO DE PARTOS
+- **V4010** (microdados) [3230] → PROFISSIONAIS DE NÍVEL MÉDIO DE MEDICINA TRADICIONAL E ALTERNATIVA
+- **V4010** (microdados) [3240] → TÉCNICOS E ASSISTENTES VETERINÁRIOS
+- **V4010** (microdados) [3251] → DENTISTAS AUXILIARES E AJUDANTES DE ODONTOLOGIA
+- **V4010** (microdados) [3252] → TÉCNICOS EM DOCUMENTAÇÃO SANITÁRIA
+- **V4010** (microdados) [3253] → TRABALHADORES COMUNITÁRIOS DA SAÚDE
+- **V4010** (microdados) [3254] → TÉCNICOS EM OPTOMETRIA E ÓPTICOS
+- **V4010** (microdados) [3255] → TÉCNICOS E ASSISTENTES FISIOTERAPEUTAS
+- **V4010** (microdados) [3256] → ASSISTENTES DE MEDICINA
+- **V4010** (microdados) [3257] → INSPETORES DE SAÚDE LABORAL, AMBIENTAL E AFINS
+- **V4010** (microdados) [3258] → AJUDANTES DE AMBULÂNCIAS
+- **V4010** (microdados) [3259] → PROFISSIONAIS DE NÍVEL MÉDIO DA SAÚDE NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [3311] → AGENTES E CORRETORES DE BOLSA, CÂMBIO E OUTROS SERVIÇOS FINANCEIROS
+- **V4010** (microdados) [3312] → AGENTES DE EMPRÉSTIMOS E FINANCIAMENTO
+- **V4010** (microdados) [3313] → CONTABILISTAS E GUARDA LIVROS
+- **V4010** (microdados) [3314] → PROFISSIONAIS DE NÍVEL MÉDIO DE SERVIÇOS ESTATÍSTICOS, MATEMÁTICOS E AFINS
+- **V4010** (microdados) [3315] → AVALIADORES
+- **V4010** (microdados) [3321] → AGENTES DE SEGUROS
+- **V4010** (microdados) [3322] → REPRESENTANTES COMERCIAIS
+- **V4010** (microdados) [3323] → AGENTES DE COMPRAS
+- **V4010** (microdados) [3324] → CORRETORES DE COMERCIALIZAÇÃO
+- **V4010** (microdados) [3331] → DESPACHANTES ADUANEIROS
+- **V4010** (microdados) [3332] → ORGANIZADORES DE CONFERÊNCIAS E EVENTOS
+- **V4010** (microdados) [3333] → AGENTES DE EMPREGO E AGENCIADORES DE MÃO DE OBRA
+- **V4010** (microdados) [3334] → AGENTES IMOBILIÁRIOS
+- **V4010** (microdados) [3339] → AGENTES DE SERVIÇOS COMERCIAIS NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [3341] → SUPERVISORES DE SECRETARIA
+- **V4010** (microdados) [3342] → SECRETÁRIOS JURÍDICOS
+- **V4010** (microdados) [3343] → SECRETÁRIOS EXECUTIVOS E ADMINISTRATIVOS
+- **V4010** (microdados) [3344] → SECRETÁRIOS DE MEDICINA
+- **V4010** (microdados) [3351] → AGENTES ADUANEIROS E INSPETORES DE FRONTEIRAS
+- **V4010** (microdados) [3352] → AGENTES DA ADMINISTRAÇÃO TRIBUTÁRIA
+- **V4010** (microdados) [3353] → AGENTES DE SERVIÇOS DE SEGURIDADE SOCIAL
+- **V4010** (microdados) [3354] → AGENTES DE SERVIÇOS DE EXPEDIÇÃO DE LICENÇAS E PERMISSÕES
+- **V4010** (microdados) [3355] → INSPETORES DE POLÍCIA E DETETIVES
+- **V4010** (microdados) [3359] → AGENTES DA ADMINISTRAÇÃO PÚBLICA PARA APLICAÇÃO DA LEI E AFINS NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [3411] → PROFISSIONAIS DE NÍVEL MÉDIO DO DIREITO E SERVIÇOS LEGAIS E AFINS
+- **V4010** (microdados) [3412] → TRABALHADORES E ASSISTENTES SOCIAIS DE NÍVEL MÉDIO
+- **V4010** (microdados) [3413] → AUXILIARES LEIGOS DE RELIGIÃO
+- **V4010** (microdados) [3421] → ATLETAS E ESPORTISTAS
+- **V4010** (microdados) [3422] → TREINADORES, INSTRUTORES E ÁRBITROS DE ATIVIDADES ESPORTIVAS
+- **V4010** (microdados) [3423] → INSTRUTORES DE EDUCAÇÃO FÍSICA E ATIVIDADES RECREATIVAS
+- **V4010** (microdados) [3431] → FOTÓGRAFOS
+- **V4010** (microdados) [3432] → DESENHISTAS E DECORADORES DE INTERIORES
+- **V4010** (microdados) [3433] → TÉCNICOS EM GALERIAS DE ARTE, MUSEUS E BIBLIOTECAS
+- **V4010** (microdados) [3434] → CHEFES DE COZINHA
+- **V4010** (microdados) [3435] → OUTROS PROFISSIONAIS DE NÍVEL MÉDIO EM ATIVIDADES CULTURAIS E ARTÍSTICAS
+- **V4010** (microdados) [3511] → TÉCNICOS EM OPERAÇÕES DE TECNOLOGIA DA INFORMAÇÃO E DAS COMUNICAÇÕES
+- **V4010** (microdados) [3512] → TÉCNICOS EM ASSISTÊNCIA AO USUÁRIO DE TECNOLOGIA DA INFORMAÇÃO E DAS COMUNICAÇÕES
+- **V4010** (microdados) [3513] → TÉCNICOS DE REDES E SISTEMAS DE COMPUTADORES
+- **V4010** (microdados) [3514] → TÉCNICOS DA WEB
+- **V4010** (microdados) [3521] → TÉCNICOS DE RADIODIFUSÃO E GRAVAÇÃO AUDIOVISUAL
+- **V4010** (microdados) [3522] → TÉCNICOS DE ENGENHARIA DE TELECOMUNICAÇÕES
+- **V4010** (microdados) [4110] → ESCRITURÁRIOS GERAIS
+- **V4010** (microdados) [4120] → SECRETÁRIOS (GERAL)
+- **V4010** (microdados) [4131] → OPERADORES DE MÁQUINAS DE PROCESSAMENTO DE TEXTO E MECANÓGRAFOS
+- **V4010** (microdados) [4132] → OPERADORES DE ENTRADA DE DADOS
+- **V4010** (microdados) [4211] → CAIXAS DE BANCO E AFINS
+- **V4010** (microdados) [4212] → COLETORES DE APOSTAS E DE JOGOS
+- **V4010** (microdados) [4213] → TRABALHADORES EM ESCRITÓRIOS DE EMPRÉSTIMOS E PENHOR
+- **V4010** (microdados) [4214] → COBRADORES E AFINS
+- **V4010** (microdados) [4221] → TRABALHADORES DE AGÊNCIAS DE VIAGEM
+- **V4010** (microdados) [4222] → TRABALHADORES DE CENTRAIS DE ATENDIMENTO
+- **V4010** (microdados) [4223] → TELEFONISTAS
+- **V4010** (microdados) [4224] → RECEPCIONISTAS DE HOTÉIS
+- **V4010** (microdados) [4225] → TRABALHADORES DOS SERVIÇOS DE INFORMAÇÕES
+- **V4010** (microdados) [4226] → RECEPCIONISTAS EM GERAL
+- **V4010** (microdados) [4227] → ENTREVISTADORES DE PESQUISAS DE MERCADO
+- **V4010** (microdados) [4229] → TRABALHADORES DE SERVIÇOS DE INFORMAÇÃO AO CLIENTE NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [4311] → TRABALHADORES DE CONTABILIDADE E CÁLCULO DE CUSTOS
+- **V4010** (microdados) [4312] → TRABALHADORES DE SERVIÇOS ESTATÍSTICOS, FINANCEIROS E DE SEGUROS
+- **V4010** (microdados) [4313] → TRABALHADORES ENCARREGADOS DE FOLHA DE PAGAMENTO
+- **V4010** (microdados) [4321] → TRABALHADORES DE CONTROLE DE ABASTECIMENTO E ESTOQUES
+- **V4010** (microdados) [4322] → TRABALHADORES DE SERVIÇOS DE APOIO À PRODUÇÃO
+- **V4010** (microdados) [4323] → TRABALHADORES DE SERVIÇOS DE TRANSPORTE
+- **V4010** (microdados) [4411] → TRABALHADORES DE BIBLIOTECAS
+- **V4010** (microdados) [4412] → TRABALHADORES DE SERVIÇOS DE CORREIOS
+- **V4010** (microdados) [4413] → CODIFICADORES DE DADOS, REVISORES DE PROVAS DE IMPRESSÃO E AFINS
+- **V4010** (microdados) [4414] → OUTROS ESCREVENTES
+- **V4010** (microdados) [4415] → TRABALHADORES DE ARQUIVOS
+- **V4010** (microdados) [4416] → TRABALHADORES DO SERVIÇO DE PESSOAL
+- **V4010** (microdados) [4419] → TRABALHADORES DE APOIO ADMINISTRATIVO NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [5111] → AUXILIARES DE SERVIÇO DE BORDO
+- **V4010** (microdados) [5112] → FISCAIS E COBRADORES DE TRANSPORTES PÚBLICOS
+- **V4010** (microdados) [5113] → GUIAS DE TURISMO
+- **V4010** (microdados) [5120] → COZINHEIROS
+- **V4010** (microdados) [5131] → GARÇONS
+- **V4010** (microdados) [5132] → ATENDENTES DE BAR
+- **V4010** (microdados) [5141] → CABELEIREIROS
+- **V4010** (microdados) [5142] → ESPECIALISTAS EM TRATAMENTO DE BELEZA E AFINS
+- **V4010** (microdados) [5151] → SUPERVISORES DE MANUTENÇÃO E LIMPEZA DE EDIFÍCIOS EM ESCRITÓRIOS, HOTÉIS E ESTABELECIMENTOS
+- **V4010** (microdados) [5152] → GOVERNANTAS E MORDOMOS DOMÉSTICOS
+- **V4010** (microdados) [5153] → PORTEIROS E ZELADORES
+- **V4010** (microdados) [5161] → ASTRÓLOGOS, ADIVINHOS E AFINS
+- **V4010** (microdados) [5162] → ACOMPANHANTES E CRIADOS PARTICULARES
+- **V4010** (microdados) [5163] → TRABALHADORES DE FUNERÁRIAS E EMBALSAMADORES
+- **V4010** (microdados) [5164] → CUIDADORES DE ANIMAIS
+- **V4010** (microdados) [5165] → INSTRUTORES DE AUTOESCOLA
+- **V4010** (microdados) [5168] → TRABALHADORES DO SEXO
+- **V4010** (microdados) [5169] → TRABALHADORES DE SERVIÇOS PESSOAIS NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [5211] → VENDEDORES DE QUIOSQUES E POSTOS DE MERCADOS
+- **V4010** (microdados) [5212] → VENDEDORES AMBULANTES DE SERVIÇOS DE ALIMENTAÇÃO
+- **V4010** (microdados) [5221] → COMERCIANTES DE LOJAS
+- **V4010** (microdados) [5222] → SUPERVISORES DE LOJAS
+- **V4010** (microdados) [5223] → BALCONISTAS E VENDEDORES DE LOJAS
+- **V4010** (microdados) [5230] → CAIXAS E EXPEDIDORES DE BILHETES
+- **V4010** (microdados) [5241] → MODELOS DE MODA, ARTE E PUBLICIDADE
+- **V4010** (microdados) [5242] → DEMONSTRADORES DE LOJAS
+- **V4010** (microdados) [5243] → VENDEDORES A DOMICILIO
+- **V4010** (microdados) [5244] → VENDEDORES POR TELEFONE
+- **V4010** (microdados) [5245] → FRENTISTAS DE POSTO DE GASOLINA
+- **V4010** (microdados) [5246] → BALCONISTAS DOS SERVIÇOS DE ALIMENTAÇÃO
+- **V4010** (microdados) [5249] → VENDEDORES NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [5311] → CUIDADORES DE CRIANÇAS
+- **V4010** (microdados) [5312] → AJUDANTES DE PROFESSORES
+- **V4010** (microdados) [5321] → TRABALHADORES DE CUIDADOS PESSOAIS EM INSTITUIÇÕES
+- **V4010** (microdados) [5322] → TRABALHADORES DE CUIDADOS PESSOAIS A DOMICÍLIOS
+- **V4010** (microdados) [5329] → TRABALHADORES DE CUIDADOS PESSOAIS NOS SERVIÇOS DE SAÚDE NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [5411] → BOMBEIROS
+- **V4010** (microdados) [5412] → POLICIAIS
+- **V4010** (microdados) [5413] → GUARDIÕES DE PRESÍDIOS
+- **V4010** (microdados) [5414] → GUARDAS DE SEGURANÇA
+- **V4010** (microdados) [5419] → TRABALHADORES DOS SERVIÇOS DE PROTEÇÃO E SEGURANÇA NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [6111] → AGRICULTORES E TRABALHADORES QUALIFICADOS EM ATIVIDADES DA AGRICULTURA (EXCLUSIVE HORTAS, VIVEIROS E JARDINS)
+- **V4010** (microdados) [6112] → AGRICULTORES E TRABALHADORES QUALIFICADOS NO CULTIVO DE HORTAS, VIVEIROS E JARDINS
+- **V4010** (microdados) [6114] → AGRICULTORES E TRABALHADORES QUALIFICADOS DE CULTIVOS MISTOS
+- **V4010** (microdados) [6121] → CRIADORES DE GADO E TRABALHADORES QUALIFICADOS DA CRIAÇÃO DE GADO
+- **V4010** (microdados) [6122] → AVICULTORES E TRABALHADORES QUALIFICADOS DA AVICULTURA
+- **V4010** (microdados) [6123] → APICULTORES, SERICICULTORES E TRABALHADORES QUALIFICADOS DA APICULTURA E SERICICULTURA
+- **V4010** (microdados) [6129] → OUTROS CRIADORES E TRABALHADORES QUALIFICADOS DA PECUÁRIA NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [6130] → PRODUTORES E TRABALHADORES QUALIFICADOS DE EXPLORAÇÃO AGROPECUÁRIA MISTA
+- **V4010** (microdados) [6210] → TRABALHADORES FLORESTAIS QUALIFICADOS E AFINS
+- **V4010** (microdados) [6221] → TRABALHADORES DA AQUICULTURA
+- **V4010** (microdados) [6224] → CAÇADORES
+- **V4010** (microdados) [6225] → PESCADORES
+- **V4010** (microdados) [7111] → CONSTRUTORES DE CASAS
+- **V4010** (microdados) [7112] → PEDREIROS
+- **V4010** (microdados) [7113] → CANTEIROS, CORTADORES E GRAVADORES DE PEDRAS
+- **V4010** (microdados) [7114] → TRABALHADORES EM CIMENTO E CONCRETO ARMADO
+- **V4010** (microdados) [7115] → CARPINTEIROS
+- **V4010** (microdados) [7119] → OUTROS TRABALHADORES QUALIFICADOS E OPERÁRIOS DA CONSTRUÇÃO NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [7121] → TELHADORES
+- **V4010** (microdados) [7122] → APLICADORES DE REVESTIMENTOS CERÂMICOS, PASTILHAS, PEDRAS E MADEIRAS
+- **V4010** (microdados) [7123] → GESSEIROS
+- **V4010** (microdados) [7124] → INSTALADORES DE MATERIAL ISOLANTE TÉRMICO E ACÚSTICO
+- **V4010** (microdados) [7125] → VIDRACEIROS
+- **V4010** (microdados) [7126] → BOMBEIROS E ENCANADORES
+- **V4010** (microdados) [7127] → MECÂNICOS-INSTALADORES DE SISTEMAS DE REFRIGERAÇÃO E CLIMATIZAÇÃO
+- **V4010** (microdados) [7131] → PINTORES E EMPAPELADORES
+- **V4010** (microdados) [7132] → LUSTRADORES
+- **V4010** (microdados) [7133] → LIMPADORES DE FACHADAS
+- **V4010** (microdados) [7211] → MOLDADORES DE METAL E MACHEIROS
+- **V4010** (microdados) [7212] → SOLDADORES E OXICORTADORES
+- **V4010** (microdados) [7213] → CHAPISTAS E CALDEIREIROS
+- **V4010** (microdados) [7214] → MONTADORES DE ESTRUTURAS METÁLICAS
+- **V4010** (microdados) [7215] → APARELHADORES E EMENDADORES DE CABOS
+- **V4010** (microdados) [7221] → FERREIROS E FORJADORES
+- **V4010** (microdados) [7222] → FERRAMENTEIROS E AFINS
+- **V4010** (microdados) [7223] → REGULADORES E OPERADORES DE MÁQUINAS-FERRAMENTAS
+- **V4010** (microdados) [7224] → POLIDORES DE METAIS E AFIADORES DE FERRAMENTAS
+- **V4010** (microdados) [7231] → MECÂNICOS E REPARADORES DE VEÍCULOS A MOTOR
+- **V4010** (microdados) [7232] → MECÂNICOS E REPARADORES DE MOTORES DE AVIÃO
+- **V4010** (microdados) [7233] → MECÂNICOS E REPARADORES DE MÁQUINAS AGRÍCOLAS E INDUSTRIAIS
+- **V4010** (microdados) [7234] → REPARADORES DE BICICLETAS E AFINS
+- **V4010** (microdados) [7311] → MECÂNICOS E REPARADORES DE INSTRUMENTOS DE PRECISÃO
+- **V4010** (microdados) [7312] → CONFECCIONADORES E AFINADORES DE INSTRUMENTOS MUSICAIS
+- **V4010** (microdados) [7313] → JOALHEIROS E LAPIDADORES DE GEMAS, ARTESÃOS DE METAIS PRECIOSOS E SEMIPRECIOSOS
+- **V4010** (microdados) [7314] → CERAMISTAS E AFINS (PREPARAÇÃO E FABRICAÇÃO)
+- **V4010** (microdados) [7315] → CORTADORES, POLIDORES, JATEADORES E GRAVADORES DE VIDROS E AFINS
+- **V4010** (microdados) [7316] → REDATORES DE CARTAZES, PINTORES DECORATIVOS E GRAVADORES
+- **V4010** (microdados) [7317] → ARTESÃOS DE PEDRA, MADEIRA, VIME E MATERIAIS SEMELHANTES
+- **V4010** (microdados) [7318] → ARTESÃOS DE TECIDOS, COUROS E MATERIAIS SEMELHANTES
+- **V4010** (microdados) [7319] → ARTESÃOS NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [7321] → TRABALHADORES DA PRÉ-IMPRESSÃO GRÁFICA
+- **V4010** (microdados) [7322] → IMPRESSORES
+- **V4010** (microdados) [7323] → ENCADERNADORES E AFINS
+- **V4010** (microdados) [7411] → ELETRICISTAS DE OBRAS E AFINS
+- **V4010** (microdados) [7412] → MECÂNICOS E AJUSTADORES ELETRICISTAS
+- **V4010** (microdados) [7413] → INSTALADORES E REPARADORES DE LINHAS ELÉTRICAS
+- **V4010** (microdados) [7421] → MECÂNICOS E REPARADORES EM ELETRÔNICA
+- **V4010** (microdados) [7422] → INSTALADORES E REPARADORES EM TECNOLOGIAS DA INFORMAÇÃO E COMUNICAÇÕES
+- **V4010** (microdados) [7511] → MAGAREFES E AFINS
+- **V4010** (microdados) [7512] → PADEIROS, CONFEITEIROS E AFINS
+- **V4010** (microdados) [7513] → TRABALHADORES DA PASTEURIZAÇÃO DO LEITE E FABRICAÇÃO DE LATICÍNIOS E AFINS
+- **V4010** (microdados) [7514] → TRABALHADORES DA CONSERVAÇÃO DE FRUTAS, LEGUMES E SIMILARES
+- **V4010** (microdados) [7515] → TRABALHADORES DA DEGUSTAÇÃO E CLASSIFICAÇÃO DE ALIMENTOS E BEBIDAS
+- **V4010** (microdados) [7516] → TRABALHADORES QUALIFICADOS DA PREPARAÇÃO DO FUMO E SEUS PRODUTOS
+- **V4010** (microdados) [7521] → TRABALHADORES DE TRATAMENTO E PREPARAÇÃO DA MADEIRA
+- **V4010** (microdados) [7522] → MARCENEIROS E AFINS
+- **V4010** (microdados) [7523] → OPERADORES DE MÁQUINAS DE LAVRAR MADEIRA
+- **V4010** (microdados) [7531] → ALFAIATES, MODISTAS, CHAPELEIROS E PELETEIROS
+- **V4010** (microdados) [7532] → TRABALHADORES QUALIFICADOS DA PREPARAÇÃO DA CONFECÇÃO DE ROUPAS
+- **V4010** (microdados) [7533] → COSTUREIROS, BORDADEIROS E AFINS
+- **V4010** (microdados) [7534] → TAPECEIROS, COLCHOEIROS E AFINS
+- **V4010** (microdados) [7535] → TRABALHADORES QUALIFICADOS DO TRATAMENTO DE COUROS E PELES
+- **V4010** (microdados) [7536] → SAPATEIROS E AFINS
+- **V4010** (microdados) [7541] → TRABALHADORES SUBAQUÁTICOS
+- **V4010** (microdados) [7542] → DINAMITADORES E DETONADORES
+- **V4010** (microdados) [7543] → CLASSIFICADORES E PROVADORES DE PRODUTOS (EXCETO DE BEBIDAS E ALIMENTOS)
+- **V4010** (microdados) [7544] → FUMIGADORES E OUTROS CONTROLADORES DE PRAGAS E ERVAS DANINHAS
+- **V4010** (microdados) [7549] → OUTROS TRABALHADORES QUALIFICADOS E OPERÁRIOS DA INDÚSTRIA E DO ARTESANATO NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [8111] → MINEIROS E OPERADORES DE MÁQUINAS E DE INSTALAÇÕES EM MINAS E PEDREIRAS
+- **V4010** (microdados) [8112] → OPERADORES DE INSTALAÇÕES DE PROCESSAMENTO DE MINERAIS E ROCHAS
+- **V4010** (microdados) [8113] → PERFURADORES E SONDADORES DE POÇOS E AFINS
+- **V4010** (microdados) [8114] → OPERADORES DE MÁQUINAS PARA FABRICAR CIMENTO, PEDRAS E OUTROS PRODUTOS MINERAIS
+- **V4010** (microdados) [8121] → OPERADORES DE INSTALAÇÕES DE PROCESSAMENTO DE METAIS
+- **V4010** (microdados) [8122] → OPERADORES DE MÁQUINAS POLIDORAS, GALVANIZADORAS E RECOBRIDORAS DE METAIS
+- **V4010** (microdados) [8131] → OPERADORES DE INSTALAÇÕES E MÁQUINAS DE PRODUTOS QUÍMICOS
+- **V4010** (microdados) [8132] → OPERADORES DE MÁQUINAS PARA FABRICAR PRODUTOS FOTOGRÁFICOS
+- **V4010** (microdados) [8141] → OPERADORES DE MÁQUINAS PARA FABRICAR PRODUTOS DE BORRACHA
+- **V4010** (microdados) [8142] → OPERADORES DE MÁQUINAS PARA FABRICAR PRODUTOS DE MATERIAL PLÁSTICO
+- **V4010** (microdados) [8143] → OPERADORES DE MÁQUINAS PARA FABRICAR PRODUTOS DE PAPEL
+- **V4010** (microdados) [8151] → OPERADORES DE MÁQUINAS DE PREPARAÇÃO DE FIBRAS, FIAÇÃO E BOBINAMENTO DE FIOS
+- **V4010** (microdados) [8152] → OPERADORES DE TEARES E OUTRAS MÁQUINAS DE TECELAGEM
+- **V4010** (microdados) [8153] → OPERADORES DE MÁQUINAS DE COSTURA
+- **V4010** (microdados) [8154] → OPERADORES DE MÁQUINAS DE BRANQUEAMENTO, TINGIMENTO E LIMPEZA DE TECIDOS
+- **V4010** (microdados) [8155] → OPERADORES DE MÁQUINAS DE PROCESSAMENTO DE COUROS E PELES
+- **V4010** (microdados) [8156] → OPERADORES DE MÁQUINAS PARA FABRICAÇÃO DE CALÇADOS E AFINS
+- **V4010** (microdados) [8157] → OPERADORES DE MÁQUINAS DE LAVAR, TINGIR E PASSAR ROUPAS
+- **V4010** (microdados) [8159] → OPERADORES DE MÁQUINAS PARA FABRICAR PRODUTOS TÊXTEIS E ARTIGOS DE COURO E PELE NÃO CLASSIFICADOS
+- **V4010** (microdados) [8160] → OPERADORES DE MÁQUINAS PARA ELABORAR ALIMENTOS E PRODUTOS AFINS
+- **V4010** (microdados) [8171] → OPERADORES DE INSTALAÇÕES PARA A PREPARAÇÃO DE PASTA DE PAPEL E PAPEL
+- **V4010** (microdados) [8172] → OPERADORES DE INSTALAÇÕES PARA PROCESSAMENTO DE MADEIRA
+- **V4010** (microdados) [8181] → OPERADORES DE INSTALAÇÕES DE VIDRARIA E CERÂMICA
+- **V4010** (microdados) [8182] → OPERADORES DE MÁQUINAS DE VAPOR E CALDEIRAS
+- **V4010** (microdados) [8183] → OPERADORES DE MÁQUINAS DE EMBALAGEM, ENGARRAFAMENTO E ETIQUETAGEM
+- **V4010** (microdados) [8189] → OPERADORES DE MÁQUINAS E DE INSTALAÇÕES FIXAS NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [8211] → MECÂNICOS MONTADORES DE MAQUINARIA MECÂNICA
+- **V4010** (microdados) [8212] → MONTADORES DE EQUIPAMENTOS ELÉTRICOS E ELETRÔNICOS
+- **V4010** (microdados) [8219] → MONTADORES NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [8311] → MAQUINISTAS DE LOCOMOTIVAS
+- **V4010** (microdados) [8312] → GUARDA-FREIOS E AGENTES DE MANOBRAS
+- **V4010** (microdados) [8321] → CONDUTORES DE MOTOCICLETAS
+- **V4010** (microdados) [8322] → CONDUTORES DE AUTOMÓVEIS, TAXIS E CAMINHONETES
+- **V4010** (microdados) [8331] → CONDUTORES DE ÔNIBUS E BONDES
+- **V4010** (microdados) [8332] → CONDUTORES DE CAMINHÕES PESADOS
+- **V4010** (microdados) [8341] → OPERADORES DE MÁQUINAS AGRÍCOLAS E FLORESTAIS MÓVEIS
+- **V4010** (microdados) [8342] → OPERADORES DE MÁQUINAS DE MOVIMENTAÇÃO DE TERRAS E AFINS
+- **V4010** (microdados) [8343] → OPERADORES DE GUINDASTES, GRUAS, APARATOS DE ELEVAÇÃO E AFINS
+- **V4010** (microdados) [8344] → OPERADORES DE EMPILHADEIRAS
+- **V4010** (microdados) [8350] → MARINHEIROS DE COBERTA E AFINS
+- **V4010** (microdados) [9111] → TRABALHADORES DOS SERVIÇOS DOMÉSTICOS EM GERAL
+- **V4010** (microdados) [9112] → TRABALHADORES DE LIMPEZA DE INTERIOR DE EDIFÍCIOS, ESCRITÓRIOS, HOTÉIS E OUTROS ESTABELECIMENTOS
+- **V4010** (microdados) [9121] → LAVADEIROS DE ROUPAS E PASSADEIROS MANUAIS
+- **V4010** (microdados) [9122] → LAVADORES DE VEÍCULOS
+- **V4010** (microdados) [9123] → LIMPADORES DE JANELAS
+- **V4010** (microdados) [9129] → OUTROS TRABALHADORES DE LIMPEZA
+- **V4010** (microdados) [9211] → TRABALHADORES ELEMENTARES DA AGRICULTURA
+- **V4010** (microdados) [9212] → TRABALHADORES ELEMENTARES DA PECUÁRIA
+- **V4010** (microdados) [9213] → TRABALHADORES ELEMENTARES DA AGROPECUÁRIA
+- **V4010** (microdados) [9214] → TRABALHADORES ELEMENTARES DA JARDINAGEM E HORTICULTURA
+- **V4010** (microdados) [9215] → TRABALHADORES FLORESTAIS ELEMENTARES
+- **V4010** (microdados) [9216] → TRABALHADORES ELEMENTARES DA CAÇA, PESCA E AQUICULTURA
+- **V4010** (microdados) [9311] → TRABALHADORES ELEMENTARES DE MINAS E PEDREIRAS
+- **V4010** (microdados) [9312] → TRABALHADORES ELEMENTARES DE OBRAS PÚBLICAS E DA MANUTENÇÃO DE ESTRADAS, REPRESAS E SIMILARES
+- **V4010** (microdados) [9313] → TRABALHADORES ELEMENTARES DA CONSTRUÇÃO DE EDIFÍCIOS
+- **V4010** (microdados) [9321] → EMPACOTADORES MANUAIS
+- **V4010** (microdados) [9329] → TRABALHADORES ELEMENTARES DA INDÚSTRIA DE TRANSFORMAÇÃO NÃO CLASSIFICADOS ANTERIORMENTE
+- **V4010** (microdados) [9331] → CONDUTORES DE VEÍCULOS ACIONADOS A PEDAL OU A BRAÇOS
+- **V4010** (microdados) [9332] → CONDUTORES DE VEÍCULOS E MÁQUINAS DE TRAÇÃO ANIMAL
+- **V4010** (microdados) [9333] → CARREGADORES
+- **V4010** (microdados) [9334] → REPOSITORES DE PRATELEIRAS
+- **V4010** (microdados) [9411] → PREPARADORES DE COMIDAS RÁPIDAS
+- **V4010** (microdados) [9412] → AJUDANTES DE COZINHA
+- **V4010** (microdados) [9510] → TRABALHADORES AMBULANTES DOS SERVIÇOS E AFINS
+- **V4010** (microdados) [9520] → VENDEDORES AMBULANTES (EXCLUSIVE DE SERVIÇOS DE ALIMENTAÇÃO)
+- **V4010** (microdados) [9611] → COLETORES DE LIXO E MATERIAL RECICLÁVEL
+- **V4010** (microdados) [9612] → CLASSIFICADORES DE RESÍDUOS
+- **V4010** (microdados) [9613] → VARREDORES E AFINS
+- **V4010** (microdados) [9621] → MENSAGEIROS, CARREGADORES DE BAGAGENS E ENTREGADORES DE ENCOMENDAS
+- **V4010** (microdados) [9622] → PESSOAS QUE REALIZAM VÁRIAS TAREFAS
+- **V4010** (microdados) [9623] → COLETORES DE DINHEIRO EM MÁQUINAS AUTOMÁTICAS DE VENDA E LEITORES DE MEDIDORES
+- **V4010** (microdados) [9624] → CARREGADORES DE ÁGUA E COLETORES DE LENHA
+- **V4010** (microdados) [9629] → OUTRAS OCUPAÇÕES ELEMENTARES NÃO CLASSIFICADAS ANTERIORMENTE
+- **V4012** (microdados) [nan] → Não aplicável
+- **V4012** (microdados) [1] → Trabalhador doméstico
+- **V4012** (microdados) [2] → Militar do exército, da marinha, da aeronáutica, da polícia militar ou do corpo de bombeiros militar
+- **V4012** (microdados) [3] → Empregado do setor privado
+- **V4012** (microdados) [4] → Empregado do setor público (inclusive empresas de economia mista)
+- **V4012** (microdados) [5] → Empregador
+- **V4012** (microdados) [6] → Conta própria
+- **V4012** (microdados) [7] → Trabalhador familiar não remunerado
+- **V40121** (microdados) [nan] → Não aplicável
+- **V40121** (microdados) [1] → Em ajuda a conta própria ou empregador
+- **V40121** (microdados) [2] → Em ajuda a empregado
+- **V40121** (microdados) [3] → Em ajuda a trabalhador doméstico
+- **V40132** (microdados) [nan] → Não aplicável
+- **V40132** (microdados) [1] → Agricultura, pecuária silvicultura, exploração florestal, pesca ou aquicultura
+- **V40132** (microdados) [2] → Outra atividade, inclusive as atividades de apoio à agricultura, pecuária, silvicultura, exploração florestal, pesca ou aquicultura. 
+- **V40132A** (microdados) [nan] → Não aplicável
+- **V40132A** (microdados) [1] → Agricultura, pecuária silvicultura, exploração florestal, pesca ou aquicultura e atividades de apoio à agricultura, pecuária, silvicultura, exploração florestal, pesca ou aquicultura. 
+- **V40132A** (microdados) [2] → Outra atividade
+- **V4014** (microdados) [nan] → Não aplicável
+- **V4014** (microdados) [1] → Federal
+- **V4014** (microdados) [2] → Estadual
+- **V4014** (microdados) [3] → Municipal
+- **V4015** (microdados) [nan] → Não aplicável
+- **V4015** (microdados) [1] → Sim
+- **V4015** (microdados) [2] → Não
+- **V40151** (microdados) [nan] → Não aplicável
+- **V40151** (microdados) [1] → 1 a 5 trabalhadores não remunerados
+- **V40151** (microdados) [2] → 6 a 10 trabalhadores não remunerados
+- **V40151** (microdados) [3] → 11 ou mais trabalhadores não remunerados
+- **V4016** (microdados) [nan] → Não aplicável
+- **V4016** (microdados) [1] → 1 a 5 empregados
+- **V4016** (microdados) [2] → 6 a 10 empregados
+- **V4016** (microdados) [3] → 11 a 50 empregados
+- **V4016** (microdados) [4] → 51 ou mais empregados
+- **V4017** (microdados) [nan] → Não aplicável
+- **V4017** (microdados) [1] → Sim
+- **V4017** (microdados) [2] → Não
+- **V40171** (microdados) [nan] → Não aplicável
+- **V40171** (microdados) [1] → 1 a 5 sócios
+- **V40171** (microdados) [2] → 6 ou mais sócios
+- **V4018** (microdados) [nan] → Não aplicável
+- **V4018** (microdados) [1] → 1 a 5 pessoas
+- **V4018** (microdados) [2] → 6 a 10 pessoas
+- **V4018** (microdados) [3] → 11 a 50 pessoas
+- **V4018** (microdados) [4] → 51 ou mais pessoas
+- **V4019** (microdados) [nan] → Não aplicável
+- **V4019** (microdados) [1] → Sim
+- **V4019** (microdados) [2] → Não
+- **V4020** (microdados) [nan] → Não aplicável
+- **V4020** (microdados) [1] → Em loja, escritório, galpão, etc.
+- **V4020** (microdados) [2] → Em fazenda, sítio, granja, chácara, etc.
+- **V4020** (microdados) [3] → Não tinha estabelecimento para funcionar
+- **V4021** (microdados) [nan] → Não aplicável
+- **V4021** (microdados) [1] → Sim
+- **V4021** (microdados) [2] → Não
+- **V4022** (microdados) [nan] → Não aplicável
+- **V4022** (microdados) [1] → Em estabelecimento de outro négocio/empresa
+- **V4022** (microdados) [2] → Em local designado pelo empregador, cliente ou freguês
+- **V4022** (microdados) [3] → Em domicílio de empregador, patrão, sócio ou freguês
+- **V4022** (microdados) [4] → No domicílio de residência, em local exclusivo para o desempenho da atividade
+- **V4022** (microdados) [5] → No domicílio de residência, sem local exclusivo para o desempenho da atividade
+- **V4022** (microdados) [6] → Em veículo automotor (táxi, ônibus, caminhão, automóvel, embarcação, etc.)
+- **V4022** (microdados) [7] → Em via ou área pública (rua, rio, manguezal, mata pública, praça, praia etc.)
+- **V4022** (microdados) [8] → Em outro local, especifique
+- **V4024** (microdados) [nan] → Não aplicável
+- **V4024** (microdados) [1] → Sim
+- **V4024** (microdados) [2] → Não
+- **V4025** (microdados) [nan] → Não aplicável
+- **V4025** (microdados) [1] → Sim
+- **V4025** (microdados) [2] → Não
+- **V4026** (microdados) [nan] → Não aplicável
+- **V4026** (microdados) [1] → Sim
+- **V4026** (microdados) [2] → Não
+- **V4027** (microdados) [nan] → Não aplicável
+- **V4027** (microdados) [1] → Sim
+- **V4027** (microdados) [2] → Não
+- **V4028** (microdados) [nan] → Não aplicável
+- **V4028** (microdados) [1] → Sim
+- **V4028** (microdados) [2] → Não
+- **V4029** (microdados) [nan] → Não aplicável
+- **V4029** (microdados) [1] → Sim
+- **V4029** (microdados) [2] → Não
+- **V4032** (microdados) [nan] → Não aplicável
+- **V4032** (microdados) [1] → Sim
+- **V4032** (microdados) [2] → Não
+- **V4033** (microdados) [nan] → Não aplicável
+- **V4033** (microdados) [1] → Indica se o quesito foi respondido
+- **V40331** (microdados) [nan] → Não ou não aplicável
+- **V40331** (microdados) [1] → Em dinheiro
+- **V403311** (microdados) [nan] → Não aplicável
+- **V403311** (microdados) [1] → 1 a [0,5SM]
+- **V403311** (microdados) [2] → [0,5SM]+1 a [1SM]
+- **V403311** (microdados) [3] → [1SM]+1 a [2SM]
+- **V403311** (microdados) [4] → [2SM]+1 a [3SM]
+- **V403311** (microdados) [5] → [3SM]+1 a [5SM]
+- **V403311** (microdados) [6] → [5SM]+1 a [10SM]
+- **V403311** (microdados) [7] → [10SM]+1 a [20SM]
+- **V403311** (microdados) [8] → [20SM]+1 ou mais
+- **V40332** (microdados) [nan] → Não ou não aplicável
+- **V40332** (microdados) [2] → Em produtos ou mercadorias
+- **V403321** (microdados) [nan] → Não aplicável
+- **V403321** (microdados) [1] → 1 a [0,5SM]
+- **V403321** (microdados) [2] → [0,5SM]+1 a [1SM]
+- **V403321** (microdados) [3] → [1SM]+1 a [2SM]
+- **V403321** (microdados) [4] → [2SM]+1 a [3SM]
+- **V403321** (microdados) [5] → [3SM]+1 a [5SM]
+- **V403321** (microdados) [6] → [5SM]+1 a [10SM]
+- **V403321** (microdados) [7] → [10SM]+1 a [20SM]
+- **V403321** (microdados) [8] → [20SM]+1 ou mais
+- **V40333** (microdados) [nan] → Não ou não aplicável
+- **V40333** (microdados) [3] → Em benefícios
+- **V403331** (microdados) [nan] → Não aplicável
+- **V403331** (microdados) [1] → Pessoa recebendo somente em beneficios, exceto aprendizado
+- **V403331** (microdados) [2] → Aprendiz ou estagiário recebendo em aprendizado e outros beneficios
+- **V403331** (microdados) [3] → Aprendiz ou estagiário recebendo somente em aprendizado
+- **V4034** (microdados) [nan] → Não aplicável
+- **V4034** (microdados) [1] → Indica se o quesito foi respondido
+- **V40341** (microdados) [nan] → Não ou não aplicável
+- **V40341** (microdados) [1] → Em dinheiro
+- **V403411** (microdados) [nan] → Não aplicável
+- **V403411** (microdados) [0] → 0
+- **V403411** (microdados) [1] → 1 a [0,5SM]
+- **V403411** (microdados) [2] → [0,5SM]+1 a [1SM]
+- **V403411** (microdados) [3] → [1SM]+1 a [2SM]
+- **V403411** (microdados) [4] → [2SM]+1 a [3SM]
+- **V403411** (microdados) [5] → [3SM]+1 a [5SM]
+- **V403411** (microdados) [6] → [5SM]+1 a [10SM]
+- **V403411** (microdados) [7] → [10SM]+1 a [20SM]
+- **V403411** (microdados) [8] → [20SM]+1 ou mais
+- **V40342** (microdados) [nan] → Não ou não aplicável
+- **V40342** (microdados) [2] → Em produtos ou mercadorias
+- **V403421** (microdados) [nan] → Não aplicável
+- **V403421** (microdados) [0] → 0
+- **V403421** (microdados) [1] → 1 a [0,5SM]
+- **V403421** (microdados) [2] → [0,5SM]+1 a [1SM]
+- **V403421** (microdados) [3] → [1SM]+1 a [2SM]
+- **V403421** (microdados) [4] → [2SM]+1 a [3SM]
+- **V403421** (microdados) [5] → [3SM]+1 a [5SM]
+- **V403421** (microdados) [6] → [5SM]+1 a [10SM]
+- **V403421** (microdados) [7] → [10SM]+1 a [20SM]
+- **V403421** (microdados) [8] → [20SM]+1 ou mais
+- **V4040** (microdados) [nan] → Não aplicável
+- **V4040** (microdados) [1] → Menos de 1 mês
+- **V4040** (microdados) [2] → De 1 mês a menos de 1 ano
+- **V4040** (microdados) [3] → De 1 ano a menos de 2 anos
+- **V4040** (microdados) [4] → 2 anos ou mais
+- **V4043** (microdados) [nan] → Não aplicável
+- **V4043** (microdados) [1] → Trabalhador doméstico
+- **V4043** (microdados) [2] → Militar do exército, da marinha, da aeronáutica, da polícia militar ou do corpo de bombeiros militar
+- **V4043** (microdados) [3] → Empregado do setor privado
+- **V4043** (microdados) [4] → Empregado do setor público (inclusive empresas de economia mista)
+- **V4043** (microdados) [5] → Empregador
+- **V4043** (microdados) [6] → Conta própria
+- **V4043** (microdados) [7] → Trabalhador não remunerado em ajuda a membro do domicílio ou parente
+- **V40431** (microdados) [nan] → Não aplicável
+- **V40431** (microdados) [1] → Em ajuda a conta própria ou empregador
+- **V40431** (microdados) [2] → Em ajuda a empregado
+- **V40431** (microdados) [3] → Em ajuda a trabalhador doméstico
+- **V4045** (microdados) [nan] → Não aplicável
+- **V4045** (microdados) [1] → Federal
+- **V4045** (microdados) [2] → Estadual
+- **V4045** (microdados) [3] → Municipal
+- **V4046** (microdados) [nan] → Não aplicável
+- **V4046** (microdados) [1] → Sim
+- **V4046** (microdados) [2] → Não
+- **V4047** (microdados) [nan] → Não aplicável
+- **V4047** (microdados) [1] → Sim
+- **V4047** (microdados) [2] → Não
+- **V4048** (microdados) [nan] → Não aplicável
+- **V4048** (microdados) [1] → Sim
+- **V4048** (microdados) [2] → Não
+- **V4049** (microdados) [nan] → Não aplicável
+- **V4049** (microdados) [1] → Sim
+- **V4049** (microdados) [2] → Não
+- **V4050** (microdados) [nan] → Não aplicável
+- **V4050** (microdados) [1] → Indica se o quesito foi respondido
+- **V40501** (microdados) [nan] → Não ou não aplicável
+- **V40501** (microdados) [1] → Em dinheiro
+- **V405011** (microdados) [nan] → Não aplicável
+- **V405011** (microdados) [1] → 1 a [0,5SM]
+- **V405011** (microdados) [2] → [0,5SM]+1 a [1SM]
+- **V405011** (microdados) [3] → [1SM]+1 a [2SM]
+- **V405011** (microdados) [4] → [2SM]+1 a [3SM]
+- **V405011** (microdados) [5] → [3SM]+1 a [5SM]
+- **V405011** (microdados) [6] → [5SM]+1 a [10SM]
+- **V405011** (microdados) [7] → [10SM]+1 a [20SM]
+- **V405011** (microdados) [8] → [20SM]+1 ou mais
+- **V40502** (microdados) [nan] → Não ou não aplicável
+- **V40502** (microdados) [2] → Em produtos ou mercadorias
+- **V405021** (microdados) [nan] → Não aplicável
+- **V405021** (microdados) [1] → 1 a [0,5SM]
+- **V405021** (microdados) [2] → [0,5SM]+1 a [1SM]
+- **V405021** (microdados) [3] → [1SM]+1 a [2SM]
+- **V405021** (microdados) [4] → [2SM]+1 a [3SM]
+- **V405021** (microdados) [5] → [3SM]+1 a [5SM]
+- **V405021** (microdados) [6] → [5SM]+1 a [10SM]
+- **V405021** (microdados) [7] → [10SM]+1 a [20SM]
+- **V405021** (microdados) [8] → [20SM]+1 ou mais
+- **V40503** (microdados) [nan] → Não ou não aplicável
+- **V40503** (microdados) [3] → Em benefícios
+- **V405031** (microdados) [nan] → Não aplicável
+- **V405031** (microdados) [1] → Pessoa recebendo somente em beneficios, exceto aprendizado
+- **V405031** (microdados) [2] → Aprendiz ou estagiário recebendo em aprendizado e outros beneficios
+- **V405031** (microdados) [3] → Aprendiz ou estagiário recebendo somente em aprendizado
+- **V4051** (microdados) [nan] → Não aplicável
+- **V4051** (microdados) [1] → Indica se o quesito foi respondido
+- **V40511** (microdados) [nan] → Não ou não aplicável
+- **V40511** (microdados) [1] → Em dinheiro
+- **V405111** (microdados) [nan] → Não aplicável
+- **V405111** (microdados) [0] → 0
+- **V405111** (microdados) [1] → 1 a [0,5SM]
+- **V405111** (microdados) [2] → [0,5SM]+1 a [1SM]
+- **V405111** (microdados) [3] → [1SM]+1 a [2SM]
+- **V405111** (microdados) [4] → [2SM]+1 a [3SM]
+- **V405111** (microdados) [5] → [3SM]+1 a [5SM]
+- **V405111** (microdados) [6] → [5SM]+1 a [10SM]
+- **V405111** (microdados) [7] → [10SM]+1 a [20SM]
+- **V405111** (microdados) [8] → [20SM]+1 ou mais
+- **V40512** (microdados) [nan] → Não ou não aplicável
+- **V40512** (microdados) [2] → Produtos ou mercadorias
+- **V405121** (microdados) [nan] → Não aplicável
+- **V405121** (microdados) [0] → 0
+- **V405121** (microdados) [1] → 1 a [0,5SM]
+- **V405121** (microdados) [2] → [0,5SM]+1 a [1SM]
+- **V405121** (microdados) [3] → [1SM]+1 a [2SM]
+- **V405121** (microdados) [4] → [2SM]+1 a [3SM]
+- **V405121** (microdados) [5] → [3SM]+1 a [5SM]
+- **V405121** (microdados) [6] → [5SM]+1 a [10SM]
+- **V405121** (microdados) [7] → [10SM]+1 a [20SM]
+- **V405121** (microdados) [8] → [20SM]+1 ou mais
+- **V4057** (microdados) [nan] → Não aplicável
+- **V4057** (microdados) [1] → Sim
+- **V4057** (microdados) [2] → Não
+- **V4058** (microdados) [nan] → Não aplicável
+- **V4058** (microdados) [1] → Indica se o quesito foi respondido
+- **V40581** (microdados) [nan] → Não ou não aplicável
+- **V40581** (microdados) [1] → Em dinheiro
+- **V405811** (microdados) [nan] → Não aplicável
+- **V405811** (microdados) [1] → 1 a [0,5SM]
+- **V405811** (microdados) [2] → [0,5SM]+1 a [1SM]
+- **V405811** (microdados) [3] → [1SM]+1 a [2SM]
+- **V405811** (microdados) [4] → [2SM]+1 a [3SM]
+- **V405811** (microdados) [5] → [3SM]+1 a [5SM]
+- **V405811** (microdados) [6] → [5SM]+1 a [10SM]
+- **V405811** (microdados) [7] → [10SM]+1 a [20SM]
+- **V405811** (microdados) [8] → [20SM]+1 ou mais
+- **V40582** (microdados) [nan] → Não aplicável
+- **V40582** (microdados) [2] → Em produtos ou mercadorias
+- **V40583** (microdados) [nan] → Não aplicável
+- **V40583** (microdados) [3] → Em benefícios
+- **V405831** (microdados) [nan] → Não aplicável
+- **V405831** (microdados) [1] → Pessoa recebendo somente em beneficios, exceto aprendizado
+- **V405831** (microdados) [2] → Aprendiz ou estagiário recebendo em aprendizado e outros beneficios
+- **V405831** (microdados) [3] → Aprendiz ou estagiário recebendo somente em aprendizado
+- **V40584** (microdados) [4] → Não remunerado
+- **V40584 ** (microdados) [nan] → Não aplicável
+- **V4059** (microdados) [nan] → Não aplicável
+- **V4059** (microdados) [1] → Indica se o quesito foi respondido
+- **V40591** (microdados) [nan] → Não ou não aplicável
+- **V40591** (microdados) [1] → Em dinheiro
+- **V405911** (microdados) [nan] → Não aplicável
+- **V405911** (microdados) [0] → 0
+- **V405911** (microdados) [1] → 1 a [0,5SM]
+- **V405911** (microdados) [2] → [0,5SM]+1 a [1SM]
+- **V405911** (microdados) [3] → [1SM]+1 a [2SM]
+- **V405911** (microdados) [4] → [2SM]+1 a [3SM]
+- **V405911** (microdados) [5] → [3SM]+1 a [5SM]
+- **V405911** (microdados) [6] → [5SM]+1 a [10SM]
+- **V405911** (microdados) [7] → [10SM]+1 a [20SM]
+- **V405911** (microdados) [8] → [20SM]+1 ou mais
+- **V40592** (microdados) [nan] → Não aplicável
+- **V40592** (microdados) [2] → Em produtos ou mercadorias
+- **V405921** (microdados) [nan] → Não aplicável
+- **V405921** (microdados) [0] → 0
+- **V405921** (microdados) [1] → 1 a [0,5SM]
+- **V405921** (microdados) [2] → [0,5SM]+1 a [1SM]
+- **V405921** (microdados) [3] → [1SM]+1 a [2SM]
+- **V405921** (microdados) [4] → [2SM]+1 a [3SM]
+- **V405921** (microdados) [5] → [3SM]+1 a [5SM]
+- **V405921** (microdados) [6] → [5SM]+1 a [10SM]
+- **V405921** (microdados) [7] → [10SM]+1 a [20SM]
+- **V405921** (microdados) [8] → [20SM]+1 ou mais
+- **V4063** (microdados) [nan] → Não aplicável
+- **V4063** (microdados) [1] → Sim
+- **V4063** (microdados) [2] → Não
+- **V4063A** (microdados) [nan] → Não aplicável
+- **V4063A** (microdados) [1] → Sim
+- **V4063A** (microdados) [2] → Não
+- **V4064** (microdados) [nan] → Não aplicável
+- **V4064** (microdados) [1] → Sim
+- **V4064** (microdados) [2] → Não
+- **V4064A** (microdados) [nan] → Não aplicável
+- **V4064A** (microdados) [1] → Sim
+- **V4064A** (microdados) [2] → Não
+- **V4071** (microdados) [nan] → Não aplicável
+- **V4071** (microdados) [1] → Sim
+- **V4071** (microdados) [2] → Não
+- **V4072** (microdados) [1] → Entrou diretamente em contato com empregador (em fábrica, fazenda, mercado, loja ou outro local de trabalho)
+- **V4072** (microdados) [2] → Fez ou inscreveu-se em concurso
+- **V4072** (microdados) [3] → Consultou agência privada ou sindicato
+- **V4072** (microdados) [4] → Consultou agência municipal, estadual ou o Sistema Nacional de Emprego (SINE) 
+- **V4072** (microdados) [5] → Colocou ou respondeu anúncio
+- **V4072** (microdados) [6] → Consultou parente, amigo ou colega
+- **V4072** (microdados) [7] → Buscou ajuda financeira para iniciar o próprio negócio
+- **V4072** (microdados) [8] → Procurou local, equipamento ou maquinário para iniciar o próprio negócio 
+- **V4072** (microdados) [9] → Solicitou registro ou licença para iniciar o próprio negócio
+- **V4072** (microdados) [10] → Tomou outra providência
+- **V4072** (microdados) [11] → Não tomou providência efetiva
+- **V4072A** (microdados) [nan] → Não aplicável
+- **V4072A** (microdados) [1] → Entrou em contato com empregador (pessoalmente, por telefone, por email ou pelo portal da empresa, inclusive enviando currículo)
+- **V4072A** (microdados) [2] → Colocou ou respondeu anúncio de trabalho em jornal ou revista
+- **V4072A** (microdados) [3] → Consultou ou inscreveu-se em agência de emprego privada ou sindicato
+- **V4072A** (microdados) [4] → Consultou ou inscreveu-se em agência de emprego municipal, estadual ou no Sistema Nacional de Emprego (SINE) 
+- **V4072A** (microdados) [5] → Fez ou inscreveu-se em concurso
+- **V4072A** (microdados) [6] → Consultou parente, amigo ou colega
+- **V4072A** (microdados) [7] → Tomou medida para iniciar o próprio negócio (recursos financeiros, local para instalação, equipamentos, legalização etc.) 
+- **V4072A** (microdados) [8] → Tomou outra providência, especifique: 
+- **V4072A** (microdados) [9] → Não tomou providência efetiva
+- **V4073** (microdados) [nan] → Não aplicável
+- **V4073** (microdados) [1] → Sim
+- **V4073** (microdados) [2] → Não
+- **V4074** (microdados) [nan] → Não aplicável
+- **V4074** (microdados) [1] → Conseguiu proposta de trabalho para começar após a semana de referência
+- **V4074** (microdados) [2] → Aguardando resposta de medida tomada para conseguir trabalho
+- **V4074** (microdados) [3] → Desistiu de procurar por não conseguir encontrar trabalho
+- **V4074** (microdados) [4] → Acha que não vai encontrar trabalho por ser muito jovem ou muito idoso
+- **V4074** (microdados) [5] → Tinha que cuidar de filho(s), de outro(s) dependente(s) ou dos afazeres domésticos
+- **V4074** (microdados) [6] → Estudo
+- **V4074** (microdados) [7] → Incapacidade física, mental ou doença permanente
+- **V4074** (microdados) [8] → Outro motivo
+- **V4074A** (microdados) [nan] → Não aplicável
+- **V4074A** (microdados) [1] → Conseguiu proposta de trabalho para começar após a semana de referência
+- **V4074A** (microdados) [2] → Estava aguardando resposta de medida tomada para conseguir trabalho
+- **V4074A** (microdados) [3] → Não conseguia trabalho adequado
+- **V4074A** (microdados) [4] → Não tinha experiência profissional ou qualificação
+- **V4074A** (microdados) [5] → Não conseguia trabalho por ser considerado muito jovem ou muito idoso
+- **V4074A** (microdados) [6] → Não havia trabalho na localidade
+- **V4074A** (microdados) [7] → Tinha que cuidar dos afazeres domésticos, do(s) filho(s) ou de outro(s) parente(s) 
+- **V4074A** (microdados) [8] → Estava estudando (curso de qualquer tipo ou por conta própria)
+- **V4074A** (microdados) [9] → Por problema de saúde ou gravidez
+- **V4074A** (microdados) [10] → Outro motivo, especifique
+- **V4075A** (microdados) [nan] → Não aplicável
+- **V4075A** (microdados) [1] → Menos de 1 mês
+- **V4075A** (microdados) [2] → De 1 mês a menos de 1 ano
+- **V4075A** (microdados) [3] → 1 ano ou mais
+- **V4076** (microdados) [nan] → Não aplicável
+- **V4076** (microdados) [1] → Menos de 1 mês
+- **V4076** (microdados) [2] → De 1 mês a menos de 1 ano
+- **V4076** (microdados) [3] → De 1 ano a menos de 2 anos
+- **V4076** (microdados) [4] → 2 anos ou mais
+- **V4077** (microdados) [nan] → Não aplicável
+- **V4077** (microdados) [1] → Sim
+- **V4077** (microdados) [2] → Não
+- **V4078** (microdados) [nan] → Não aplicável
+- **V4078** (microdados) [1] → Tinha que cuidar de filho(s), de outro(s) dependente(s) ou dos afazeres domésticos 
+- **V4078** (microdados) [2] → Estudo
+- **V4078** (microdados) [3] → Incapacidade física, mental ou doença permanente
+- **V4078** (microdados) [4] → Aposentado ou idoso para trabalhar
+- **V4078** (microdados) [5] → Muito jovem para trabalhar
+- **V4078** (microdados) [6] → Não desejava trabalhar
+- **V4078** (microdados) [7] → Outro motivo
+- **V4078A** (microdados) [nan] → Não aplicável
+- **V4078A** (microdados) [1] → Tinha que cuidar dos afazeres domésticos, do(s) filho(s) ou de outro(s) parente(s) 
+- **V4078A** (microdados) [2] → Estava estudando (em curso de qualquer tipo ou por conta própria)
+- **V4078A** (microdados) [3] → Por problema de saúde ou gravidez
+- **V4078A** (microdados) [4] → Por ser muito jovem ou muito idoso para trabalhar
+- **V4078A** (microdados) [5] → Por não querer trabalhar
+- **V4078A** (microdados) [6] → Outro motivo, especifique: 
+- **V4082** (microdados) [nan] → Não aplicável
+- **V4082** (microdados) [1] → Sim
+- **V4082** (microdados) [2] → Não
+- **VD2002** (microdados) [1] → Pessoa responsável
+- **VD2002** (microdados) [2] → Cônjuge ou companheiro(a)
+- **VD2002** (microdados) [3] → Filho(a)
+- **VD2002** (microdados) [4] → Enteado(a)
+- **VD2002** (microdados) [5] → Genro ou nora
+- **VD2002** (microdados) [6] → Pai, mãe, padrasto ou madrasta
+- **VD2002** (microdados) [7] → Sogro(a)
+- **VD2002** (microdados) [8] → Neto(a)
+- **VD2002** (microdados) [9] → Bisneto(a)
+- **VD2002** (microdados) [10] → Irmão ou irmã
+- **VD2002** (microdados) [11] → Avô ou avó
+- **VD2002** (microdados) [12] → Outro parente
+- **VD2002** (microdados) [13] → Agregado(a)
+- **VD2002** (microdados) [14] → Convivente
+- **VD2002** (microdados) [15] → Pensionista
+- **VD2002** (microdados) [16] → Empregado(a) doméstico(a)
+- **VD2002** (microdados) [17] → Parente do(a) empregado(a) doméstico(a)
+- **VD2004** (microdados) [1] → Unipessoal
+- **VD2004** (microdados) [2] → Nuclear
+- **VD2004** (microdados) [3] → Estendida
+- **VD2004** (microdados) [4] → Composta
+- **VD3004** (microdados) [nan] → Não aplicável
+- **VD3004** (microdados) [1] → Sem instrução e menos de 1 ano de estudo
+- **VD3004** (microdados) [2] → Fundamental incompleto ou equivalente
+- **VD3004** (microdados) [3] → Fundamental completo ou equivalente
+- **VD3004** (microdados) [4] → Médio incompleto ou equivalente
+- **VD3004** (microdados) [5] → Médio completo ou equivalente
+- **VD3004** (microdados) [6] → Superior incompleto ou equivalente
+- **VD3004** (microdados) [7] → Superior completo
+- **VD3006** (microdados) [nan] → Não aplicável
+- **VD3006** (microdados) [1] → Sem instrução e menos de 1 ano de estudo
+- **VD3006** (microdados) [2] → 1 a 4 anos de estudo
+- **VD3006** (microdados) [3] → 5 a 8 anos de estudo
+- **VD3006** (microdados) [4] → 9 a 11 anos de estudo
+- **VD3006** (microdados) [5] → 12 a 15 anos de estudo
+- **VD3006** (microdados) [6] → 16 anos ou mais de estudo
+- **VD4001** (microdados) [nan] → Não aplicável
+- **VD4001** (microdados) [1] → Pessoas na força de trabalho
+- **VD4001** (microdados) [2] → Pessoas fora da força de trabalho
+- **VD4002** (microdados) [nan] → Não aplicável
+- **VD4002** (microdados) [1] → Pessoas ocupadas
+- **VD4002** (microdados) [2] → Pessoas desocupadas
+- **VD4003** (microdados) [nan] → Não aplicável
+- **VD4003** (microdados) [1] → Pessoas fora da força de trabalho e na força de trabalho potencial
+- **VD4003** (microdados) [2] → Pessoas fora da força de trabalho e fora da força de trabalho potencial
+- **VD4004** (microdados) [nan] → Não aplicável
+- **VD4004** (microdados) [1] → Pessoas subocupadas
+- **VD4004A** (microdados) [nan] → Não aplicável
+- **VD4004A** (microdados) [1] → Pessoas subocupadas
+- **VD4005** (microdados) [nan] → Não aplicável
+- **VD4005** (microdados) [1] → Pessoas desalentadas
+- **VD4007** (microdados) [nan] → Não aplicável
+- **VD4007** (microdados) [1] → Empregado (inclusive trabalhador doméstico)
+- **VD4007** (microdados) [2] → Empregador
+- **VD4007** (microdados) [3] → Conta própria
+- **VD4007** (microdados) [4] → Trabalhador familiar auxiliar
+- **VD4008** (microdados) [nan] → Não aplicável
+- **VD4008** (microdados) [1] → Empregado no setor privado
+- **VD4008** (microdados) [2] → Trabalhador doméstico
+- **VD4008** (microdados) [3] → Empregado no setor público (inclusive servidor estatutário e militar)
+- **VD4008** (microdados) [4] → Empregador
+- **VD4008** (microdados) [5] → Conta-própria
+- **VD4008** (microdados) [6] → Trabalhador familiar auxiliar
+- **VD4009** (microdados) [nan] → Não aplicável
+- **VD4009** (microdados) [1] → Empregado no setor privado com carteira de trabalho assinada
+- **VD4009** (microdados) [2] → Empregado no setor privado sem carteira de trabalho assinada
+- **VD4009** (microdados) [3] → Trabalhador doméstico com carteira de trabalho assinada
+- **VD4009** (microdados) [4] → Trabalhador doméstico sem carteira de trabalho assinada
+- **VD4009** (microdados) [5] → Empregado no setor público com carteira de trabalho assinada
+- **VD4009** (microdados) [6] → Empregado no setor público sem carteira de trabalho assinada
+- **VD4009** (microdados) [7] → Militar e servidor estatutário
+- **VD4009** (microdados) [8] → Empregador
+- **VD4009** (microdados) [9] → Conta-própria
+- **VD4009** (microdados) [10] → Trabalhador familiar auxiliar
+- **VD4010** (microdados) [nan] → Não aplicável
+- **VD4010** (microdados) [1] → Agricultura, pecuária, produção florestal, pesca e aquicultura 
+- **VD4010** (microdados) [2] → Indústria geral
+- **VD4010** (microdados) [3] → Construção
+- **VD4010** (microdados) [4] → Comércio, reparação de veículos automotores e motocicletas
+- **VD4010** (microdados) [5] → Transporte, armazenagem e correio 
+- **VD4010** (microdados) [6] → Alojamento e alimentação 
+- **VD4010** (microdados) [7] → Informação, comunicação e atividades financeiras, imobiliárias, profissionais e administrativas
+- **VD4010** (microdados) [8] → Administração pública, defesa e seguridade social 
+- **VD4010** (microdados) [9] → Educação, saúde humana e serviços sociais
+- **VD4010** (microdados) [10] → Outros Serviços
+- **VD4010** (microdados) [11] → Serviços domésticos
+- **VD4010** (microdados) [12] → Atividades mal definidas
+- **VD4011** (microdados) [nan] → Não aplicável
+- **VD4011** (microdados) [1] → Diretores e gerentes
+- **VD4011** (microdados) [2] → Profissionais das ciências e intelectuais
+- **VD4011** (microdados) [3] → Técnicos e profissionais de nível médio
+- **VD4011** (microdados) [4] → Trabalhadores de apoio administrativo
+- **VD4011** (microdados) [5] → Trabalhadores dos serviços, vendedores dos comércios e mercados
+- **VD4011** (microdados) [6] → Trabalhadores qualificados da agropecuária, florestais, da caça e da pesca
+- **VD4011** (microdados) [7] → Trabalhadores qualificados, operários e artesões da construção, das artes mecânicas e outros ofícios
+- **VD4011** (microdados) [8] → Operadores de instalações e máquinas e montadores
+- **VD4011** (microdados) [9] → Ocupações elementares
+- **VD4011** (microdados) [10] → Membros das forças armadas, policiais e bombeiros militares
+- **VD4011** (microdados) [11] → Ocupações maldefinidas
+- **VD4012** (microdados) [nan] → Não aplicável
+- **VD4012** (microdados) [1] → Contribuinte
+- **VD4012** (microdados) [2] → Não contribuinte
+- **VD4013** (microdados) [nan] → Não aplicável
+- **VD4013** (microdados) [1] → Até 14 horas
+- **VD4013** (microdados) [2] → 15 a 39 horas
+- **VD4013** (microdados) [3] → 40 a 44 horas
+- **VD4013** (microdados) [4] → 45 a 48 horas
+- **VD4013** (microdados) [5] → 49 horas ou mais
+- **VD4014** (microdados) [nan] → Não aplicável
+- **VD4014** (microdados) [1] → Até 14 horas
+- **VD4014** (microdados) [2] → 15 a 39 horas
+- **VD4014** (microdados) [3] → 40 a 44 horas
+- **VD4014** (microdados) [4] → 45 a 48 horas
+- **VD4014** (microdados) [5] → 49 horas ou mais
+- **VD4015** (microdados) [nan] → Não aplicável
+- **VD4015** (microdados) [1] → Remuneração em dinheiro, produtos ou mercadorias no trabalho principal
+- **VD4015** (microdados) [2] → Remuneração em benefícios ou sem remuneração no trabalho principal
+- **VD4018** (microdados) [nan] → Não aplicável
+- **VD4018** (microdados) [1] → Remuneração em dinheiro, produtos ou mercadorias em pelo menos um dos trabalhos
+- **VD4018** (microdados) [2] → Remuneração em benefícios ou sem remuneração em todos os trabalhos
+- **VD4023** (microdados) [nan] → Não aplicável
+- **VD4023** (microdados) [1] → Tinha que cuidar dos afazeres domésticos, do(s) filho(s) ou de outro(s) dependente(s)
+- **VD4023** (microdados) [2] → Estava estudando
+- **VD4023** (microdados) [3] → Por incapacidade física, mental ou doença permanente
+- **VD4023** (microdados) [4] → Por ser muito jovem ou muito idoso para trabalhar
+- **VD4023** (microdados) [5] → Por não querer trabalhar
+- **VD4023** (microdados) [6] → Por outro motivo
+- **VD4030** (microdados) [nan] → Não aplicável
+- **VD4030** (microdados) [1] → Tinha que cuidar dos afazeres domésticos, do(s) filho(s) ou de outro(s) parente(s)
+- **VD4030** (microdados) [2] → Estava estudando
+- **VD4030** (microdados) [3] → Por problema de saúde ou gravidez
+- **VD4030** (microdados) [4] → Por ser muito jovem ou muito idoso para trabalhar
+- **VD4030** (microdados) [5] → Por não querer trabalhar
+- **VD4030** (microdados) [6] → Por outro motivo
+- **VD4036** (microdados) [nan] → Não aplicável
+- **VD4036** (microdados) [1] → Até 14 horas
+- **VD4036** (microdados) [2] → 15 a 39 horas
+- **VD4036** (microdados) [3] → 40 a 44 horas
+- **VD4036** (microdados) [4] → 45 a 48 horas
+- **VD4036** (microdados) [5] → 49 horas ou mais
+- **VD4037** (microdados) [nan] → Não aplicável
+- **VD4037** (microdados) [1] → Até 14 horas
+- **VD4037** (microdados) [2] → 15 a 39 horas
+- **VD4037** (microdados) [3] → 40 a 44 horas
+- **VD4037** (microdados) [4] → 45 a 48 horas
+- **VD4037** (microdados) [5] → 49 horas ou mais
+- **capital** (microdados) [11] → Município de Porto Velho (RO)
+- **capital** (microdados) [12] → Município de Rio Branco (AC)
+- **capital** (microdados) [13] → Município de Manaus (AM)
+- **capital** (microdados) [14] → Município de Boa Vista (RR)
+- **capital** (microdados) [15] → Município de Belém (PA)
+- **capital** (microdados) [16] → Município de Macapá (AP)
+- **capital** (microdados) [17] → Município de Palmas (TO)
+- **capital** (microdados) [21] → Município de São Luís (MA)
+- **capital** (microdados) [22] → Município de Teresina (PI)
+- **capital** (microdados) [23] → Município de Fortaleza (CE)
+- **capital** (microdados) [24] → Município de Natal (RN)
+- **capital** (microdados) [25] → Município de João Pessoa (PB)
+- **capital** (microdados) [26] → Município de Recife (PE)
+- **capital** (microdados) [27] → Município de Maceió (AL)
+- **capital** (microdados) [28] → Município de Aracaju (SE)
+- **capital** (microdados) [29] → Município de Salvador (BA)
+- **capital** (microdados) [31] → Município de Belo Horizonte (MG)
+- **capital** (microdados) [32] → Município de Vitória (ES)
+- **capital** (microdados) [33] → Município de Rio de Janeiro (RJ)
+- **capital** (microdados) [35] → Município de São Paulo (SP)
+- **capital** (microdados) [41] → Município de Curitiba (PR)
+- **capital** (microdados) [42] → Município de Florianópolis (SC)
+- **capital** (microdados) [43] → Município de Porto Alegre (RS)
+- **capital** (microdados) [50] → Município de Campo Grande (MS)
+- **capital** (microdados) [51] → Município de Cuiabá (MT)
+- **capital** (microdados) [52] → Município de Goiânia (GO)
+- **capital** (microdados) [53] → Município de Brasília (DF)
+- **rm_ride** (microdados) [13] → Região Metropolitana de Manaus (AM)
+- **rm_ride** (microdados) [15] → Região Metropolitana de Belém (PA)
+- **rm_ride** (microdados) [16] → Região Metropolitana de Macapá (AP)
+- **rm_ride** (microdados) [21] → Região Metropolitana de Grande São Luís (MA)
+- **rm_ride** (microdados) [22] → Região Administrativa Integrada de Desenvolvimento da Grande Teresina (PI)
+- **rm_ride** (microdados) [23] → Região Metropolitana de Fortaleza (CE)
+- **rm_ride** (microdados) [24] → Região Metropolitana de Natal (RN)
+- **rm_ride** (microdados) [25] → Região Metropolitana de João Pessoa (PB)
+- **rm_ride** (microdados) [26] → Região Metropolitana de Recife (PE)
+- **rm_ride** (microdados) [27] → Região Metropolitana de Maceió (AL)
+- **rm_ride** (microdados) [28] → Região Metropolitana de Aracaju (SE)
+- **rm_ride** (microdados) [29] → Região Metropolitana de Salvador (BA)
+- **rm_ride** (microdados) [31] → Região Metropolitana de Belo Horizonte (MG)
+- **rm_ride** (microdados) [32] → Região Metropolitana de Grande Vitória (ES)
+- **rm_ride** (microdados) [33] → Região Metropolitana de Rio de Janeiro (RJ)
+- **rm_ride** (microdados) [35] → Região Metropolitana de São Paulo (SP)
+- **rm_ride** (microdados) [41] → Região Metropolitana de Curitiba (PR)
+- **rm_ride** (microdados) [42] → Região Metropolitana de Florianópolis (SC)
+- **rm_ride** (microdados) [43] → Região Metropolitana de Porto Alegre (RS)
+- **rm_ride** (microdados) [51] → Região Metropolitana de Vale do Rio Cuiabá (MT)
+- **rm_ride** (microdados) [52] → Região Metropolitana de Goiânia (GO)
+- **V1022** (rendimentos_outras_fontes) [1] → Urbana
+- **V1022** (rendimentos_outras_fontes) [2] → Rural
+- **V1023** (rendimentos_outras_fontes) [1] → Capital
+- **V1023** (rendimentos_outras_fontes) [2] → Resto da RM (Região Metropolitana, excluindo a capital)
+- **V1023** (rendimentos_outras_fontes) [3] → Resto da RIDE (Região Integrada de Desenvolvimento Econômico, excluindo a capital) 
+- **V1023** (rendimentos_outras_fontes) [4] → Resto da UF  (Unidade da Federação, excluindo a região metropolitana e a RIDE)
+- **V5001** (rendimentos_outras_fontes) [1] → Sim
+- **V5001** (rendimentos_outras_fontes) [2] → Não
+- **V50011** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50011** (rendimentos_outras_fontes) [1] → Sim
+- **V5001A** (rendimentos_outras_fontes) [1] → Sim
+- **V5001A** (rendimentos_outras_fontes) [2] → Não
+- **V5002** (rendimentos_outras_fontes) [1] → Sim
+- **V5002** (rendimentos_outras_fontes) [2] → Não
+- **V50021** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50021** (rendimentos_outras_fontes) [1] → Sim
+- **V5002A** (rendimentos_outras_fontes) [1] → Sim
+- **V5002A** (rendimentos_outras_fontes) [2] → Não
+- **V5003** (rendimentos_outras_fontes) [1] → Sim
+- **V5003** (rendimentos_outras_fontes) [2] → Não
+- **V50031** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50031** (rendimentos_outras_fontes) [1] → Sim
+- **V5003A** (rendimentos_outras_fontes) [1] → Sim
+- **V5003A** (rendimentos_outras_fontes) [2] → Não
+- **V5004** (rendimentos_outras_fontes) [1] → Sim
+- **V5004** (rendimentos_outras_fontes) [2] → Não
+- **V50041** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50041** (rendimentos_outras_fontes) [1] → Sim
+- **V5004A** (rendimentos_outras_fontes) [1] → Sim
+- **V5004A** (rendimentos_outras_fontes) [2] → Não
+- **V5005** (rendimentos_outras_fontes) [1] → Sim
+- **V5005** (rendimentos_outras_fontes) [2] → Não
+- **V50051** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50051** (rendimentos_outras_fontes) [1] → Sim
+- **V5005A** (rendimentos_outras_fontes) [1] → Sim
+- **V5005A** (rendimentos_outras_fontes) [2] → Não
+- **V5006** (rendimentos_outras_fontes) [1] → Sim
+- **V5006** (rendimentos_outras_fontes) [2] → Não
+- **V50061** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50061** (rendimentos_outras_fontes) [1] → Sim
+- **V5006A** (rendimentos_outras_fontes) [1] → Sim
+- **V5006A** (rendimentos_outras_fontes) [2] → Não
+- **V5007** (rendimentos_outras_fontes) [1] → Sim
+- **V5007** (rendimentos_outras_fontes) [2] → Não
+- **V50071** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50071** (rendimentos_outras_fontes) [1] → Sim
+- **V5007A** (rendimentos_outras_fontes) [1] → Sim
+- **V5007A** (rendimentos_outras_fontes) [2] → Não
+- **V5008** (rendimentos_outras_fontes) [1] → Sim
+- **V5008** (rendimentos_outras_fontes) [2] → Não
+- **V50081** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50081** (rendimentos_outras_fontes) [1] → Sim
+- **V5008A** (rendimentos_outras_fontes) [1] → Sim
+- **V5008A** (rendimentos_outras_fontes) [2] → Não
+- **V5009** (rendimentos_outras_fontes) [1] → Sim
+- **V5009** (rendimentos_outras_fontes) [2] → Não
+- **V50091** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50091** (rendimentos_outras_fontes) [1] → Sim
+- **V5010** (rendimentos_outras_fontes) [1] → Sim
+- **V5010** (rendimentos_outras_fontes) [2] → Não
+- **V50101** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50101** (rendimentos_outras_fontes) [1] → Sim
+- **V5011** (rendimentos_outras_fontes) [1] → Sim
+- **V5011** (rendimentos_outras_fontes) [2] → Não
+- **V50111** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50111** (rendimentos_outras_fontes) [1] → Sim
+- **V5012** (rendimentos_outras_fontes) [1] → Sim
+- **V5012** (rendimentos_outras_fontes) [2] → Não
+- **V50121** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50121** (rendimentos_outras_fontes) [1] → Sim
+- **V5013** (rendimentos_outras_fontes) [1] → Sim
+- **V5013** (rendimentos_outras_fontes) [2] → Não
+- **V50131** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **V50131** (rendimentos_outras_fontes) [1] → Sim
+- **VD5003** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **VD5003** (rendimentos_outras_fontes) [1] → Até 0,25 salário mínimo
+- **VD5003** (rendimentos_outras_fontes) [2] → Mais de 0,25 até 0,5 salário mínimo
+- **VD5003** (rendimentos_outras_fontes) [3] → Mais de 0,5 até 1 salário mínimo
+- **VD5003** (rendimentos_outras_fontes) [4] → Mais de 1 até 2 salários mínimos
+- **VD5003** (rendimentos_outras_fontes) [5] → Mais de 2 até 3 salários mínimos
+- **VD5003** (rendimentos_outras_fontes) [6] → Mais de 3 até 5 salários mínimos
+- **VD5003** (rendimentos_outras_fontes) [7] → Mais de 5 salários mínimos
+- **VD5006** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **VD5006** (rendimentos_outras_fontes) [1] → Até 0,25 salário mínimo
+- **VD5006** (rendimentos_outras_fontes) [2] → Mais de 0,25 até 0,5 salário mínimo
+- **VD5006** (rendimentos_outras_fontes) [3] → Mais de 0,5 até 1 salário mínimo
+- **VD5006** (rendimentos_outras_fontes) [4] → Mais de 1 até 2 salários mínimos
+- **VD5006** (rendimentos_outras_fontes) [5] → Mais de 2 até 3 salários mínimos
+- **VD5006** (rendimentos_outras_fontes) [6] → Mais de 3 até 5 salários mínimos
+- **VD5006** (rendimentos_outras_fontes) [7] → Mais de 5 salários mínimos
+- **VD5009** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **VD5009** (rendimentos_outras_fontes) [1] → Até 0,25 salário mínimo
+- **VD5009** (rendimentos_outras_fontes) [2] → Mais de 0,25 até 0,5 salário mínimo
+- **VD5009** (rendimentos_outras_fontes) [3] → Mais de 0,5 até 1 salário mínimo
+- **VD5009** (rendimentos_outras_fontes) [4] → Mais de 1 até 2 salários mínimos
+- **VD5009** (rendimentos_outras_fontes) [5] → Mais de 2 até 3 salários mínimos
+- **VD5009** (rendimentos_outras_fontes) [6] → Mais de 3 até 5 salários mínimos
+- **VD5009** (rendimentos_outras_fontes) [7] → Mais de 5 salários mínimos
+- **VD5012** (rendimentos_outras_fontes) [nan] → Não aplicável
+- **VD5012** (rendimentos_outras_fontes) [1] → Até 0,25 salário mínimo
+- **VD5012** (rendimentos_outras_fontes) [2] → Mais de 0,25 até 0,5 salário mínimo
+- **VD5012** (rendimentos_outras_fontes) [3] → Mais de 0,5 até 1 salário mínimo
+- **VD5012** (rendimentos_outras_fontes) [4] → Mais de 1 até 2 salários mínimos
+- **VD5012** (rendimentos_outras_fontes) [5] → Mais de 2 até 3 salários mínimos
+- **VD5012** (rendimentos_outras_fontes) [6] → Mais de 3 até 5 salários mínimos
+- **VD5012** (rendimentos_outras_fontes) [7] → Mais de 5 salários mínimos
+- **capital** (rendimentos_outras_fontes) [11] → Município de Porto Velho (RO)
+- **capital** (rendimentos_outras_fontes) [12] → Município de Rio Branco (AC)
+- **capital** (rendimentos_outras_fontes) [13] → Município de Manaus (AM)
+- **capital** (rendimentos_outras_fontes) [14] → Município de Boa Vista (RR)
+- **capital** (rendimentos_outras_fontes) [15] → Município de Belém (PA)
+- **capital** (rendimentos_outras_fontes) [16] → Município de Macapá (AP)
+- **capital** (rendimentos_outras_fontes) [17] → Município de Palmas (TO)
+- **capital** (rendimentos_outras_fontes) [21] → Município de São Luís (MA)
+- **capital** (rendimentos_outras_fontes) [22] → Município de Teresina (PI)
+- **capital** (rendimentos_outras_fontes) [23] → Município de Fortaleza (CE)
+- **capital** (rendimentos_outras_fontes) [24] → Município de Natal (RN)
+- **capital** (rendimentos_outras_fontes) [25] → Município de João Pessoa (PB)
+- **capital** (rendimentos_outras_fontes) [26] → Município de Recife (PE)
+- **capital** (rendimentos_outras_fontes) [27] → Município de Maceió (AL)
+- **capital** (rendimentos_outras_fontes) [28] → Município de Aracaju (SE)
+- **capital** (rendimentos_outras_fontes) [29] → Município de Salvador (BA)
+- **capital** (rendimentos_outras_fontes) [31] → Município de Belo Horizonte (MG)
+- **capital** (rendimentos_outras_fontes) [32] → Município de Vitória (ES)
+- **capital** (rendimentos_outras_fontes) [33] → Município de Rio de Janeiro (RJ)
+- **capital** (rendimentos_outras_fontes) [35] → Município de São Paulo (SP)
+- **capital** (rendimentos_outras_fontes) [41] → Município de Curitiba (PR)
+- **capital** (rendimentos_outras_fontes) [42] → Município de Florianópolis (SC)
+- **capital** (rendimentos_outras_fontes) [43] → Município de Porto Alegre (RS)
+- **capital** (rendimentos_outras_fontes) [50] → Município de Campo Grande (MS)
+- **capital** (rendimentos_outras_fontes) [51] → Município de Cuiabá (MT)
+- **capital** (rendimentos_outras_fontes) [52] → Município de Goiânia (GO)
+- **capital** (rendimentos_outras_fontes) [53] → Município de Brasília (DF)
+- **rm_ride** (rendimentos_outras_fontes) [13] → Região Metropolitana de Manaus (AM)
+- **rm_ride** (rendimentos_outras_fontes) [15] → Região Metropolitana de Belém (PA)
+- **rm_ride** (rendimentos_outras_fontes) [16] → Região Metropolitana de Macapá (AP)
+- **rm_ride** (rendimentos_outras_fontes) [21] → Região Metropolitana de Grande São Luís (MA)
+- **rm_ride** (rendimentos_outras_fontes) [22] → Região Administrativa Integrada de Desenvolvimento da Grande Teresina (PI)
+- **rm_ride** (rendimentos_outras_fontes) [23] → Região Metropolitana de Fortaleza (CE)
+- **rm_ride** (rendimentos_outras_fontes) [24] → Região Metropolitana de Natal (RN)
+- **rm_ride** (rendimentos_outras_fontes) [25] → Região Metropolitana de João Pessoa (PB)
+- **rm_ride** (rendimentos_outras_fontes) [26] → Região Metropolitana de Recife (PE)
+- **rm_ride** (rendimentos_outras_fontes) [27] → Região Metropolitana de Maceió (AL)
+- **rm_ride** (rendimentos_outras_fontes) [28] → Região Metropolitana de Aracaju (SE)
+- **rm_ride** (rendimentos_outras_fontes) [29] → Região Metropolitana de Salvador (BA)
+- **rm_ride** (rendimentos_outras_fontes) [31] → Região Metropolitana de Belo Horizonte (MG)
+- **rm_ride** (rendimentos_outras_fontes) [32] → Região Metropolitana de Grande Vitória (ES)
+- **rm_ride** (rendimentos_outras_fontes) [33] → Região Metropolitana de Rio de Janeiro (RJ)
+- **rm_ride** (rendimentos_outras_fontes) [35] → Região Metropolitana de São Paulo (SP)
+- **rm_ride** (rendimentos_outras_fontes) [41] → Região Metropolitana de Curitiba (PR)
+- **rm_ride** (rendimentos_outras_fontes) [42] → Região Metropolitana de Florianópolis (SC)
+- **rm_ride** (rendimentos_outras_fontes) [43] → Região Metropolitana de Porto Alegre (RS)
+- **rm_ride** (rendimentos_outras_fontes) [51] → Região Metropolitana de Vale do Rio Cuiabá (MT)
+- **rm_ride** (rendimentos_outras_fontes) [52] → Região Metropolitana de Goiânia (GO)
