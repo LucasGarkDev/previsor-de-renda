@@ -1,0 +1,95 @@
+############################
+# Ambiente Python
+############################
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+############################
+# Variáveis de ambiente
+############################
+.env
+.env.*
+!.env.example
+
+############################
+# Dados (NUNCA versionar)
+############################
+data/raw/
+data/interim/
+data/processed/
+data/external/
+
+############################
+# Modelos treinados / artefatos
+############################
+*.joblib
+*.pkl
+*.onnx
+*.h5
+*.pt
+
+############################
+# Jupyter
+############################
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+############################
+# Frontend (React / Vite)
+############################
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.*
+
+############################
+# Backend (FastAPI)
+############################
+backend/__pycache__/
+backend/.env
+backend/.env.*
+
+############################
+# Logs e relatórios
+############################
+*.log
+logs/
+reports/
+
+############################
+# Docker
+############################
+docker/*.env
+docker/.env
+
+############################
+# IDEs / Editores
+############################
+.vscode/
+.idea/
+*.swp
+*.swo
+
+############################
+# Sistema operacional
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Coverage / CI
+############################
+.coverage
+htmlcov/
+
+############################
+# BigQuery exports temporários
+############################
+**/bigquery_exports/
