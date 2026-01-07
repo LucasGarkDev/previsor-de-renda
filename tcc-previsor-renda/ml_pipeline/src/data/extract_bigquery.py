@@ -1,15 +1,16 @@
 """
 Extração de dados da PNAD tradicional via BigQuery
-Salva os dados brutos recortados em data/raw
+(EXTRACT – BigQuery → data/raw)
 """
 
 from google.cloud import bigquery
-import pandas as pd
 
 from ml_pipeline.src.config.settings import (
     BQ_PROJECT_ID,
+    BQ_DATA_PROJECT,
     BQ_DATASET_PNAD,
     BQ_TABLE_PESSOA,
+    BQ_LOCATION,
     DATA_RAW_DIR,
     SAMPLE_SIZE,
     MIN_AGE,
@@ -17,53 +18,77 @@ from ml_pipeline.src.config.settings import (
     FILTER_TRABALHOU_SEMANA,
     RANDOM_SEED,
     FEATURE_COLUMNS,
-    TARGET_COLUMN
+    TARGET_COLUMN,
+    PNAD_COLUMN_MAP,
 )
+
+from ml_pipeline.src.utils.io import write_parquet
+from ml_pipeline.src.utils.logging import get_logger
+
+logger = get_logger(__name__)
 
 
 def build_query() -> str:
     """
-    Constrói a query SQL de extração baseada nas configurações globais.
+    Constrói a query SQL usando o mapa conceitual → técnico da PNAD.
     """
-    selected_columns = FEATURE_COLUMNS + [TARGET_COLUMN]
-    columns_sql = ", ".join(selected_columns)
 
+    # SELECT com alias conceitual
+    select_expressions = [
+        f"{PNAD_COLUMN_MAP[col]} AS {col}"
+        for col in FEATURE_COLUMNS
+    ]
+
+    # Variável alvo (nome técnico correto)
+    select_expressions.append(
+        f"{TARGET_COLUMN} AS {TARGET_COLUMN}"
+    )
+
+    columns_sql = ",\n        ".join(select_expressions)
+
+    # WHERE – SEMPRE com nomes técnicos
     where_clauses = [f"idade >= {MIN_AGE}"]
 
     if FILTER_OCUPADOS:
+        # ocupacao_semana é INTEGER
         where_clauses.append("ocupacao_semana = 1")
 
     if FILTER_TRABALHOU_SEMANA:
-        where_clauses.append("trabalhou_semana = 1")
+        # trabalhou_semana é STRING
+        where_clauses.append("trabalhou_semana = '1'")
 
     where_sql = " AND ".join(where_clauses)
 
     query = f"""
     SELECT
         {columns_sql}
-    FROM `{BQ_DATASET_PNAD}.{BQ_TABLE_PESSOA}`
+    FROM `{BQ_DATA_PROJECT}.{BQ_DATASET_PNAD}.{BQ_TABLE_PESSOA}`
     WHERE {where_sql}
-    ORDER BY RAND({RANDOM_SEED})
+    ORDER BY RAND()
     LIMIT {SAMPLE_SIZE}
     """
-
     return query
 
 
 def extract_pnad():
-    """
-    Executa a extração da PNAD e salva o resultado em Parquet.
-    """
+    logger.info("Iniciando extração da PNAD via BigQuery")
+
     client = bigquery.Client(project=BQ_PROJECT_ID)
 
     query = build_query()
-    df = client.query(query).to_dataframe()
+
+    job = client.query(
+        query,
+        location=BQ_LOCATION
+    )
+
+    df = job.to_dataframe()
 
     output_path = DATA_RAW_DIR / "pnad_extract.parquet"
-    df.to_parquet(output_path, index=False)
+    write_parquet(df, output_path)
 
-    print(f"Extração concluída: {len(df)} registros")
-    print(f"Arquivo salvo em: {output_path}")
+    logger.info(f"Extração concluída com {len(df)} registros")
+    logger.info(f"Arquivo salvo em: {output_path}")
 
     return output_path
 

@@ -34,7 +34,10 @@ for _dir in [DATA_RAW_DIR, DATA_INTERIM_DIR, DATA_PROCESSED_DIR]:
 # ======================================================
 
 # Dataset principal definido no contrato de dados
-BQ_PROJECT_ID = None  # usa o projeto padrão autenticado (ADC)
+BQ_PROJECT_ID = "shining-rush-477809-m9" # usa o projeto padrão autenticado (ADC)
+
+# Projeto que CONTÉM os dados
+BQ_DATA_PROJECT = "basedosdados"
 BQ_DATASET_PNAD = "br_ibge_pnad"
 
 # Tabela principal (nível pessoa)
@@ -42,6 +45,36 @@ BQ_TABLE_PESSOA = "microdados_compatibilizados_pessoa"
 
 # Localização do BigQuery (default: US)
 BQ_LOCATION = "US"
+
+# ======================================================
+# MAPA CONCEITUAL → COLUNAS TÉCNICAS (PNAD)
+# ======================================================
+
+PNAD_COLUMN_MAP = {
+    # Capital humano
+    "anos_estudo": "anos_estudo",
+    "ultimo_grau_frequentado": "ultimo_grau_frequentado",
+    "sabe_ler_escrever": "sabe_ler_escrever",
+
+    # Experiência
+    "idade": "idade",
+
+    # Demografia
+    "sexo": "sexo",
+    "raca_cor": "raca_cor",
+
+    # Trabalho
+    "trabalhou_semana": "trabalhou_semana",
+    "ocupacao_semana": "ocupacao_semana",
+    "atividade_ramo_negocio_semana": "atividade_ramo_negocio_semana",
+    "posicao_ocupacao": "posicao_ocupacao",
+    "possui_carteira_assinada": "possui_carteira_assinada",
+    "horas_trabalhadas_semana": "horas_trabalhadas_semana",
+
+    # Geografia (nível pessoa)
+    "sigla_uf": "sigla_uf",
+    "regiao": "id_regiao",
+}
 
 # ======================================================
 # FILTROS DO ESTUDO (DECISÕES METODOLÓGICAS)
@@ -71,7 +104,7 @@ RANDOM_SEED = 42
 # VARIÁVEL ALVO
 # ======================================================
 
-TARGET_COLUMN = "renda_mensal_ocupacao_principal_deflacionada"
+TARGET_COLUMN = "renda_mensal_ocupacao_principal_deflacionado"
 
 # Variável alternativa para análises de robustez
 ALTERNATIVE_TARGET_COLUMN = "renda_mensal_todos_trabalhos_deflacionada"
@@ -104,8 +137,8 @@ FEATURE_COLUMNS = [
     # Contexto geográfico
     "sigla_uf",
     "regiao",
-    "zona_urbana",
-    "regiao_metropolitana",
+    # "zona_urbana",
+    # "regiao_metropolitana",
 ]
 
 # ======================================================
