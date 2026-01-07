@@ -1,0 +1,6 @@
+{
+  "model": "ElasticNet",
+  "type": "baseline",
+  "target": "renda_mensal_ocupacao_principal_deflacionado",
+  "status": "validado"
+}
