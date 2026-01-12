@@ -1,0 +1,10 @@
+{
+  "model_name": "xgboost",
+  "target": "renda_mensal_ocupacao_principal_deflacionado",
+  "metrics": {
+    "rmse": 2511.667051452339,
+    "mae": 1545.2664387211885,
+    "r2": 0.15361616572571413
+  },
+  "status": "validado"
+}

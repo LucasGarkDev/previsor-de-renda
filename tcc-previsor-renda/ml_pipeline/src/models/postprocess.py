@@ -36,4 +36,4 @@ def run_postprocess(model_name: str):
 
 if __name__ == "__main__":
     # exemplo:
-    run_postprocess("hist_gb")
+    run_postprocess("xgboost")

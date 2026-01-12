@@ -21,7 +21,7 @@ from ml_pipeline.src.models.modelsList import MODEL_REGISTRY
 logger = get_logger(__name__)
 
 
-def train(model_name: str = "hist_gb"):
+def train(model_name: str = "xgboost"):
     logger.info(f"Iniciando treino do modelo: {model_name}")
 
     if model_name not in MODEL_REGISTRY:
@@ -130,5 +130,5 @@ def train(model_name: str = "hist_gb"):
 
 
 if __name__ == "__main__":
-    train("hist_gb")
+    train("xgboost")
 
