@@ -1,7 +1,6 @@
 import joblib
 from pathlib import Path
 
-from sklearn.linear_model import ElasticNet
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
@@ -16,11 +15,20 @@ from ml_pipeline.src.config.settings import (
     DATA_PROCESSED_DIR,
 )
 
+# 🔌 Factory de modelos
+from ml_pipeline.src.models.modelsList import MODEL_REGISTRY
+
 logger = get_logger(__name__)
 
 
-def train_baseline():
-    logger.info("Iniciando treino do modelo baseline (ElasticNet)")
+def train(model_name: str = "hist_gb"):
+    logger.info(f"Iniciando treino do modelo: {model_name}")
+
+    if model_name not in MODEL_REGISTRY:
+        raise ValueError(
+            f"Modelo '{model_name}' não registrado. "
+            f"Disponíveis: {list(MODEL_REGISTRY.keys())}"
+        )
 
     # =========================
     # Leitura dos dados
@@ -40,7 +48,7 @@ def train_baseline():
     # =========================
     # REMOVER LEAKAGE (CRÍTICO)
     # =========================
-    leakage_cols = [col for col in X_train.columns if col.startswith("log_")]
+    leakage_cols = [c for c in X_train.columns if c.startswith("log_")]
     if leakage_cols:
         logger.warning(f"Removendo colunas com vazamento de alvo: {leakage_cols}")
         X_train = X_train.drop(columns=leakage_cols)
@@ -80,19 +88,14 @@ def train_baseline():
     )
 
     # =========================
-    # Pipeline completo
+    # Construção do modelo (factory)
     # =========================
+    regressor = MODEL_REGISTRY[model_name](RANDOM_SEED)
+
     model = Pipeline(
         steps=[
             ("preprocessing", preprocessor),
-            (
-                "regressor",
-                ElasticNet(
-                    alpha=1.0,
-                    l1_ratio=0.5,
-                    random_state=RANDOM_SEED,
-                ),
-            ),
+            ("regressor", regressor),
         ]
     )
 
@@ -106,14 +109,13 @@ def train_baseline():
     # =========================
     preds = model.predict(X_val)
 
-    mse = mean_squared_error(y_val, preds)
-    rmse = mse ** 0.5
+    rmse = mean_squared_error(y_val, preds) ** 0.5
     mae = mean_absolute_error(y_val, preds)
     r2 = r2_score(y_val, preds)
 
-    logger.info(f"Baseline RMSE (validação): {rmse:.4f}")
-    logger.info(f"Baseline MAE  (validação): {mae:.4f}")
-    logger.info(f"Baseline R²   (validação): {r2:.4f}")
+    logger.info(f"{model_name} RMSE (validação): {rmse:.4f}")
+    logger.info(f"{model_name} MAE  (validação): {mae:.4f}")
+    logger.info(f"{model_name} R²   (validação): {r2:.4f}")
 
     # =========================
     # Persistência
@@ -121,11 +123,12 @@ def train_baseline():
     models_dir = Path("models")
     models_dir.mkdir(exist_ok=True)
 
-    model_path = models_dir / "baseline_elasticnet.joblib"
+    model_path = models_dir / f"{model_name}.joblib"
     joblib.dump(model, model_path)
 
-    logger.info(f"Modelo baseline salvo em: {model_path.resolve()}")
+    logger.info(f"Modelo salvo em: {model_path.resolve()}")
 
 
 if __name__ == "__main__":
-    train_baseline()
+    train("hist_gb")
+

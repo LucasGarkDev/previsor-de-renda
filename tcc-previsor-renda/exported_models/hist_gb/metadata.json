@@ -1,0 +1,10 @@
+{
+  "model_name": "hist_gb",
+  "target": "renda_mensal_ocupacao_principal_deflacionado",
+  "metrics": {
+    "rmse": 2420.554443558391,
+    "mae": 1502.6545152167107,
+    "r2": 0.21390880176985805
+  },
+  "status": "validado"
+}
