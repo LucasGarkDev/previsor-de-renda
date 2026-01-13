@@ -1,0 +1,10 @@
+{
+  "model_name": "catboost",
+  "target": "renda_mensal_ocupacao_principal_deflacionado",
+  "metrics": {
+    "rmse": 2386.9248180340714,
+    "mae": 1471.5992842080875,
+    "r2": 0.23559995657016675
+  },
+  "status": "validado"
+}
