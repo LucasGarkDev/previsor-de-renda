@@ -17,9 +17,17 @@ from ml_pipeline.src.models.modelsList import MODEL_REGISTRY
 logger = get_logger(__name__)
 
 
-def train_catboost():
+def train_catboost(
+    depth: int = 8,
+    learning_rate: float = 0.05,
+    iterations: int = 800,
+    save_suffix: str | None = None,
+):
     model_name = "catboost"
-    logger.info(f"Iniciando treino do modelo: {model_name}")
+    logger.info(
+        f"Iniciando treino do modelo: {model_name} | "
+        f"depth={depth} | lr={learning_rate} | iterations={iterations}"
+    )
 
     if model_name not in MODEL_REGISTRY:
         raise ValueError(
@@ -66,11 +74,15 @@ def train_catboost():
         X_train[col] = X_train[col].fillna("MISSING")
         X_val[col] = X_val[col].fillna("MISSING")
 
-
     # =========================
-    # Construção do modelo
+    # Construção do modelo (parametrizada)
     # =========================
-    model = MODEL_REGISTRY[model_name](RANDOM_SEED)
+    model = MODEL_REGISTRY[model_name](
+        RANDOM_SEED,
+        depth=depth,
+        learning_rate=learning_rate,
+        iterations=iterations,
+    )
 
     # =========================
     # Treinamento
@@ -80,11 +92,11 @@ def train_catboost():
         y_train,
         cat_features=categorical_features,
         eval_set=(X_val, y_val),
-        early_stopping_rounds=50
+        early_stopping_rounds=50,
     )
 
     # =========================
-    # Avaliação
+    # Avaliação (validação)
     # =========================
     preds = model.predict(X_val)
 
@@ -102,10 +114,20 @@ def train_catboost():
     models_dir = Path("models")
     models_dir.mkdir(exist_ok=True)
 
-    model_path = models_dir / f"{model_name}.joblib"
+    suffix = f"_{save_suffix}" if save_suffix else ""
+    model_path = models_dir / f"{model_name}{suffix}.joblib"
     joblib.dump(model, model_path)
 
     logger.info(f"Modelo salvo em: {model_path.resolve()}")
+
+    # =========================
+    # Retorno das métricas (IMPORTANTE p/ tuning)
+    # =========================
+    return {
+        "rmse": rmse,
+        "mae": mae,
+        "r2": r2,
+    }
 
 
 if __name__ == "__main__":
