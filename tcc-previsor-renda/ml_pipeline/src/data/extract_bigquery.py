@@ -1,3 +1,4 @@
+"ml_pipeline/src/data/extract_bigquery.py"
 """
 Extração de dados da PNAD tradicional via BigQuery
 (EXTRACT – BigQuery → data/raw)

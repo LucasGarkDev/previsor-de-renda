@@ -1,3 +1,5 @@
+"ml_pipeline/src/config/pipeline_version.py"
+
 PIPELINE_VERSION = "v1.0.0-baseline"
 
 PIPELINE_DESCRIPTION = """

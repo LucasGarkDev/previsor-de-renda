@@ -1,3 +1,4 @@
+"ml_pipeline/src/utils/logging.py"
 """
 Configuração central de logging do pipeline
 """

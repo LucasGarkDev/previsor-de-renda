@@ -1,3 +1,5 @@
+"ml_pipeline/src/config/settings.py"
+
 """
 Configurações globais do pipeline de dados e modelagem
 Projeto: TCC Previsor de Renda
