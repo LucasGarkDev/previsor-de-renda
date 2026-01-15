@@ -1,13 +1,13 @@
 "ml_pipeline/src/config/pipeline_version.py"
 
-PIPELINE_VERSION = "v1.0.0-baseline"
+PIPELINE_VERSION = "v2.0.0-contextual"
 
 PIPELINE_DESCRIPTION = """
-Baseline do pipeline de dados PNAD.
-- Extração BigQuery (basedosdados)
-- Limpeza básica
-- Engenharia inicial de atributos
+Pipeline com contexto domiciliar.
+- Extração PNAD (pessoa + domicílio)
+- Merge explícito por identificador domiciliar
+- Limpeza e engenharia de atributos
 - Split estratificado
 """
 
-CREATED_AT = "2026-01-07"
+CREATED_AT = "2026-01-15"

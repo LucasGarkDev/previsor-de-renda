@@ -1,7 +1,7 @@
-"ml_pipeline/src/data/extract_bigquery.py"
+# ml_pipeline/src/data/extract_bigquery_pessoa.py
 """
-Extração de dados da PNAD tradicional via BigQuery
-(EXTRACT – BigQuery → data/raw)
+Extração de dados da PNAD — nível pessoa
+(EXTRACT – BigQuery → data/raw/v2)
 """
 
 from google.cloud import bigquery
@@ -17,7 +17,6 @@ from ml_pipeline.src.config.settings import (
     MIN_AGE,
     FILTER_OCUPADOS,
     FILTER_TRABALHOU_SEMANA,
-    RANDOM_SEED,
     FEATURE_COLUMNS,
     TARGET_COLUMN,
     PNAD_COLUMN_MAP,
@@ -31,31 +30,35 @@ logger = get_logger(__name__)
 
 def build_query() -> str:
     """
-    Constrói a query SQL usando o mapa conceitual → técnico da PNAD.
+    Query da PNAD Pessoa com id_domicilio nativo
     """
 
-    # SELECT com alias conceitual
+    # =========================
+    # Features conceituais
+    # =========================
     select_expressions = [
+        "id_domicilio"
+    ] + [
         f"{PNAD_COLUMN_MAP[col]} AS {col}"
         for col in FEATURE_COLUMNS
     ]
 
-    # Variável alvo (nome técnico correto)
+    # Target
     select_expressions.append(
         f"{TARGET_COLUMN} AS {TARGET_COLUMN}"
     )
 
     columns_sql = ",\n        ".join(select_expressions)
 
-    # WHERE – SEMPRE com nomes técnicos
+    # =========================
+    # Filtros metodológicos
+    # =========================
     where_clauses = [f"idade >= {MIN_AGE}"]
 
     if FILTER_OCUPADOS:
-        # ocupacao_semana é INTEGER
         where_clauses.append("ocupacao_semana = 1")
 
     if FILTER_TRABALHOU_SEMANA:
-        # trabalhou_semana é STRING
         where_clauses.append("trabalhou_semana = '1'")
 
     where_sql = " AND ".join(where_clauses)
@@ -68,31 +71,28 @@ def build_query() -> str:
     ORDER BY RAND()
     LIMIT {SAMPLE_SIZE}
     """
+
     return query
 
 
-def extract_pnad():
-    logger.info("Iniciando extração da PNAD via BigQuery")
+def extract_pnad_pessoa():
+    logger.info("Iniciando extração da PNAD (nível pessoa)")
 
     client = bigquery.Client(project=BQ_PROJECT_ID)
 
     query = build_query()
-
-    job = client.query(
-        query,
-        location=BQ_LOCATION
-    )
+    job = client.query(query, location=BQ_LOCATION)
 
     df = job.to_dataframe()
 
-    output_path = DATA_RAW_DIR / "pnad_extract.parquet"
+    output_path = DATA_RAW_DIR / "v2" / "pnad_pessoa.parquet"
     write_parquet(df, output_path)
 
-    logger.info(f"Extração concluída com {len(df)} registros")
+    logger.info(f"Extração pessoa concluída: {len(df)} registros")
     logger.info(f"Arquivo salvo em: {output_path}")
 
     return output_path
 
 
 if __name__ == "__main__":
-    extract_pnad()
+    extract_pnad_pessoa()

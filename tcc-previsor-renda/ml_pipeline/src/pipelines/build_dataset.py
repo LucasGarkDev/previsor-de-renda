@@ -1,4 +1,5 @@
-"ml_pipeline/src/pipelines/build_dataset.py"
+# ml_pipeline/src/pipelines/build_dataset.py
+
 """
 Orquestrador do pipeline de dados
 
@@ -9,7 +10,7 @@ Executa, em ordem:
 4. Split treino / validação / teste
 """
 
-from ml_pipeline.src.data.extract_bigquery import extract_pnad
+from ml_pipeline.src.data.extract_bigquery_pessoa import extract_pnad
 from ml_pipeline.src.data.transform import transform_dataset
 from ml_pipeline.src.data.features import build_features
 from ml_pipeline.src.data.split import split_dataset
