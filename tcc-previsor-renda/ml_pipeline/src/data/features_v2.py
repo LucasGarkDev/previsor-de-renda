@@ -1,8 +1,7 @@
 # ml_pipeline/src/data/features_v2.py
-
 """
 Engenharia de atributos — versão v2
-(FEATURE ENGINEERING com variáveis domiciliares)
+(FEATURE ENGINEERING com variáveis domiciliares e contexto socioeconômico)
 """
 
 import numpy as np
@@ -28,53 +27,97 @@ def build_features_v2():
 
     validate_not_empty(df)
 
-    # =========================
-    # Features já existentes
-    # =========================
+    # ======================================================
+    # Features individuais já existentes
+    # ======================================================
     df["idade_squared"] = df["idade"] ** 2
 
-    # =========================
-    # Features domiciliares
-    # =========================
+    # ======================================================
+    # Normalização de variáveis binárias (PNAD)
+    # ======================================================
+    # PNAD NÃO usa 1/0 universalmente, então padronizamos
+    BIN_MAP = {
+        1: 1, 2: 0,
+        "1": 1, "2": 0,
+        "Sim": 1, "Não": 0,
+        "sim": 1, "não": 0,
+        True: 1, False: 0,
+    }
 
+    bin_cols = [
+        "possui_agua_rede",
+        "possui_iluminacao_eletrica",
+        "possui_geladeira",
+        "possui_tv",
+        "possui_fogao",
+        "possui_radio",
+        "zona_urbana",
+    ]
+
+    for col in bin_cols:
+        if col in df.columns:
+            df[col] = df[col].map(BIN_MAP).fillna(0).astype(int)
+
+    # ======================================================
+    # Features domiciliares (contexto socioeconômico)
+    # ======================================================
+
+    # --------------------------
     # Densidade domiciliar
-    df["densidade_domiciliar"] = df["total_pessoas"] / df["quantidade_comodos"].replace(0, np.nan)
-    df["densidade_domiciliar"] = df["densidade_domiciliar"].fillna(0)
+    # (pessoas por dormitório — padrão em estudos sociais)
+    # --------------------------
+    df["densidade_domiciliar"] = (
+        df["total_pessoas"] /
+        df["quantidade_dormitorios"].replace(0, np.nan)
+    )
 
+    # Limpeza defensiva
+    df["densidade_domiciliar"] = (
+        df["densidade_domiciliar"]
+        .clip(lower=0, upper=10)
+        .fillna(df["densidade_domiciliar"].median())
+    )
+
+    # --------------------------
     # Score de infraestrutura básica
+    # --------------------------
     infra_cols = [
         "possui_agua_rede",
         "possui_iluminacao_eletrica",
-        "lixo_coletado",
     ]
-    df["infraestrutura_score"] = df[infra_cols].apply(
-        lambda row: sum(row == 1), axis=1
-    )
 
+    df["infraestrutura_score"] = df[infra_cols].sum(axis=1)
+
+    # --------------------------
     # Score de bens duráveis
+    # --------------------------
     bens_cols = [
         "possui_geladeira",
         "possui_tv",
         "possui_fogao",
         "possui_radio",
     ]
-    df["bens_score"] = df[bens_cols].apply(
-        lambda row: sum(row == 1), axis=1
-    )
 
+    df["bens_score"] = df[bens_cols].sum(axis=1)
+
+    # --------------------------
     # Interação capital humano × território
-    df["anos_estudo_urbano"] = df["anos_estudo"] * (df["zona_urbana"] == 1)
+    # --------------------------
+    df["anos_estudo_urbano"] = df["anos_estudo"] * df["zona_urbana"]
 
-    # =========================
-    # Transformação do target
-    # =========================
+    # ======================================================
+    # Transformação da variável alvo
+    # ======================================================
     if APPLY_LOG_TARGET:
         df[f"log_{TARGET_COLUMN}"] = np.log(df[TARGET_COLUMN])
 
+    # ======================================================
+    # Persistência
+    # ======================================================
     output_path = DATA_PROCESSED_DIR / "v2" / "train_ready.parquet"
     write_parquet(df, output_path)
 
-    logger.info("Engenharia de atributos v2 concluída")
+    logger.info("Engenharia de atributos v2 concluída com sucesso")
     return output_path
 
 
