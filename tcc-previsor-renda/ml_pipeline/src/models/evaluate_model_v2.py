@@ -1,4 +1,5 @@
 # ml_pipeline/src/models/evaluate_model_v2.py
+
 """
 Avaliação final dos modelos V2 no conjunto de TESTE
 (TEST SET EVALUATION — GENERALIZAÇÃO)
@@ -36,19 +37,22 @@ def evaluate_model_v2(model_name: str):
     # =========================
     df_test = read_parquet(test_path)
 
-    X_test = df_test.drop(columns=[TARGET_COLUMN])
     y_test = df_test[TARGET_COLUMN]
 
     # =========================
-    # AJUSTE ESTRUTURAL (CRÍTICO)
+    # Carregar modelo
     # =========================
-    if model_name == "catboost_v2_no_id":
-        if "id_domicilio" in X_test.columns:
-            logger.warning(
-                "Removendo coluna 'id_domicilio' do TESTE "
-                "para compatibilidade com catboost_v2_no_id"
-            )
-            X_test = X_test.drop(columns=["id_domicilio"])
+    model = joblib.load(model_path)
+
+    expected_features = model.feature_names_
+    logger.info(
+        f"Modelo espera {len(expected_features)} features: {expected_features}"
+    )
+
+    # =========================
+    # Alinhar X_test ao modelo
+    # =========================
+    X_test = df_test[expected_features].copy()
 
     # =========================
     # Tratamento de categóricas
@@ -64,11 +68,6 @@ def evaluate_model_v2(model_name: str):
 
     for col in categorical_features:
         X_test[col] = X_test[col].fillna("MISSING")
-
-    # =========================
-    # Carregar modelo
-    # =========================
-    model = joblib.load(model_path)
 
     # =========================
     # Predição
@@ -99,5 +98,5 @@ def evaluate_model_v2(model_name: str):
 
 
 if __name__ == "__main__":
-    evaluate_model_v2("catboost_v2")
     evaluate_model_v2("catboost_v2_no_id")
+    evaluate_model_v2("catboost_v2_inference")

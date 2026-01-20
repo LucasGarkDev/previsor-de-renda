@@ -1,0 +1,458 @@
+[
+  {
+    "name": "id_domicilio",
+    "type": "string",
+    "nullable": false
+  },
+  {
+    "name": "anos_estudo",
+    "type": "int",
+    "nullable": false,
+    "min": -1.0,
+    "max": 17.0,
+    "allowed_values": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "name": "ultimo_grau_frequentado",
+    "type": "string",
+    "nullable": false,
+    "allowed_values": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "NA_DOM"
+    ]
+  },
+  {
+    "name": "sabe_ler_escrever",
+    "type": "string",
+    "nullable": false,
+    "allowed_values": [
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "idade",
+    "type": "int",
+    "nullable": false,
+    "min": 18.0,
+    "max": 90.0
+  },
+  {
+    "name": "sexo",
+    "type": "string",
+    "nullable": false,
+    "allowed_values": [
+      "0",
+      "1"
+    ]
+  },
+  {
+    "name": "raca_cor",
+    "type": "string",
+    "nullable": false,
+    "allowed_values": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ]
+  },
+  {
+    "name": "trabalhou_semana",
+    "type": "string",
+    "nullable": false,
+    "allowed_values": [
+      "1"
+    ]
+  },
+  {
+    "name": "ocupacao_semana",
+    "type": "int",
+    "nullable": false,
+    "min": 1.0,
+    "max": 1.0,
+    "allowed_values": [
+      1
+    ]
+  },
+  {
+    "name": "atividade_ramo_negocio_semana",
+    "type": "int",
+    "nullable": false,
+    "min": 11.0,
+    "max": 25.0,
+    "allowed_values": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ]
+  },
+  {
+    "name": "posicao_ocupacao",
+    "type": "string",
+    "nullable": false,
+    "allowed_values": [
+      "3"
+    ]
+  },
+  {
+    "name": "possui_carteira_assinada",
+    "type": "string",
+    "nullable": false,
+    "allowed_values": [
+      "NA_DOM"
+    ]
+  },
+  {
+    "name": "horas_trabalhadas_semana",
+    "type": "int",
+    "nullable": false,
+    "min": -1.0,
+    "max": 98.0
+  },
+  {
+    "name": "sigla_uf",
+    "type": "string",
+    "nullable": false,
+    "allowed_values": [
+      "AC",
+      "AL",
+      "AM",
+      "BA",
+      "CE",
+      "DF",
+      "ES",
+      "GO",
+      "MA",
+      "MG",
+      "MS",
+      "MT",
+      "PA",
+      "PB",
+      "PE",
+      "PI",
+      "PR",
+      "RJ",
+      "RN",
+      "RO",
+      "RR",
+      "RS",
+      "SC",
+      "SE",
+      "SP"
+    ]
+  },
+  {
+    "name": "regiao",
+    "type": "string",
+    "nullable": false,
+    "allowed_values": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "name": "renda_mensal_ocupacao_principal_deflacionado",
+    "type": "float",
+    "nullable": false,
+    "min": 52.0,
+    "max": 18753.0
+  },
+  {
+    "name": "possui_agua_rede",
+    "type": "int",
+    "nullable": false,
+    "min": 0.0,
+    "max": 1.0,
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "name": "tipo_esgoto",
+    "type": "string",
+    "nullable": false,
+    "allowed_values": [
+      "0",
+      "2",
+      "4",
+      "6",
+      "NA_DOM"
+    ]
+  },
+  {
+    "name": "lixo_coletado",
+    "type": "string",
+    "nullable": false,
+    "allowed_values": [
+      "0",
+      "1",
+      "NA_DOM"
+    ]
+  },
+  {
+    "name": "possui_iluminacao_eletrica",
+    "type": "int",
+    "nullable": false,
+    "min": 0.0,
+    "max": 1.0,
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "name": "possui_geladeira",
+    "type": "int",
+    "nullable": false,
+    "min": 0.0,
+    "max": 1.0,
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "name": "possui_tv",
+    "type": "int",
+    "nullable": false,
+    "min": 0.0,
+    "max": 1.0,
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "name": "possui_fogao",
+    "type": "int",
+    "nullable": false,
+    "min": 0.0,
+    "max": 1.0,
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "name": "possui_radio",
+    "type": "int",
+    "nullable": false,
+    "min": 0.0,
+    "max": 1.0,
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "name": "total_pessoas",
+    "type": "int",
+    "nullable": false,
+    "min": -1.0,
+    "max": 13.0,
+    "allowed_values": [
+      -1,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  {
+    "name": "quantidade_comodos",
+    "type": "int",
+    "nullable": false,
+    "min": -1.0,
+    "max": 24.0,
+    "allowed_values": [
+      -1,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      21,
+      24
+    ]
+  },
+  {
+    "name": "quantidade_dormitorios",
+    "type": "int",
+    "nullable": false,
+    "min": -1.0,
+    "max": 6.0,
+    "allowed_values": [
+      -1,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "name": "zona_urbana",
+    "type": "int",
+    "nullable": false,
+    "min": 0.0,
+    "max": 1.0,
+    "allowed_values": [
+      0,
+      1
+    ]
+  },
+  {
+    "name": "regiao_metropolitana",
+    "type": "int",
+    "nullable": false,
+    "min": -1.0,
+    "max": 1.0,
+    "allowed_values": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "name": "idade_squared",
+    "type": "int",
+    "nullable": false,
+    "min": 324.0,
+    "max": 8100.0
+  },
+  {
+    "name": "densidade_domiciliar",
+    "type": "float",
+    "nullable": false,
+    "min": 0.0,
+    "max": 7.0
+  },
+  {
+    "name": "infraestrutura_score",
+    "type": "int",
+    "nullable": false,
+    "min": 0.0,
+    "max": 2.0,
+    "allowed_values": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "name": "bens_score",
+    "type": "int",
+    "nullable": false,
+    "min": 0.0,
+    "max": 4.0,
+    "allowed_values": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "name": "anos_estudo_urbano",
+    "type": "int",
+    "nullable": false,
+    "min": 0.0,
+    "max": 17.0,
+    "allowed_values": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ]
+  },
+  {
+    "name": "log_renda_mensal_ocupacao_principal_deflacionado",
+    "type": "float",
+    "nullable": false,
+    "min": 3.9512437185814275,
+    "max": 9.839109018599922
+  }
+]
