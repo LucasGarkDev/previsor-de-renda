@@ -98,5 +98,5 @@ def evaluate_model_v2(model_name: str):
 
 
 if __name__ == "__main__":
-    evaluate_model_v2("catboost_v2_no_id")
     evaluate_model_v2("catboost_v2_inference")
+    evaluate_model_v2("catboost_v2_log_target")
