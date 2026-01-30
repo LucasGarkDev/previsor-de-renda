@@ -37,10 +37,16 @@ def main():
         possui_radio=False,
     )
 
-    renda_estimada = PredictService.predict(payload)
+    resultado = PredictService.predict(payload)
 
-    print("\n=== Renda estimada ===")
-    print(f"R$ {renda_estimada:,.2f}")
+    print("Renda estimada:", resultado["renda_estimada"])
+    print(
+        "Intervalo:",
+        resultado["intervalo_provavel"]["min"],
+        "-",
+        resultado["intervalo_provavel"]["max"],
+    )
+
 
 
 if __name__ == "__main__":

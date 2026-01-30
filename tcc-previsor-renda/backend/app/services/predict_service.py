@@ -6,20 +6,27 @@ from backend.app.services.model_loader import ModelLoader
 
 
 class PredictService:
-    """
-    Serviço responsável por executar a predição de renda.
-    """
-
     @staticmethod
-    def predict(input_data: PredictInput) -> float:
-        # 1. Construir DataFrame de features
-        features_df: pd.DataFrame = build_model_features(input_data)
-
-        # 2. Obter modelo carregado
+    def predict(input_data: PredictInput) -> dict:
+        features_df = build_model_features(input_data)
         model = ModelLoader.get_model()
 
-        # 3. Executar predição
-        prediction = model.predict(features_df)
+        y_hat = float(model.predict(features_df)[0])
 
-        # 4. Retornar valor escalar
-        return float(prediction[0])
+        # valores vindos da avaliação do modelo
+        MAE_TESTE = 1500.0
+        Q90_ERRO = 3800.0
+
+        return {
+            "renda_estimada": round(y_hat, 2),
+            "intervalo_provavel": {
+                "min": round(max(0, y_hat - Q90_ERRO), 2),
+                "max": round(y_hat + Q90_ERRO, 2),
+            },
+            "erro_medio_modelo": MAE_TESTE,
+            "observacao": (
+                "O erro médio representa o desempenho global do modelo "
+                "no conjunto de teste. A renda real pode variar por fatores "
+                "não observados."
+            ),
+        }

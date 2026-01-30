@@ -87,10 +87,10 @@ def build_model_features(data: PredictInput) -> pd.DataFrame:
     # ---------------------------
     features = {
         "anos_estudo": anos_estudo,
-        "ultimo_grau_frequentado": GRAU_FREQUENTADO_MAP[data.ultimo_grau_frequentado],
-        "sabe_ler_escrever": "1" if data.sabe_ler_escrever else "0",
+        "ultimo_grau_frequentado": data.ultimo_grau_frequentado,
+        "sabe_ler_escrever": str(data.sabe_ler_escrever),
         "idade": idade,
-        "sexo": SEXO_MAP[data.sexo],
+        "sexo": data.sexo,
         "raca_cor": RACA_COR_MAP[data.raca_cor],
         "trabalhou_semana": "1" if data.trabalhou_semana else "0",
         "ocupacao_semana": 1 if data.ocupacao_semana else 0,
