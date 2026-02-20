@@ -1,8 +1,12 @@
-"ml_pipeline/src/config/settings.py"
-
+# ml_pipeline/src/config/settings.py
 """
 Configurações globais do pipeline de dados e modelagem
 Projeto: TCC Previsor de Renda
+
+Atualizações (v2.1+):
+- Flags de recorte por UF e urbano (para estratégias de segmentação)
+- Suporte a modelos por segmento (ex.: ES urbano)
+- Parâmetros para alvo log e correção via smearing (opcional)
 """
 
 from pathlib import Path
@@ -35,17 +39,10 @@ for _dir in [DATA_RAW_DIR, DATA_INTERIM_DIR, DATA_PROCESSED_DIR]:
 # BIGQUERY
 # ======================================================
 
-# Dataset principal definido no contrato de dados
-BQ_PROJECT_ID = "shining-rush-477809-m9" # usa o projeto padrão autenticado (ADC)
-
-# Projeto que CONTÉM os dados
+BQ_PROJECT_ID = "shining-rush-477809-m9"  # usa o projeto padrão autenticado (ADC)
 BQ_DATA_PROJECT = "basedosdados"
 BQ_DATASET_PNAD = "br_ibge_pnad"
-
-# Tabela principal (nível pessoa)
 BQ_TABLE_PESSOA = "microdados_compatibilizados_pessoa"
-
-# Localização do BigQuery (default: US)
 BQ_LOCATION = "US"
 
 # ======================================================
@@ -82,24 +79,15 @@ PNAD_COLUMN_MAP = {
 # FILTROS DO ESTUDO (DECISÕES METODOLÓGICAS)
 # ======================================================
 
-# Idade mínima considerada no estudo
 MIN_AGE = 18
-
-# Considerar apenas pessoas ocupadas
 FILTER_OCUPADOS = True
-
-# Considerar apenas quem trabalhou na semana de referência
 FILTER_TRABALHOU_SEMANA = True
 
 # ======================================================
 # AMOSTRAGEM
 # ======================================================
 
-# Tamanho da amostra para desenvolvimento e treino
-# (ajustável conforme a fase do projeto)
 SAMPLE_SIZE = 200_000
-
-# Seed global para reprodutibilidade
 RANDOM_SEED = 42
 
 # ======================================================
@@ -107,9 +95,29 @@ RANDOM_SEED = 42
 # ======================================================
 
 TARGET_COLUMN = "renda_mensal_ocupacao_principal_deflacionado"
-
-# Variável alternativa para análises de robustez
 ALTERNATIVE_TARGET_COLUMN = "renda_mensal_todos_trabalhos_deflacionada"
+
+# ======================================================
+# SEGMENTAÇÃO / RECORTES (NOVO)
+# ======================================================
+# Objetivo: permitir treinar modelos específicos (ex.: ES urbano),
+# sem espalhar "if sigla_uf == 'ES'" pelo código.
+
+# Se True, filtra dataset para conter APENAS essas UFs (lista).
+ENABLE_UF_FILTER = False
+UF_WHITELIST = ["ES"]  # quando ENABLE_UF_FILTER=True
+
+# Se True, filtra para zona urbana = 1.
+ENABLE_URBAN_ONLY = False
+
+# Colunas que representam urbano/metrópole (devem existir no dataset)
+URBAN_COLUMN = "zona_urbana"
+METRO_COLUMN = "regiao_metropolitana"
+UF_COLUMN = "sigla_uf"
+
+# “Segmentos” para experimentos (para salvar modelos/outputs com nomes consistentes)
+# Ex.: "global", "es", "urban", "es_urban"
+MODEL_SEGMENT_NAME = "global"
 
 # ======================================================
 # VARIÁVEIS EXPLICATIVAS (X)
@@ -139,8 +147,10 @@ FEATURE_COLUMNS = [
     # Contexto geográfico
     "sigla_uf",
     "regiao",
-    # "zona_urbana",
-    # "regiao_metropolitana",
+
+    # Contexto territorial (ativar se estiver no dataset)
+    "zona_urbana",
+    "regiao_metropolitana",
 ]
 
 # ======================================================
@@ -151,16 +161,34 @@ TRAIN_SIZE = 0.7
 VALIDATION_SIZE = 0.15
 TEST_SIZE = 0.15
 
-# Coluna usada para estratificação (criada no pipeline)
 STRATIFY_COLUMN = "faixa_renda"
+
+# Coluna de grupo para evitar leakage domiciliar (quando aplicável)
+GROUP_COLUMN = "id_domicilio"
 
 # ======================================================
 # TRANSFORMAÇÕES
 # ======================================================
 
-# Aplicar log na renda (para reduzir assimetria)
+# Estratégia recomendada: modelar no log e corrigir com smearing (opcional)
 APPLY_LOG_TARGET = True
+
+# Se True, usa log1p para ser mais estável numericamente (recomendável)
+USE_LOG1P = True
+
+# Se True, aplica correção de smearing na volta do log para renda (opcional)
+ENABLE_SMEARING = False
 
 # Quantis usados para definir outliers
 LOWER_INCOME_QUANTILE = 0.01
 UPPER_INCOME_QUANTILE = 0.99
+
+# ======================================================
+# TREINO (HIPERPARÂMETROS PADRÃO / CONTROLES)
+# ======================================================
+
+# Early stopping padrão para boosting
+EARLY_STOPPING_ROUNDS = 50
+
+# Se você quiser rodar tuning depois, deixa ligado
+ENABLE_TUNING = False
