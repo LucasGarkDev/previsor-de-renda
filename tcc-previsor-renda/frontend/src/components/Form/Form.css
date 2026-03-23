@@ -1,131 +1,232 @@
-form h2 {
-  margin-bottom: 24px;
-  font-size: 1.5rem;
-  color: #1f2933;
-}
-
-fieldset {
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 24px;
-}
-
-legend {
-  padding: 0 8px;
-  font-weight: 600;
-  color: #374151;
-}
-
-fieldset label {
+.predict-form {
   display: flex;
   flex-direction: column;
-  font-size: 0.9rem;
-  color: #374151;
+  gap: 22px;
 }
 
-fieldset input,
-fieldset select {
-  margin-top: 6px;
-  padding: 8px 10px;
-  border-radius: 6px;
-  border: 1px solid #cbd5e1;
-  font-size: 0.95rem;
-}
-
-fieldset input[type="checkbox"] {
-  margin-top: 12px;
-  width: auto;
-}
-
-fieldset {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px 24px;
-}
-
-@media (max-width: 900px) {
-  fieldset {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  fieldset {
-    grid-template-columns: 1fr;
-  }
-}
-
-.submit-btn {
-  margin-top: 16px;
-  padding: 12px 20px;
-  background-color: #0f172a;
-  color: #ffffff;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.submit-btn:hover {
-  background-color: #1e293b;
-}
-
-.submit-btn:disabled {
-  background-color: #94a3b8;
-  cursor: not-allowed;
-}
-
-form {
+.form-intro {
   display: flex;
-  flex-direction: column;
-  gap: 24px;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
 }
 
-fieldset {
-  border: 1px solid #d0d7de;
-  border-radius: 8px;
-  padding: 16px;
+.form-eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-legend {
-  padding: 0 8px;
-  font-weight: 600;
+.predict-form h2 {
+  max-width: 16ch;
+  font-size: clamp(1.7rem, 2.6vw, 2.35rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+}
+
+.predict-form p {
+  color: var(--text-muted);
+}
+
+.form-status-card {
+  flex: 0 0 250px;
+  padding: 18px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(13, 89, 68, 0.08) 0%, rgba(236, 185, 76, 0.1) 100%);
+  border: 1px solid var(--border-strong);
+}
+
+.form-status-card span,
+.form-status-card small {
+  display: block;
+}
+
+.form-status-card span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.form-status-card strong {
+  display: block;
+  margin: 10px 0 8px;
+  font-size: 1.05rem;
+  color: var(--accent-strong);
+}
+
+.form-status-card small {
+  color: var(--text-muted);
+  font-size: 0.86rem;
+}
+
+.form-section {
+  margin: 0;
+  padding: 22px;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(249, 252, 250, 0.9) 100%);
+}
+
+.form-section legend {
+  padding: 0 10px;
+  font-weight: 800;
+  color: var(--accent-strong);
+  letter-spacing: -0.02em;
+}
+
+.section-description {
+  margin-bottom: 18px;
+  color: var(--text-soft);
+  font-size: 0.92rem;
 }
 
 .fieldset-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
 }
 
-/* Inputs */
-label {
+.field,
+.switch-field {
   display: flex;
+  min-width: 0;
+  font-size: 0.94rem;
+}
+
+.field {
   flex-direction: column;
-  font-size: 14px;
+  gap: 8px;
 }
 
-input,
-select {
-  padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+.field span {
+  color: var(--text-main);
+  font-weight: 600;
 }
 
-@media (max-width: 900px) {
+.field input,
+.field select {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(21, 35, 29, 0.12);
+  background: rgba(255, 255, 255, 0.96);
+  color: var(--text-main);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.field input:focus,
+.field select:focus {
+  outline: none;
+  border-color: rgba(13, 89, 68, 0.5);
+  box-shadow: 0 0 0 4px rgba(13, 89, 68, 0.08);
+  transform: translateY(-1px);
+}
+
+.switch-field {
+  align-items: center;
+  gap: 12px;
+  min-height: 58px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(21, 35, 29, 0.1);
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.switch-field input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.switch-field span {
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.form-error {
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(153, 27, 27, 0.18);
+  background: rgba(254, 242, 242, 0.9);
+  color: #991b1b;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 22px;
+  border-radius: var(--radius-lg);
+  background: rgba(13, 89, 68, 0.04);
+  border: 1px solid rgba(13, 89, 68, 0.1);
+}
+
+.form-helper {
+  max-width: 56ch;
+  font-size: 0.93rem;
+}
+
+.submit-btn {
+  min-width: 220px;
+  min-height: 52px;
+  padding: 14px 24px;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent-strong) 0%, var(--accent) 100%);
+  color: #ffffff;
+  font-size: 0.98rem;
+  font-weight: 700;
+  box-shadow: 0 14px 32px rgba(13, 89, 68, 0.22);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 36px rgba(13, 89, 68, 0.28);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+@media (max-width: 960px) {
   .fieldset-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .form-intro,
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .predict-form h2 {
+    max-width: none;
+  }
+
+  .form-status-card,
+  .submit-btn {
+    min-width: 0;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
+  .form-section,
+  .form-actions {
+    padding: 18px;
+  }
+
   .fieldset-grid {
     grid-template-columns: 1fr;
-  }
-
-  .card {
-    padding: 16px;
   }
 }

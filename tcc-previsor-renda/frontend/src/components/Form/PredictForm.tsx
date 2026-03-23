@@ -1,4 +1,3 @@
-// frontend/src/components/Form/PredictForm.tsx
 import "./Form.css";
 
 import { useState } from "react";
@@ -60,7 +59,7 @@ export default function PredictForm({ onResult }: Props) {
     try {
       const response = await predictRenda(formData);
       onResult(response);
-    } catch (err) {
+    } catch {
       setError("Erro ao consultar o modelo. Tente novamente.");
     } finally {
       setLoading(false);
@@ -68,19 +67,41 @@ export default function PredictForm({ onResult }: Props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Informe seus dados</h2>
+    <form className="predict-form" onSubmit={handleSubmit}>
+      <div className="form-intro">
+        <div>
+          <span className="form-eyebrow">Simulacao</span>
+          <h2>Informe os dados para gerar a estimativa.</h2>
+          <p>
+            O preenchimento foi distribuido em secoes para facilitar a leitura e
+            reduzir erro no envio.
+          </p>
+        </div>
+
+        <div className="form-status-card">
+          <span>Etapas</span>
+          <strong>4 blocos de entrada</strong>
+          <small>Demografia, trabalho, localizacao e domicilio.</small>
+        </div>
+      </div>
 
       <DemografiaSection data={formData} setData={setFormData} />
       <TrabalhoSection data={formData} setData={setFormData} />
       <LocalizacaoSection data={formData} setData={setFormData} />
       <DomicilioSection data={formData} setData={setFormData} />
 
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p className="form-error">{error}</p>}
 
-      <button type="submit" className="submit-btn" disabled={loading}>
-        {loading ? "Calculando..." : "Prever renda"}
-      </button>
+      <div className="form-actions">
+        <p className="form-helper">
+          Revise os campos principais antes de enviar. O resultado exibira uma
+          faixa provavel, nao apenas um valor unico.
+        </p>
+
+        <button type="submit" className="submit-btn" disabled={loading}>
+          {loading ? "Calculando estimativa..." : "Prever renda"}
+        </button>
+      </div>
     </form>
   );
 }

@@ -1,4 +1,3 @@
-// frontend/src/components/Form/DemografiaSection.tsx
 import { PredictInput } from "../../types/Predict";
 
 interface Props {
@@ -8,34 +7,35 @@ interface Props {
 
 export default function DemografiaSection({ data, setData }: Props) {
   return (
-    <fieldset>
-      <legend>Dados Demográficos</legend>
+    <fieldset className="form-section">
+      <legend>Dados Demograficos</legend>
+      <p className="section-description">
+        Perfil basico de identificacao e escolaridade.
+      </p>
 
       <div className="fieldset-grid">
-        <label>
-          Idade:
+        <label className="field">
+          <span>Idade</span>
           <input
             type="number"
+            min={0}
             value={data.idade}
-            onChange={(e) =>
-              setData({ ...data, idade: Number(e.target.value) })
-            }
+            onChange={(e) => setData({ ...data, idade: Number(e.target.value) })}
           />
         </label>
 
-        <label>
-          Anos de estudo:
+        <label className="field">
+          <span>Anos de estudo</span>
           <input
             type="number"
+            min={0}
             value={data.anos_estudo}
-            onChange={(e) =>
-              setData({ ...data, anos_estudo: Number(e.target.value) })
-            }
+            onChange={(e) => setData({ ...data, anos_estudo: Number(e.target.value) })}
           />
         </label>
 
-        <label>
-          Escolaridade:
+        <label className="field">
+          <span>Escolaridade</span>
           <select
             value={data.ultimo_grau_frequentado}
             onChange={(e) =>
@@ -47,39 +47,35 @@ export default function DemografiaSection({ data, setData }: Props) {
           >
             <option value="fundamental_incompleto">Fundamental incompleto</option>
             <option value="fundamental_completo">Fundamental completo</option>
-            <option value="medio_incompleto">Médio incompleto</option>
-            <option value="medio_completo">Médio completo</option>
+            <option value="medio_incompleto">Medio incompleto</option>
+            <option value="medio_completo">Medio completo</option>
             <option value="superior_incompleto">Superior incompleto</option>
             <option value="superior_completo">Superior completo</option>
           </select>
         </label>
 
-        <label>
-          Sexo:
+        <label className="field">
+          <span>Sexo</span>
           <select
             value={data.sexo}
-            onChange={(e) =>
-              setData({ ...data, sexo: e.target.value as any })
-            }
+            onChange={(e) => setData({ ...data, sexo: e.target.value as any })}
           >
             <option value="masculino">Masculino</option>
             <option value="feminino">Feminino</option>
           </select>
         </label>
 
-        <label>
-          Raça/cor:
+        <label className="field">
+          <span>Raca/cor</span>
           <select
             value={data.raca_cor}
-            onChange={(e) =>
-              setData({ ...data, raca_cor: e.target.value as any })
-            }
+            onChange={(e) => setData({ ...data, raca_cor: e.target.value as any })}
           >
             <option value="branca">Branca</option>
             <option value="preta">Preta</option>
             <option value="parda">Parda</option>
             <option value="amarela">Amarela</option>
-            <option value="indigena">Indígena</option>
+            <option value="indigena">Indigena</option>
           </select>
         </label>
       </div>

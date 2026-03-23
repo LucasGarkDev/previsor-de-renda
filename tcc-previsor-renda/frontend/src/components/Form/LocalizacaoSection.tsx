@@ -1,4 +1,3 @@
-// frontend/src/components/Form/LocalizacaoSection.tsx
 import { PredictInput } from "../../types/Predict";
 
 interface Props {
@@ -8,48 +7,51 @@ interface Props {
 
 export default function LocalizacaoSection({ data, setData }: Props) {
   return (
-    <fieldset>
-      <legend>Localização</legend>
+    <fieldset className="form-section">
+      <legend>Localizacao</legend>
+      <p className="section-description">
+        Localidade e caracteristicas urbanas da residencia.
+      </p>
 
-      <label>
-        UF:
-        <input
-          type="text"
-          maxLength={2}
-          value={data.sigla_uf}
-          onChange={(e) =>
-            setData({
-              ...data,
-              sigla_uf: e.target.value.toUpperCase(),
-            })
-          }
-        />
-      </label>
+      <div className="fieldset-grid">
+        <label className="field">
+          <span>UF</span>
+          <input
+            type="text"
+            maxLength={2}
+            value={data.sigla_uf}
+            onChange={(e) =>
+              setData({
+                ...data,
+                sigla_uf: e.target.value.toUpperCase(),
+              })
+            }
+          />
+        </label>
 
-      <label>
-        Zona urbana?
-        <input
-          type="checkbox"
-          checked={data.zona_urbana}
-          onChange={(e) =>
-            setData({ ...data, zona_urbana: e.target.checked })
-          }
-        />
-      </label>
+        <label className="switch-field">
+          <input
+            type="checkbox"
+            checked={data.zona_urbana}
+            onChange={(e) => setData({ ...data, zona_urbana: e.target.checked })}
+          />
+          <span>Zona urbana</span>
+        </label>
 
-      <label>
-        Região metropolitana?
-        <input
-          type="checkbox"
-          checked={data.regiao_metropolitana}
-          onChange={(e) =>
-            setData({
-              ...data,
-              regiao_metropolitana: e.target.checked,
-            })
-          }
-        />
-      </label>
+        <label className="switch-field">
+          <input
+            type="checkbox"
+            checked={data.regiao_metropolitana}
+            onChange={(e) =>
+              setData({
+                ...data,
+                regiao_metropolitana: e.target.checked,
+              })
+            }
+          />
+          <span>Regiao metropolitana</span>
+        </label>
+      </div>
     </fieldset>
   );
 }
