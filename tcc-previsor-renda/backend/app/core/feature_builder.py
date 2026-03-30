@@ -1,22 +1,15 @@
-# backend/app/core/feature_builder.py
+from __future__ import annotations
+
 import pandas as pd
+
 from backend.app.schemas.predict import PredictInput
-
-# ============================
-# Mapeamentos categóricos
-# ============================
-
-SEXO_MAP = {
-    "masculino": "1",
-    "feminino": "0",
-}
 
 RACA_COR_MAP = {
     "branca": "2",
     "preta": "4",
     "parda": "6",
     "amarela": "8",
-    "indigena": "8",  # PNAD agrupa indígena/ignorado em alguns casos
+    "indigena": "8",
 }
 
 GRAU_FREQUENTADO_MAP = {
@@ -35,115 +28,59 @@ POSICAO_OCUPACAO_MAP = {
     "outro": "4",
 }
 
-TIPO_ESGOTO_MAP = {
-    "rede": "2",
-    "fossa": "4",
-    "outro": "6",
-    "nao_informado": "NA_DOM",
-}
-
-
-# ============================
-# Função principal
-# ============================
 
 def build_model_features(data: PredictInput) -> pd.DataFrame:
-    """
-    Constrói o DataFrame de features exatamente no formato
-    esperado pelo modelo CatBoost.
-    """
-
-    # ---------------------------
-    # Variáveis diretas
-    # ---------------------------
     idade = data.idade
     anos_estudo = data.anos_estudo
+    experiencia_aprox = max(0, idade - anos_estudo - 6)
+    idade_quadrado = idade ** 2
+    horas_trabalhadas = data.horas_trabalhadas_semana
+    carteira_flag = 1 if data.possui_carteira_assinada else 0
 
-    # ---------------------------
-    # Variáveis derivadas
-    # ---------------------------
-    idade_squared = idade ** 2
-    densidade_domiciliar = data.total_pessoas / data.quantidade_comodos
-    anos_estudo_urbano = anos_estudo * int(data.zona_urbana)
-
-    # ---------------------------
-    # Scores agregados
-    # ---------------------------
-    infraestrutura_score = (
-        int(data.possui_agua_rede)
-        + int(data.possui_iluminacao_eletrica)
-        + (1 if data.tipo_esgoto == "rede" else 0)
-    )
-
-    bens_score = (
-        int(data.possui_geladeira)
-        + int(data.possui_tv)
-        + int(data.possui_fogao)
-        + int(data.possui_radio)
-    )
-
-    # ---------------------------
-    # Montagem do vetor final
-    # Ordem CRÍTICA: igual ao treino
-    # ---------------------------
     features = {
         "anos_estudo": anos_estudo,
-        "ultimo_grau_frequentado": data.ultimo_grau_frequentado,
-        "sabe_ler_escrever": str(data.sabe_ler_escrever),
+        "ultimo_grau_frequentado": GRAU_FREQUENTADO_MAP[data.ultimo_grau_frequentado],
+        "sabe_ler_escrever": "1" if data.sabe_ler_escrever else "0",
         "idade": idade,
-        "sexo": data.sexo,
+        "sexo": "1" if data.sexo == "masculino" else "0",
         "raca_cor": RACA_COR_MAP[data.raca_cor],
         "trabalhou_semana": "1" if data.trabalhou_semana else "0",
         "ocupacao_semana": 1 if data.ocupacao_semana else 0,
         "atividade_ramo_negocio_semana": data.atividade_ramo_negocio_semana,
         "posicao_ocupacao": POSICAO_OCUPACAO_MAP[data.posicao_ocupacao],
-        "possui_carteira_assinada": "1" if data.possui_carteira_assinada else "NA_DOM",
-        "horas_trabalhadas_semana": data.horas_trabalhadas_semana,
-        "sigla_uf": data.sigla_uf,
-        "regiao": _map_regiao(data.sigla_uf),
-        "possui_agua_rede": int(data.possui_agua_rede),
-        "tipo_esgoto": TIPO_ESGOTO_MAP[data.tipo_esgoto],
-        "lixo_coletado": "1" if data.lixo_coletado else "NA_DOM",
-        "possui_iluminacao_eletrica": int(data.possui_iluminacao_eletrica),
-        "possui_geladeira": int(data.possui_geladeira),
-        "possui_tv": int(data.possui_tv),
-        "possui_fogao": int(data.possui_fogao),
-        "possui_radio": int(data.possui_radio),
-        "total_pessoas": data.total_pessoas,
-        "quantidade_comodos": data.quantidade_comodos,
-        "quantidade_dormitorios": data.quantidade_dormitorios,
-        "zona_urbana": int(data.zona_urbana),
-        "regiao_metropolitana": int(data.regiao_metropolitana),
-        "idade_squared": idade_squared,
-        "densidade_domiciliar": densidade_domiciliar,
-        "infraestrutura_score": infraestrutura_score,
-        "bens_score": bens_score,
-        "anos_estudo_urbano": anos_estudo_urbano,
+        "possui_carteira_assinada": "1" if data.possui_carteira_assinada else "0",
+        "horas_trabalhadas_semana": horas_trabalhadas,
+        "sigla_uf": data.sigla_uf.upper(),
+        "regiao": _map_regiao(data.sigla_uf.upper()),
+        "zona_urbana": 1 if data.zona_urbana else 0,
+        "regiao_metropolitana": 1 if data.regiao_metropolitana else 0,
+        "idade_quadrado": idade_quadrado,
+        "experiencia_aprox": experiencia_aprox,
+        "idade_x_estudo": idade * anos_estudo,
+        "estudo_x_horas": anos_estudo * horas_trabalhadas,
+        "estudo_x_carteira": float(anos_estudo * carteira_flag),
+        "idade_x_horas": idade * horas_trabalhadas,
     }
 
     return pd.DataFrame([features])
 
 
-# ============================
-# Função auxiliar
-# ============================
-
 def _map_regiao(sigla_uf: str) -> str:
-    NORTE = {"AC", "AM", "AP", "PA", "RO", "RR", "TO"}
-    NORDESTE = {"AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE"}
-    SUDESTE = {"ES", "MG", "RJ", "SP"}
-    SUL = {"PR", "RS", "SC"}
-    CENTRO_OESTE = {"DF", "GO", "MT", "MS"}
+    norte = {"AC", "AM", "AP", "PA", "RO", "RR", "TO"}
+    nordeste = {"AL", "BA", "CE", "MA", "PB", "PE", "PI", "RN", "SE"}
+    sudeste = {"ES", "MG", "RJ", "SP"}
+    sul = {"PR", "RS", "SC"}
+    centro_oeste = {"DF", "GO", "MT", "MS"}
 
-    if sigla_uf in NORTE:
+    if sigla_uf in norte:
         return "1"
-    if sigla_uf in NORDESTE:
+    if sigla_uf in nordeste:
         return "2"
-    if sigla_uf in SUDESTE:
+    if sigla_uf in sudeste:
         return "3"
-    if sigla_uf in SUL:
+    if sigla_uf in sul:
         return "4"
-    if sigla_uf in CENTRO_OESTE:
+    if sigla_uf in centro_oeste:
         return "5"
 
-    raise ValueError(f"UF inválida: {sigla_uf}")
+    raise ValueError(f"UF invalida: {sigla_uf}")

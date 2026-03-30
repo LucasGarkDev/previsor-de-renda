@@ -59,8 +59,10 @@ export default function PredictForm({ onResult }: Props) {
     try {
       const response = await predictRenda(formData);
       onResult(response);
-    } catch {
-      setError("Erro ao consultar o modelo. Tente novamente.");
+    } catch (err) {
+      setError(
+        err instanceof Error ? err.message : "Erro ao consultar o modelo. Tente novamente."
+      );
     } finally {
       setLoading(false);
     }

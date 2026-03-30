@@ -63,3 +63,11 @@ class PredictInput(BaseModel):
 
 class PredictOutput(BaseModel):
     renda_estimada: float
+    intervalo_provavel: "PredictionInterval"
+    erro_medio_modelo: float
+    observacao: str
+
+
+class PredictionInterval(BaseModel):
+    min: float
+    max: float
