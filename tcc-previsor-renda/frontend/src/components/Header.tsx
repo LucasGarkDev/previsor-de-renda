@@ -9,14 +9,14 @@ export default function Header() {
           <img src={ifesLogo} alt="IFES" className="logo" />
         </div>
         <div>
-          <h1>Previsor de Renda</h1>
-          <span>TCC | Sistemas de Informacao</span>
+          <h1>IFES Previsor de Renda</h1>
+          <span>Plataforma de previsao de renda | TCC</span>
         </div>
       </div>
 
       <div className="header-badge">
-        <strong>Frontend renovado</strong>
-        <span>mais legivel, dinamico e responsivo</span>
+        <strong>Estimativa inteligente</strong>
+        <span>interface institucional do IFES</span>
       </div>
     </header>
   );
