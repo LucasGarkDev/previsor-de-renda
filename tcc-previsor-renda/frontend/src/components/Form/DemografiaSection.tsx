@@ -15,27 +15,34 @@ export default function DemografiaSection({ data, setData }: Props) {
 
       <div className="fieldset-grid">
         <label className="field">
-          <span>Idade</span>
+          <span className="field-label">Idade</span>
+          <small className="field-hint">Informe a idade em anos completos.</small>
           <input
             type="number"
-            min={0}
+            min={18}
+            max={100}
+            placeholder="Ex: 30"
             value={data.idade}
             onChange={(e) => setData({ ...data, idade: Number(e.target.value) })}
           />
         </label>
 
         <label className="field">
-          <span>Anos de estudo</span>
+          <span className="field-label">Anos de estudo</span>
+          <small className="field-hint">Conte apenas anos concluidos, de 0 a 17.</small>
           <input
             type="number"
             min={0}
+            max={17}
+            placeholder="Ex: 11"
             value={data.anos_estudo}
             onChange={(e) => setData({ ...data, anos_estudo: Number(e.target.value) })}
           />
         </label>
 
         <label className="field">
-          <span>Escolaridade</span>
+          <span className="field-label">Escolaridade</span>
+          <small className="field-hint">Maior nivel de ensino que a pessoa cursou.</small>
           <select
             value={data.ultimo_grau_frequentado}
             onChange={(e) =>
@@ -45,37 +52,59 @@ export default function DemografiaSection({ data, setData }: Props) {
               })
             }
           >
-            <option value="fundamental_incompleto">Fundamental incompleto</option>
-            <option value="fundamental_completo">Fundamental completo</option>
-            <option value="medio_incompleto">Medio incompleto</option>
-            <option value="medio_completo">Medio completo</option>
-            <option value="superior_incompleto">Superior incompleto</option>
-            <option value="superior_completo">Superior completo</option>
+            <optgroup label="Maior grau cursado">
+              <option value="fundamental_incompleto">Fundamental incompleto</option>
+              <option value="fundamental_completo">Fundamental completo</option>
+              <option value="medio_incompleto">Medio incompleto</option>
+              <option value="medio_completo">Medio completo</option>
+              <option value="superior_incompleto">Superior incompleto</option>
+              <option value="superior_completo">Superior completo</option>
+            </optgroup>
           </select>
         </label>
 
+        <label className="switch-field">
+          <input
+            type="checkbox"
+            checked={data.sabe_ler_escrever}
+            onChange={(e) =>
+              setData({ ...data, sabe_ler_escrever: e.target.checked })
+            }
+          />
+          <span className="switch-copy">
+            <span className="switch-label">Sabe ler e escrever</span>
+            <small>Marque quando a pessoa e alfabetizada.</small>
+          </span>
+        </label>
+
         <label className="field">
-          <span>Sexo</span>
+          <span className="field-label">Sexo</span>
+          <small className="field-hint">Selecione a opcao informada na pesquisa.</small>
           <select
             value={data.sexo}
             onChange={(e) => setData({ ...data, sexo: e.target.value as any })}
           >
-            <option value="masculino">Masculino</option>
-            <option value="feminino">Feminino</option>
+            <optgroup label="Opcao informada">
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+            </optgroup>
           </select>
         </label>
 
         <label className="field">
-          <span>Raca/cor</span>
+          <span className="field-label">Raca/cor</span>
+          <small className="field-hint">Use a autodeclaracao da pessoa.</small>
           <select
             value={data.raca_cor}
             onChange={(e) => setData({ ...data, raca_cor: e.target.value as any })}
           >
-            <option value="branca">Branca</option>
-            <option value="preta">Preta</option>
-            <option value="parda">Parda</option>
-            <option value="amarela">Amarela</option>
-            <option value="indigena">Indigena</option>
+            <optgroup label="Autodeclaracao">
+              <option value="branca">Branca</option>
+              <option value="preta">Preta</option>
+              <option value="parda">Parda</option>
+              <option value="amarela">Amarela</option>
+              <option value="indigena">Indigena</option>
+            </optgroup>
           </select>
         </label>
       </div>

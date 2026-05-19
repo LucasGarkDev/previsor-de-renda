@@ -20,14 +20,20 @@ export default function TrabalhoSection({ data, setData }: Props) {
             checked={data.trabalhou_semana}
             onChange={(e) => setData({ ...data, trabalhou_semana: e.target.checked })}
           />
-          <span>Trabalhou na ultima semana</span>
+          <span className="switch-copy">
+            <span className="switch-label">Trabalhou na ultima semana</span>
+            <small>Considere qualquer trabalho remunerado no periodo.</small>
+          </span>
         </label>
 
         <label className="field">
-          <span>Horas trabalhadas por semana</span>
+          <span className="field-label">Horas trabalhadas por semana</span>
+          <small className="field-hint">Informe a jornada semanal habitual.</small>
           <input
             type="number"
             min={0}
+            max={100}
+            placeholder="Ex: 40"
             value={data.horas_trabalhadas_semana}
             onChange={(e) =>
               setData({
@@ -44,14 +50,20 @@ export default function TrabalhoSection({ data, setData }: Props) {
             checked={data.ocupacao_semana}
             onChange={(e) => setData({ ...data, ocupacao_semana: e.target.checked })}
           />
-          <span>Esta ocupado atualmente</span>
+          <span className="switch-copy">
+            <span className="switch-label">Esta ocupado atualmente</span>
+            <small>Marque se possui ocupacao na semana de referencia.</small>
+          </span>
         </label>
 
         <label className="field">
-          <span>Ramo de atividade (codigo PNAD)</span>
+          <span className="field-label">Ramo de atividade (codigo PNAD)</span>
+          <small className="field-hint">Use o codigo do setor entre 11 e 25.</small>
           <input
             type="number"
-            min={0}
+            min={11}
+            max={25}
+            placeholder="Ex: 17"
             value={data.atividade_ramo_negocio_semana}
             onChange={(e) =>
               setData({
@@ -63,7 +75,8 @@ export default function TrabalhoSection({ data, setData }: Props) {
         </label>
 
         <label className="field">
-          <span>Posicao na ocupacao</span>
+          <span className="field-label">Posicao na ocupacao</span>
+          <small className="field-hint">Tipo de vinculo da pessoa no trabalho.</small>
           <select
             value={data.posicao_ocupacao}
             onChange={(e) =>
@@ -73,10 +86,12 @@ export default function TrabalhoSection({ data, setData }: Props) {
               })
             }
           >
-            <option value="empregado">Empregado</option>
-            <option value="empregador">Empregador</option>
-            <option value="conta_propria">Conta propria</option>
-            <option value="outro">Outro</option>
+            <optgroup label="Vinculo principal">
+              <option value="empregado">Empregado</option>
+              <option value="empregador">Empregador</option>
+              <option value="conta_propria">Conta propria</option>
+              <option value="outro">Outro</option>
+            </optgroup>
           </select>
         </label>
 
@@ -91,7 +106,10 @@ export default function TrabalhoSection({ data, setData }: Props) {
               })
             }
           />
-          <span>Possui carteira assinada</span>
+          <span className="switch-copy">
+            <span className="switch-label">Possui carteira assinada</span>
+            <small>Marque quando ha vinculo formal CLT.</small>
+          </span>
         </label>
       </div>
     </fieldset>
