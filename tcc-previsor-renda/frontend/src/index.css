@@ -2,30 +2,37 @@
   font-family: "Aptos", "Segoe UI", "Trebuchet MS", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #15231d;
+  color: #102018;
   background:
-    radial-gradient(circle at top left, rgba(0, 130, 95, 0.18), transparent 28%),
-    radial-gradient(circle at top right, rgba(255, 186, 73, 0.18), transparent 24%),
-    linear-gradient(180deg, #f4faf7 0%, #edf3ee 52%, #f9f6ef 100%);
+    linear-gradient(90deg, rgba(0, 132, 61, 0.055) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(0, 132, 61, 0.045) 1px, transparent 1px),
+    #f5f7f2;
+  background-size: 48px 48px, 48px 48px, auto;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --bg-panel: rgba(255, 255, 255, 0.72);
-  --bg-panel-strong: rgba(255, 255, 255, 0.92);
-  --border-soft: rgba(21, 35, 29, 0.1);
-  --border-strong: rgba(13, 89, 68, 0.22);
-  --text-main: #15231d;
-  --text-muted: #54645c;
-  --text-soft: #708177;
-  --accent: #0d5944;
-  --accent-strong: #083a2c;
-  --accent-warm: #ecb94c;
-  --shadow-soft: 0 20px 60px rgba(13, 54, 42, 0.08);
-  --shadow-strong: 0 28px 80px rgba(7, 35, 27, 0.14);
-  --radius-xl: 28px;
-  --radius-lg: 20px;
-  --radius-md: 14px;
+  --surface: #ffffff;
+  --surface-muted: #f8fbf7;
+  --surface-green: #eef7f0;
+  --line-soft: #dce7df;
+  --line-strong: #b9cec0;
+  --text-main: #102018;
+  --text-muted: #4f6257;
+  --text-soft: #728079;
+  --ifes-green: #00843d;
+  --ifes-green-dark: #006b32;
+  --ifes-green-deep: #064b31;
+  --ifes-red: #c8102e;
+  --ifes-red-dark: #9f0b22;
+  --accent: var(--ifes-green);
+  --accent-strong: var(--ifes-green-deep);
+  --accent-danger: var(--ifes-red);
+  --shadow-soft: 0 10px 26px rgba(16, 32, 24, 0.08);
+  --shadow-strong: 0 18px 42px rgba(16, 32, 24, 0.12);
+  --radius-xl: 8px;
+  --radius-lg: 8px;
+  --radius-md: 6px;
 }
 
 * {
@@ -42,6 +49,10 @@ body {
   min-height: 100vh;
   color: var(--text-main);
   background: inherit;
+}
+
+::selection {
+  background: rgba(0, 132, 61, 0.2);
 }
 
 body,

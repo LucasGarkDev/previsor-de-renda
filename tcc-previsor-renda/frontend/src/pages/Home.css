@@ -1,38 +1,61 @@
 .home-container {
-  width: min(1240px, calc(100% - 32px));
+  width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 32px 0 64px;
+  padding: 22px 0 64px;
 }
 
 .card {
   width: 100%;
-  background: var(--bg-panel-strong);
-  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-top: 4px solid var(--ifes-green);
   border-radius: var(--radius-xl);
-  padding: 32px;
+  padding: 28px;
   box-shadow: var(--shadow-strong);
-  backdrop-filter: blur(18px);
+}
+
+.work-card {
+  min-width: 0;
 }
 
 .hero-panel {
   display: grid;
-  grid-template-columns: minmax(0, 1.6fr) minmax(280px, 0.95fr);
-  gap: 24px;
-  margin-bottom: 24px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
+  gap: 18px;
+  margin-bottom: 18px;
 }
 
 .hero-copy,
 .hero-metrics,
 .insight-card {
-  background: var(--bg-panel);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(16px);
 }
 
 .hero-copy {
-  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  padding: 30px 34px 32px 38px;
+}
+
+.hero-copy::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 8px;
+  background: var(--ifes-green);
+}
+
+.hero-copy::after {
+  content: "";
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+  width: 160px;
+  height: 6px;
+  background: var(--ifes-red);
 }
 
 .hero-tag,
@@ -40,70 +63,89 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 12px;
-  margin-bottom: 18px;
-  border-radius: 999px;
-  background: rgba(13, 89, 68, 0.08);
+  padding: 6px 10px;
+  margin-bottom: 16px;
+  border-radius: var(--radius-md);
+  background: var(--surface-green);
   color: var(--accent);
   font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .hero-copy h2 {
-  max-width: 12ch;
-  font-size: clamp(2rem, 4vw, 3.4rem);
-  line-height: 0.98;
-  letter-spacing: -0.04em;
+  max-width: 760px;
+  font-size: 3rem;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .hero-copy p,
 .insight-card p {
   max-width: 58ch;
-  margin-top: 18px;
+  margin-top: 16px;
   color: var(--text-muted);
   font-size: 1rem;
 }
 
 .hero-metrics {
   display: grid;
-  gap: 14px;
-  padding: 22px;
+  gap: 10px;
+  padding: 16px;
+  background: var(--ifes-green-deep);
+  color: #ffffff;
+  border-color: rgba(6, 75, 49, 0.3);
 }
 
 .hero-metrics article {
-  padding: 18px;
-  border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.68);
-  border: 1px solid var(--border-soft);
+  position: relative;
+  padding: 16px 16px 16px 18px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.hero-metrics article::before {
+  content: "";
+  position: absolute;
+  inset: 14px auto 14px 0;
+  width: 4px;
+  background: var(--ifes-red);
 }
 
 .hero-metrics strong,
 .insight-card h3 {
   display: block;
-  font-size: 1.08rem;
+  font-size: 1.05rem;
+}
+
+.insight-card h3 {
   color: var(--accent-strong);
+  line-height: 1.25;
 }
 
 .hero-metrics span {
   display: block;
-  margin-top: 6px;
-  color: var(--text-muted);
-  font-size: 0.92rem;
+  margin-bottom: 4px;
+  color: rgba(255, 255, 255, 0.76);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .content-grid {
   display: grid;
-  grid-template-columns: minmax(260px, 320px) minmax(0, 1fr);
-  gap: 24px;
+  grid-template-columns: minmax(250px, 300px) minmax(0, 1fr);
+  gap: 18px;
   align-items: start;
 }
 
 .insight-card {
   position: sticky;
-  top: 24px;
-  padding: 28px;
+  top: 22px;
+  padding: 24px;
+  border-top: 4px solid var(--ifes-red);
 }
 
 .insight-list {
@@ -117,7 +159,7 @@
 
 .insight-list li {
   position: relative;
-  padding-left: 18px;
+  padding-left: 22px;
   font-size: 0.95rem;
   color: var(--text-muted);
 }
@@ -126,11 +168,12 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 0.58rem;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-warm) 100%);
+  top: 0.5rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--ifes-green);
+  box-shadow: 4px 4px 0 var(--ifes-red);
 }
 
 @media (max-width: 1080px) {
@@ -153,10 +196,15 @@
   .hero-copy,
   .card,
   .insight-card {
-    padding: 22px;
+    padding: 20px;
+  }
+
+  .hero-copy {
+    padding-left: 28px;
   }
 
   .hero-copy h2 {
     max-width: none;
+    font-size: 2.1rem;
   }
 }

@@ -72,18 +72,18 @@ export default function PredictForm({ onResult }: Props) {
     <form className="predict-form" onSubmit={handleSubmit}>
       <div className="form-intro">
         <div>
-          <span className="form-eyebrow">Simulacao</span>
-          <h2>Informe os dados para gerar a estimativa.</h2>
+          <span className="form-eyebrow">Entrada de dados</span>
+          <h2>Preencha os campos da simulacao.</h2>
           <p>
-            O preenchimento foi distribuido em secoes para facilitar a leitura e
-            reduzir erro no envio.
+            Os blocos seguem a ordem de leitura do questionario: perfil,
+            trabalho, localizacao e domicilio.
           </p>
         </div>
 
         <div className="form-status-card">
-          <span>Etapas</span>
-          <strong>4 blocos de entrada</strong>
-          <small>Demografia, trabalho, localizacao e domicilio.</small>
+          <span>Status</span>
+          <strong>4 blocos obrigatorios</strong>
+          <small>Revise valores numericos antes de enviar.</small>
         </div>
       </div>
 
@@ -96,8 +96,8 @@ export default function PredictForm({ onResult }: Props) {
 
       <div className="form-actions">
         <p className="form-helper">
-          Revise os campos principais antes de enviar. O resultado exibira uma
-          faixa provavel, nao apenas um valor unico.
+          O resultado apresenta uma estimativa central e uma faixa provavel para
+          apoiar a interpretacao.
         </p>
 
         <button type="submit" className="submit-btn" disabled={loading}>

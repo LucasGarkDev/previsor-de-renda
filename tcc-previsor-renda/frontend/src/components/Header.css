@@ -1,68 +1,102 @@
 .header {
-  width: min(1240px, calc(100% - 32px));
-  margin: 20px auto 0;
-  min-height: 88px;
-  background:
-    linear-gradient(135deg, rgba(8, 58, 44, 0.96) 0%, rgba(13, 89, 68, 0.92) 100%);
+  position: relative;
+  overflow: hidden;
+  width: min(1180px, calc(100% - 32px));
+  margin: 18px auto 0;
+  min-height: 78px;
+  background: var(--ifes-green-deep);
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 18px 24px;
-  border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 24px 60px rgba(7, 35, 27, 0.18);
+  padding: 16px 22px 16px 28px;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: var(--shadow-strong);
   box-sizing: border-box;
-  backdrop-filter: blur(16px);
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 8px;
+  background: var(--ifes-red);
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: min(420px, 42%);
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.14) 0,
+      rgba(255, 255, 255, 0.14) 1px,
+      transparent 1px,
+      transparent 12px
+    );
+  opacity: 0.55;
+  pointer-events: none;
 }
 
 .header-left {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 16px;
+  min-width: 0;
 }
 
 .logo-shell {
   display: grid;
   place-items: center;
-  width: 62px;
-  height: 62px;
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  flex: 0 0 auto;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  box-shadow: inset 0 -4px 0 rgba(0, 132, 61, 0.12);
 }
 
 .logo {
-  height: 40px;
+  height: 38px;
 }
 
 .header h1 {
-  font-size: 1.2rem;
+  font-size: 1.12rem;
   margin: 0;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
 }
 
 .header span {
   display: inline-block;
   margin-top: 2px;
-  font-size: 0.8rem;
-  opacity: 0.84;
+  font-size: 0.82rem;
+  opacity: 0.9;
 }
 
 .header-badge {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   gap: 2px;
+  min-width: 190px;
   padding: 12px 14px;
-  border-radius: 16px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-left: 4px solid var(--ifes-red);
 }
 
 .header-badge strong {
-  font-size: 0.85rem;
+  font-size: 0.86rem;
 }
 
 .header-badge span {
@@ -74,13 +108,14 @@
   .header {
     width: min(100% - 20px, 1240px);
     margin-top: 12px;
-    padding: 16px 18px;
-    border-radius: 20px;
+    padding: 16px 16px 16px 24px;
     align-items: flex-start;
     flex-direction: column;
   }
 
   .header-badge {
     align-items: flex-start;
+    min-width: 0;
+    width: 100%;
   }
 }

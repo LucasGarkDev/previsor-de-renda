@@ -26,10 +26,15 @@ export default function PredictionResult({ result, onReset }: Props) {
 
   return (
     <div className="result-box">
-      <span className="result-eyebrow">Estimativa concluida</span>
-      <h2>Resultado da simulacao</h2>
+      <div className="result-heading">
+        <span className="result-eyebrow">Estimativa concluida</span>
+        <h2>Resultado da simulacao</h2>
+      </div>
 
-      <div className="result-main">{renda}</div>
+      <div className="result-main">
+        <span>Renda estimada</span>
+        <strong>{renda}</strong>
+      </div>
 
       <div className="result-summary-grid">
         <article className="result-panel result-panel-primary">

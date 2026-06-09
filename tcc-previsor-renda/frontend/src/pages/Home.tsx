@@ -16,49 +16,50 @@ export default function Home() {
       <main className="home-container">
         <section className="hero-panel">
           <div className="hero-copy">
-            <span className="hero-tag">Predicao orientada por dados</span>
-            <h2>Simule a renda estimada com uma interface mais clara e objetiva.</h2>
+            <span className="hero-tag">Previsor de renda</span>
+            <h2>Estimativa mensal com leitura objetiva dos dados.</h2>
             <p>
-              Informe dados demograficos, trabalho, localizacao e domicilio para
-              gerar uma estimativa com intervalo provavel e leitura imediata do
-              resultado.
+              Preencha os blocos de perfil, trabalho, localizacao e domicilio.
+              O sistema retorna valor estimado, faixa provavel e erro medio do
+              modelo.
             </p>
           </div>
 
           <div className="hero-metrics">
             <article>
-              <strong>4 blocos</strong>
-              <span>Formulario organizado em secoes</span>
+              <span>Modelo</span>
+              <strong>Mincer + CatBoost</strong>
             </article>
             <article>
-              <strong>Leitura rapida</strong>
-              <span>Resultado destacado com contexto</span>
+              <span>Saida</span>
+              <strong>Renda + intervalo</strong>
             </article>
             <article>
-              <strong>Responsivo</strong>
-              <span>Fluxo adaptado para desktop e mobile</span>
+              <span>Base</span>
+              <strong>Variaveis PNAD</strong>
             </article>
           </div>
         </section>
 
         <section className="content-grid">
           <aside className="insight-card">
-            <span className="insight-eyebrow">Como funciona</span>
-            <h3>O modelo combina variaveis socioeconomicas para estimar renda.</h3>
+            <span className="insight-eyebrow">Fluxo</span>
+            <h3>Entrada estruturada para reduzir erro de preenchimento.</h3>
             <p>
-              A interface foi reorganizada para reduzir ruido visual, destacar
-              decisoes importantes e deixar a simulacao mais natural em telas
-              menores.
+              Cada bloco agrupa campos que pertencem ao mesmo contexto da
+              pesquisa. A previsao aparece em uma tela separada para facilitar
+              a leitura do resultado.
             </p>
 
             <ul className="insight-list">
-              <li>Campos agrupados por contexto real de preenchimento.</li>
-              <li>Hierarquia visual focada em leitura e contraste.</li>
-              <li>Resposta final com valor central, faixa provavel e observacao.</li>
+              <li>Conferir dados demograficos e escolaridade.</li>
+              <li>Informar jornada, ocupacao e vinculo de trabalho.</li>
+              <li>Completar localizacao, domicilio e bens disponiveis.</li>
+              <li>Enviar para obter estimativa, faixa e observacao.</li>
             </ul>
           </aside>
 
-          <div className="card">
+          <div className="card work-card">
             {!result ? (
               <PredictForm onResult={setResult} />
             ) : (

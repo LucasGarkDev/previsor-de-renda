@@ -1,7 +1,8 @@
 .predict-form {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 18px;
+  counter-reset: form-section;
 }
 
 .form-intro {
@@ -17,15 +18,15 @@
   color: var(--accent);
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .predict-form h2 {
-  max-width: 16ch;
-  font-size: clamp(1.7rem, 2.6vw, 2.35rem);
-  line-height: 1.02;
-  letter-spacing: -0.04em;
+  max-width: 520px;
+  font-size: 2rem;
+  line-height: 1.05;
+  letter-spacing: 0;
 }
 
 .predict-form p {
@@ -34,10 +35,11 @@
 
 .form-status-card {
   flex: 0 0 250px;
-  padding: 18px;
+  padding: 16px;
   border-radius: var(--radius-lg);
-  background: linear-gradient(180deg, rgba(13, 89, 68, 0.08) 0%, rgba(236, 185, 76, 0.1) 100%);
-  border: 1px solid var(--border-strong);
+  background: var(--surface-green);
+  border: 1px solid var(--line-strong);
+  border-top: 4px solid var(--ifes-red);
 }
 
 .form-status-card span,
@@ -50,7 +52,7 @@
   font-weight: 700;
   color: var(--accent);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
 }
 
 .form-status-card strong {
@@ -66,18 +68,37 @@
 }
 
 .form-section {
+  position: relative;
   margin: 0;
-  padding: 22px;
-  border: 1px solid var(--border-soft);
+  padding: 24px 20px 20px;
+  border: 1px solid var(--line-soft);
+  border-left: 5px solid var(--ifes-green);
   border-radius: var(--radius-lg);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.88) 0%, rgba(249, 252, 250, 0.9) 100%);
+  background: var(--surface);
 }
 
 .form-section legend {
-  padding: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 8px;
   font-weight: 800;
   color: var(--accent-strong);
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
+}
+
+.form-section legend::before {
+  counter-increment: form-section;
+  content: "0" counter(form-section);
+  display: inline-grid;
+  place-items: center;
+  min-width: 32px;
+  height: 28px;
+  border-radius: var(--radius-md);
+  background: var(--ifes-green-deep);
+  color: #ffffff;
+  font-size: 0.76rem;
+  box-shadow: 4px 0 0 var(--ifes-red);
 }
 
 .section-description {
@@ -88,8 +109,8 @@
 
 .fieldset-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 14px;
 }
 
 .field,
@@ -102,6 +123,7 @@
 .field {
   flex-direction: column;
   gap: 6px;
+  min-height: 118px;
 }
 
 .field-label {
@@ -120,43 +142,65 @@
 .field select {
   width: 100%;
   min-height: 48px;
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid rgba(21, 35, 29, 0.12);
-  background: rgba(255, 255, 255, 0.96);
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line-soft);
+  background: #ffffff;
   color: var(--text-main);
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
 }
 
 .field input::placeholder {
-  color: rgba(59, 77, 70, 0.52);
+  color: #819089;
 }
 
 .field input:focus,
 .field select:focus {
   outline: none;
-  border-color: rgba(13, 89, 68, 0.5);
-  box-shadow: 0 0 0 4px rgba(13, 89, 68, 0.08);
-  transform: translateY(-1px);
+  border-color: var(--ifes-green);
+  background: var(--surface-muted);
+  box-shadow: 0 0 0 3px rgba(0, 132, 61, 0.12);
 }
 
 .switch-field {
   align-items: center;
   gap: 12px;
-  min-height: 74px;
-  padding: 14px 16px;
-  border-radius: 14px;
-  border: 1px solid rgba(21, 35, 29, 0.1);
-  background: rgba(255, 255, 255, 0.88);
+  min-height: 92px;
+  padding: 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line-soft);
+  background: var(--surface-muted);
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
 .switch-field input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
+  appearance: none;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
   margin: 0;
-  accent-color: var(--accent);
+  border: 2px solid var(--line-strong);
+  border-radius: 4px;
+  background: #ffffff;
+  transition: border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+}
+
+.switch-field input[type="checkbox"]:checked {
+  border-color: var(--ifes-green);
+  background: var(--ifes-green);
+  box-shadow: inset 0 0 0 4px #ffffff;
+}
+
+.switch-field:has(input:checked) {
+  border-color: rgba(0, 132, 61, 0.36);
+  box-shadow: inset 4px 0 0 var(--ifes-green);
+}
+
+.switch-field:focus-within {
+  border-color: var(--ifes-green);
+  box-shadow: 0 0 0 3px rgba(0, 132, 61, 0.1);
 }
 
 .switch-copy {
@@ -173,10 +217,11 @@
 
 .form-error {
   padding: 14px 16px;
-  border-radius: 14px;
-  border: 1px solid rgba(153, 27, 27, 0.18);
-  background: rgba(254, 242, 242, 0.9);
-  color: #991b1b;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(200, 16, 46, 0.28);
+  border-left: 5px solid var(--ifes-red);
+  background: #fff5f6;
+  color: var(--ifes-red-dark);
 }
 
 .form-actions {
@@ -184,10 +229,10 @@
   justify-content: space-between;
   align-items: center;
   gap: 18px;
-  padding: 20px 22px;
+  padding: 18px;
   border-radius: var(--radius-lg);
-  background: rgba(13, 89, 68, 0.04);
-  border: 1px solid rgba(13, 89, 68, 0.1);
+  background: var(--surface-green);
+  border: 1px solid var(--line-strong);
 }
 
 .form-helper {
@@ -196,22 +241,32 @@
 }
 
 .submit-btn {
+  position: relative;
+  overflow: hidden;
   min-width: 220px;
   min-height: 52px;
-  padding: 14px 24px;
+  padding: 14px 24px 14px 30px;
   border: 0;
-  border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent-strong) 0%, var(--accent) 100%);
+  border-radius: var(--radius-md);
+  background: var(--ifes-green-deep);
   color: #ffffff;
   font-size: 0.98rem;
   font-weight: 700;
-  box-shadow: 0 14px 32px rgba(13, 89, 68, 0.22);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+  box-shadow: 0 12px 24px rgba(6, 75, 49, 0.22);
+  transition: background 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
+}
+
+.submit-btn::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 8px;
+  background: var(--ifes-red);
 }
 
 .submit-btn:hover:not(:disabled) {
-  transform: translateY(-1px);
-  box-shadow: 0 18px 36px rgba(13, 89, 68, 0.28);
+  background: var(--ifes-green-dark);
+  box-shadow: 0 16px 28px rgba(6, 75, 49, 0.27);
 }
 
 .submit-btn:disabled {
@@ -236,6 +291,7 @@
 
   .form-status-card,
   .submit-btn {
+    flex: none;
     min-width: 0;
   }
 }

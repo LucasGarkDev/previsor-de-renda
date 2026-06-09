@@ -10,13 +10,13 @@ export default function Header() {
         </div>
         <div>
           <h1>IFES Previsor de Renda</h1>
-          <span>Plataforma de previsao de renda | TCC</span>
+          <span>Simulador socioeconomico para apoio academico</span>
         </div>
       </div>
 
       <div className="header-badge">
-        <strong>Estimativa inteligente</strong>
-        <span>interface institucional do IFES</span>
+        <strong>TCC</strong>
+        <span>modelo Mincer + CatBoost</span>
       </div>
     </header>
   );
